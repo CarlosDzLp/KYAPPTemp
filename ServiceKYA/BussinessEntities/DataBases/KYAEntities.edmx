@@ -1,0 +1,1091 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="KYAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="spDeleteAdditionalFeatures" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdAdditional" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spDeleteCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spDeleteMonthlyPayment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spDeleteRooms" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spDeleteRoomService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdRoomService" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spDeleteService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdService" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spDeleteTenants" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdTenants" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spDeleteUserKYA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spInsertAdditionalFeatures" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="Description" Type="varchar" Mode="In" />
+          <Parameter Name="Price" Type="money" Mode="In" />
+          <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="DateCreated" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spInsertCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="Address" Type="varchar" Mode="In" />
+          <Parameter Name="Telephone" Type="varchar" Mode="In" />
+          <Parameter Name="Date" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spInsertMonthlyPayment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="Date" Type="varchar" Mode="In" />
+          <Parameter Name="Price" Type="money" Mode="In" />
+          <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="DateCreated" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spInsertRooms" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="NameRoom" Type="varchar" Mode="In" />
+          <Parameter Name="Date" Type="datetime" Mode="In" />
+          <Parameter Name="Price" Type="money" Mode="In" />
+        </Function>
+        <Function Name="spInsertRoomService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdService" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Date" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spInsertService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="NameService" Type="varchar" Mode="In" />
+          <Parameter Name="PriceService" Type="money" Mode="In" />
+          <Parameter Name="Date" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spInsertTenants" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Date" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spInsertUserKYA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="UserUser" Type="varchar" Mode="In" />
+          <Parameter Name="UserPassword" Type="varchar" Mode="In" />
+          <Parameter Name="UserTelephone" Type="varchar" Mode="In" />
+          <Parameter Name="UserAddress" Type="varchar" Mode="In" />
+          <Parameter Name="UserDateCreated" Type="datetime" Mode="In" />
+          <Parameter Name="UserDateModified" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spInsMessage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="MessageID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Message" Type="varchar" Mode="In" />
+          <Parameter Name="Status" Type="bit" Mode="In" />
+          <Parameter Name="Source" Type="image" Mode="In" />
+          <Parameter Name="TypeMessage" Type="int" Mode="In" />
+          <Parameter Name="TypeSendUser" Type="bit" Mode="In" />
+          <Parameter Name="MessageString" Type="varchar" Mode="In" />
+          <Parameter Name="DateCreated" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spInsNotification" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="PlayerID" Type="varchar" Mode="In" />
+          <Parameter Name="PushToken" Type="varchar" Mode="In" />
+          <Parameter Name="IdUser" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="TypeUser" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spPaymentMonthly" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdMonthly" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelAdditionalFeatures" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdMonthly" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelectAdditionalFeatures" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelectCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="phone" Type="varchar" Mode="In" />
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="spSelectUserAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos" />
+        <Function Name="spSelectUserKYA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="User" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+          <Parameter Name="Phone" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="spSelMessageAdmin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Status" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spSelMessageAdminAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos" />
+        <Function Name="spSelMessageAdminStatusAllWS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="AdminID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelMessageAdminStatusXIDUSERWS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="AdminID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelMessageUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Status" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spSelMessageUserStatusWS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelMessageUserWS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelMonthlyPayment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelMonthlyPaymentXID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="UserID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="IDMonthlyPayment" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelNotification" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdUser" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="TypeUser" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spSelRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="idRoom" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelRoomAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos" />
+        <Function Name="spSelRoomService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="idRoom" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="idService" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelRoomServiceXIDRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="idRoom" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spSelService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos" />
+        <Function Name="spSelStatusMessage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdUser" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Status" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spSelTenantsAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos" />
+        <Function Name="spSelTenantsID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="RoomID" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="userID" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="spUpdateAdditionalFeatures" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdAdditional" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Description" Type="varchar" Mode="In" />
+          <Parameter Name="Price" Type="money" Mode="In" />
+          <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="DateCreated" Type="datetime" Mode="In" />
+          <Parameter Name="Status" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spUpdateCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="Address" Type="varchar" Mode="In" />
+          <Parameter Name="Telephone" Type="varchar" Mode="In" />
+          <Parameter Name="Date" Type="datetime" Mode="In" />
+          <Parameter Name="Status" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spUpdateMonthlyPayment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Date" Type="varchar" Mode="In" />
+          <Parameter Name="Price" Type="money" Mode="In" />
+          <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="DateCreated" Type="datetime" Mode="In" />
+          <Parameter Name="Status" Type="bit" Mode="In" />
+          <Parameter Name="StatusActivePay" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spUpdateRooms" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="NameRoom" Type="varchar" Mode="In" />
+          <Parameter Name="StatusRoom" Type="bit" Mode="In" />
+          <Parameter Name="Date" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spUpdateRoomService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdRoomService" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="IdService" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Date" Type="datetime" Mode="In" />
+          <Parameter Name="Status" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spUpdateService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdService" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="NameService" Type="varchar" Mode="In" />
+          <Parameter Name="PriceService" Type="money" Mode="In" />
+          <Parameter Name="StatusService" Type="bit" Mode="In" />
+          <Parameter Name="Date" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="spUpdateTenants" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="IdTenants" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="Date" Type="datetime" Mode="In" />
+          <Parameter Name="Status" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spUpdateUserKYA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="UserUser" Type="varchar" Mode="In" />
+          <Parameter Name="UserPassword" Type="varchar" Mode="In" />
+          <Parameter Name="UserTelephone" Type="varchar" Mode="In" />
+          <Parameter Name="UserAddress" Type="varchar" Mode="In" />
+          <Parameter Name="UserDateCreated" Type="datetime" Mode="In" />
+          <Parameter Name="UserDateModified" Type="datetime" Mode="In" />
+          <Parameter Name="UserActive" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="spUpdMessage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="carlos">
+          <Parameter Name="UserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <EntityContainer Name="KYAModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KYAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="KYAEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="spDeleteAdditionalFeatures">
+            <Parameter Name="IdAdditional" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spDeleteCompany">
+            <Parameter Name="Id" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spDeleteMonthlyPayment">
+            <Parameter Name="Id" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spDeleteRooms">
+            <Parameter Name="IdRoom" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spDeleteRoomService">
+            <Parameter Name="IdRoomService" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spDeleteService">
+            <Parameter Name="IdService" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spDeleteTenants">
+            <Parameter Name="IdTenants" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spDeleteUserKYA">
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spInsertAdditionalFeatures">
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="Price" Mode="In" Type="Decimal" />
+            <Parameter Name="IdRoom" Mode="In" Type="Guid" />
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="Id" Mode="In" Type="Guid" />
+            <Parameter Name="DateCreated" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="spInsertCompany">
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="Telephone" Mode="In" Type="String" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="spInsertMonthlyPayment">
+            <Parameter Name="Date" Mode="In" Type="String" />
+            <Parameter Name="Price" Mode="In" Type="Decimal" />
+            <Parameter Name="IdRoom" Mode="In" Type="Guid" />
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="DateCreated" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="spInsertRooms">
+            <Parameter Name="NameRoom" Mode="In" Type="String" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+            <Parameter Name="Price" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="spInsertRoomService">
+            <Parameter Name="IdService" Mode="In" Type="Guid" />
+            <Parameter Name="IdRoom" Mode="In" Type="Guid" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="spInsertService">
+            <Parameter Name="NameService" Mode="In" Type="String" />
+            <Parameter Name="PriceService" Mode="In" Type="Decimal" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="spInsertTenants">
+            <Parameter Name="IdRoom" Mode="In" Type="Guid" />
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="spInsertUserKYA">
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="UserUser" Mode="In" Type="String" />
+            <Parameter Name="UserPassword" Mode="In" Type="String" />
+            <Parameter Name="UserTelephone" Mode="In" Type="String" />
+            <Parameter Name="UserAddress" Mode="In" Type="String" />
+            <Parameter Name="UserDateCreated" Mode="In" Type="DateTime" />
+            <Parameter Name="UserDateModified" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="spInsMessage">
+            <Parameter Name="MessageID" Mode="In" Type="Guid" />
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="Id" Mode="In" Type="Guid" />
+            <Parameter Name="Message" Mode="In" Type="String" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+            <Parameter Name="Source" Mode="In" Type="Binary" />
+            <Parameter Name="TypeMessage" Mode="In" Type="Int32" />
+            <Parameter Name="TypeSendUser" Mode="In" Type="Boolean" />
+            <Parameter Name="MessageString" Mode="In" Type="String" />
+            <Parameter Name="DateCreated" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="spInsNotification">
+            <Parameter Name="PlayerID" Mode="In" Type="String" />
+            <Parameter Name="PushToken" Mode="In" Type="String" />
+            <Parameter Name="IdUser" Mode="In" Type="Guid" />
+            <Parameter Name="TypeUser" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spPaymentMonthly">
+            <Parameter Name="IdMonthly" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelAdditionalFeatures" ReturnType="Collection(KYAModel.spSelAdditionalFeatures_Result)">
+            <Parameter Name="IdMonthly" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelectAdditionalFeatures" ReturnType="Collection(KYAModel.spSelectAdditionalFeatures_Result)">
+            <Parameter Name="IdRoom" Mode="In" Type="Guid" />
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="Id" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelectCompany" ReturnType="Collection(KYAModel.spSelectCompany_Result)">
+            <Parameter Name="phone" Mode="In" Type="String" />
+            <Parameter Name="Name" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="spSelectUserAll" ReturnType="Collection(KYAModel.spSelectUserAll_Result)" />
+          <FunctionImport Name="spSelectUserKYA" ReturnType="Collection(KYAModel.spSelectUserKYA_Result)">
+            <Parameter Name="User" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="Phone" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="spSelMessageAdmin" ReturnType="Collection(KYAModel.spSelMessageAdmin_Result)">
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="IdAdmin" Mode="In" Type="Guid" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spSelMessageAdminAll" ReturnType="Collection(KYAModel.spSelMessageAdminAll_Result)" />
+          <FunctionImport Name="spSelMessageAdminStatusAllWS" ReturnType="Collection(KYAModel.spSelMessageAdminStatusAllWS_Result)">
+            <Parameter Name="AdminID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelMessageAdminStatusXIDUSERWS" ReturnType="Collection(KYAModel.spSelMessageAdminStatusXIDUSERWS_Result)">
+            <Parameter Name="AdminID" Mode="In" Type="Guid" />
+            <Parameter Name="UserID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelMessageUser" ReturnType="Collection(KYAModel.spSelMessageUser_Result)">
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spSelMessageUserStatusWS" ReturnType="Collection(KYAModel.spSelMessageUserStatusWS_Result)">
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelMessageUserWS" ReturnType="Collection(KYAModel.spSelMessageUserWS_Result)">
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelMonthlyPayment" ReturnType="Collection(KYAModel.spSelMonthlyPayment_Result)">
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelMonthlyPaymentXID" ReturnType="Collection(KYAModel.spSelMonthlyPaymentXID_Result)">
+            <Parameter Name="UserID" Mode="In" Type="Guid" />
+            <Parameter Name="IDMonthlyPayment" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelNotification" ReturnType="Collection(KYAModel.spSelNotification_Result)">
+            <Parameter Name="IdUser" Mode="In" Type="Guid" />
+            <Parameter Name="TypeUser" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spSelRoom" ReturnType="Collection(KYAModel.spSelRoom_Result)">
+            <Parameter Name="idRoom" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelRoomAll" ReturnType="Collection(KYAModel.spSelRoomAll_Result)" />
+          <FunctionImport Name="spSelRoomService" ReturnType="Collection(KYAModel.spSelRoomService_Result)">
+            <Parameter Name="idRoom" Mode="In" Type="Guid" />
+            <Parameter Name="idService" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelRoomServiceXIDRoom" ReturnType="Collection(KYAModel.spSelRoomServiceXIDRoom_Result)">
+            <Parameter Name="idRoom" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spSelService" ReturnType="Collection(KYAModel.spSelService_Result)" />
+          <FunctionImport Name="spSelStatusMessage" ReturnType="Collection(KYAModel.spSelStatusMessage_Result)">
+            <Parameter Name="IdUser" Mode="In" Type="Guid" />
+            <Parameter Name="IdAdmin" Mode="In" Type="Guid" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spSelTenantsAll" ReturnType="Collection(KYAModel.spSelTenantsAll_Result)" />
+          <FunctionImport Name="spSelTenantsID" ReturnType="Collection(KYAModel.spSelTenantsID_Result)">
+            <Parameter Name="RoomID" Mode="In" Type="Guid" />
+            <Parameter Name="userID" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdateAdditionalFeatures">
+            <Parameter Name="IdAdditional" Mode="In" Type="Guid" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="Price" Mode="In" Type="Decimal" />
+            <Parameter Name="IdRoom" Mode="In" Type="Guid" />
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="Id" Mode="In" Type="Guid" />
+            <Parameter Name="DateCreated" Mode="In" Type="DateTime" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdateCompany">
+            <Parameter Name="Id" Mode="In" Type="Guid" />
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="Telephone" Mode="In" Type="String" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdateMonthlyPayment">
+            <Parameter Name="Id" Mode="In" Type="Guid" />
+            <Parameter Name="Date" Mode="In" Type="String" />
+            <Parameter Name="Price" Mode="In" Type="Decimal" />
+            <Parameter Name="IdRoom" Mode="In" Type="Guid" />
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="DateCreated" Mode="In" Type="DateTime" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+            <Parameter Name="StatusActivePay" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdateRooms">
+            <Parameter Name="IdRoom" Mode="In" Type="Guid" />
+            <Parameter Name="NameRoom" Mode="In" Type="String" />
+            <Parameter Name="StatusRoom" Mode="In" Type="Boolean" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdateRoomService">
+            <Parameter Name="IdRoomService" Mode="In" Type="Guid" />
+            <Parameter Name="IdService" Mode="In" Type="Guid" />
+            <Parameter Name="IdRoom" Mode="In" Type="Guid" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdateService">
+            <Parameter Name="IdService" Mode="In" Type="Guid" />
+            <Parameter Name="NameService" Mode="In" Type="String" />
+            <Parameter Name="PriceService" Mode="In" Type="Decimal" />
+            <Parameter Name="StatusService" Mode="In" Type="Boolean" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdateTenants">
+            <Parameter Name="IdTenants" Mode="In" Type="Guid" />
+            <Parameter Name="IdRoom" Mode="In" Type="Guid" />
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="Date" Mode="In" Type="DateTime" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdateUserKYA">
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="UserUser" Mode="In" Type="String" />
+            <Parameter Name="UserPassword" Mode="In" Type="String" />
+            <Parameter Name="UserTelephone" Mode="In" Type="String" />
+            <Parameter Name="UserAddress" Mode="In" Type="String" />
+            <Parameter Name="UserDateCreated" Mode="In" Type="DateTime" />
+            <Parameter Name="UserDateModified" Mode="In" Type="DateTime" />
+            <Parameter Name="UserActive" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdMessage">
+            <Parameter Name="UserId" Mode="In" Type="Guid" />
+            <Parameter Name="IdAdmin" Mode="In" Type="Guid" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="spSelAdditionalFeatures_Result">
+          <Property Type="Guid" Name="IdAdditional" Nullable="false" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="200" />
+          <Property Type="Decimal" Name="Price" Nullable="true" Precision="19" />
+          <Property Type="Guid" Name="IdRoom" Nullable="true" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="Guid" Name="Id" Nullable="true" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelectAdditionalFeatures_Result">
+          <Property Type="Guid" Name="IdAdditional" Nullable="false" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="200" />
+          <Property Type="Decimal" Name="Price" Nullable="true" Precision="19" />
+          <Property Type="Guid" Name="IdRoom" Nullable="true" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="Guid" Name="Id" Nullable="true" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelectCompany_Result">
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Telephone" Nullable="true" MaxLength="20" />
+          <Property Type="DateTime" Name="Date" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelectUserAll_Result">
+          <Property Type="Guid" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="UserUser" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="UserPassword" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="UserTelephone" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="UserAddress" Nullable="false" MaxLength="200" />
+          <Property Type="DateTime" Name="UserDateCreated" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="UserDateModified" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="UserActive" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelectUserKYA_Result">
+          <Property Type="Guid" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="UserUser" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="UserPassword" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="UserTelephone" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="UserAddress" Nullable="false" MaxLength="200" />
+          <Property Type="DateTime" Name="UserDateCreated" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="UserDateModified" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="UserActive" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelMessageAdmin_Result">
+          <Property Type="Guid" Name="MessageID" Nullable="false" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="Guid" Name="Id" Nullable="true" />
+          <Property Type="String" Name="Message" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="Status" Nullable="false" />
+          <Property Type="Int32" Name="TypeMessage" Nullable="false" />
+          <Property Type="String" Name="MessageString" Nullable="true" MaxLength="1000" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="TypeSendUser" Nullable="true" />
+          <Property Type="Binary" Name="Source" Nullable="true" MaxLength="Max" />
+        </ComplexType>
+        <ComplexType Name="spSelMessageAdminAll_Result">
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Telephone" Nullable="true" MaxLength="20" />
+          <Property Type="DateTime" Name="Date" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelMessageAdminStatusAllWS_Result">
+          <Property Type="Guid" Name="MessageID" Nullable="false" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="Guid" Name="Id" Nullable="true" />
+          <Property Type="String" Name="Message" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="Status" Nullable="false" />
+          <Property Type="Int32" Name="TypeMessage" Nullable="false" />
+          <Property Type="String" Name="MessageString" Nullable="true" MaxLength="1000" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="TypeSendUser" Nullable="true" />
+          <Property Type="Binary" Name="Source" Nullable="true" MaxLength="Max" />
+        </ComplexType>
+        <ComplexType Name="spSelMessageAdminStatusXIDUSERWS_Result">
+          <Property Type="Guid" Name="MessageID" Nullable="false" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="Guid" Name="Id" Nullable="true" />
+          <Property Type="String" Name="Message" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="Status" Nullable="false" />
+          <Property Type="Int32" Name="TypeMessage" Nullable="false" />
+          <Property Type="String" Name="MessageString" Nullable="true" MaxLength="1000" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="TypeSendUser" Nullable="true" />
+          <Property Type="Binary" Name="Source" Nullable="true" MaxLength="Max" />
+        </ComplexType>
+        <ComplexType Name="spSelMessageUser_Result">
+          <Property Type="Guid" Name="MessageID" Nullable="false" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="Guid" Name="Id" Nullable="true" />
+          <Property Type="String" Name="Message" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="Status" Nullable="false" />
+          <Property Type="Int32" Name="TypeMessage" Nullable="false" />
+          <Property Type="String" Name="MessageString" Nullable="true" MaxLength="1000" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="TypeSendUser" Nullable="true" />
+          <Property Type="Binary" Name="Source" Nullable="true" MaxLength="Max" />
+        </ComplexType>
+        <ComplexType Name="spSelMessageUserStatusWS_Result">
+          <Property Type="Guid" Name="MessageID" Nullable="false" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="Guid" Name="Id" Nullable="true" />
+          <Property Type="String" Name="Message" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="Status" Nullable="false" />
+          <Property Type="Int32" Name="TypeMessage" Nullable="false" />
+          <Property Type="String" Name="MessageString" Nullable="true" MaxLength="1000" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="TypeSendUser" Nullable="true" />
+          <Property Type="Binary" Name="Source" Nullable="true" MaxLength="Max" />
+        </ComplexType>
+        <ComplexType Name="spSelMessageUserWS_Result">
+          <Property Type="Guid" Name="MessageID" Nullable="false" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="Guid" Name="Id" Nullable="true" />
+          <Property Type="String" Name="Message" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="Status" Nullable="false" />
+          <Property Type="Int32" Name="TypeMessage" Nullable="false" />
+          <Property Type="String" Name="MessageString" Nullable="true" MaxLength="1000" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="TypeSendUser" Nullable="true" />
+          <Property Type="Binary" Name="Source" Nullable="true" MaxLength="Max" />
+        </ComplexType>
+        <ComplexType Name="spSelMonthlyPayment_Result">
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Date" Nullable="true" MaxLength="100" />
+          <Property Type="Decimal" Name="Price" Nullable="true" Precision="19" />
+          <Property Type="Guid" Name="IdRoom" Nullable="true" />
+          <Property Type="String" Name="NameRoom" Nullable="false" MaxLength="100" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+          <Property Type="Boolean" Name="StatusActivePay" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelMonthlyPaymentXID_Result">
+          <Property Type="Guid" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Date" Nullable="true" MaxLength="100" />
+          <Property Type="Decimal" Name="Price" Nullable="true" Precision="19" />
+          <Property Type="Guid" Name="IdRoom" Nullable="true" />
+          <Property Type="String" Name="NameRoom" Nullable="false" MaxLength="100" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+          <Property Type="Boolean" Name="StatusActivePay" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelNotification_Result">
+          <Property Type="Guid" Name="IdNotification" Nullable="false" />
+          <Property Type="Guid" Name="Id" Nullable="true" />
+          <Property Type="String" Name="PlayerId" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="PushToken" Nullable="true" MaxLength="1000" />
+          <Property Type="Boolean" Name="TypeUser" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelRoom_Result">
+          <Property Type="Guid" Name="IdRoom" Nullable="false" />
+          <Property Type="String" Name="NameRoom" Nullable="false" MaxLength="100" />
+          <Property Type="Boolean" Name="StatusRoom" Nullable="true" />
+          <Property Type="DateTime" Name="Date" Nullable="true" Precision="23" />
+          <Property Type="Decimal" Name="Price" Nullable="true" Precision="19" />
+        </ComplexType>
+        <ComplexType Name="spSelRoomAll_Result">
+          <Property Type="Guid" Name="IdRoom" Nullable="false" />
+          <Property Type="String" Name="NameRoom" Nullable="false" MaxLength="100" />
+          <Property Type="Boolean" Name="StatusRoom" Nullable="true" />
+          <Property Type="DateTime" Name="Date" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="spSelRoomService_Result">
+          <Property Type="Guid" Name="IdRoomService" Nullable="false" />
+          <Property Type="Guid" Name="IdService" Nullable="false" />
+          <Property Type="String" Name="NameService" Nullable="false" MaxLength="100" />
+          <Property Type="Decimal" Name="PriceService" Nullable="false" Precision="19" />
+          <Property Type="Guid" Name="IdRoom" Nullable="false" />
+          <Property Type="String" Name="NameRoom" Nullable="false" MaxLength="100" />
+          <Property Type="DateTime" Name="Date" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelRoomServiceXIDRoom_Result">
+          <Property Type="Guid" Name="IdRoomService" Nullable="false" />
+          <Property Type="Decimal" Name="PriceService" Nullable="false" Precision="19" />
+          <Property Type="Guid" Name="IdRoom" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelService_Result">
+          <Property Type="Guid" Name="IdService" Nullable="false" />
+          <Property Type="String" Name="NameService" Nullable="false" MaxLength="100" />
+          <Property Type="Decimal" Name="PriceService" Nullable="false" Precision="19" />
+          <Property Type="Boolean" Name="StatusService" Nullable="true" />
+          <Property Type="DateTime" Name="Date" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="spSelStatusMessage_Result">
+          <Property Type="Guid" Name="MessageID" Nullable="false" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="Guid" Name="Id" Nullable="true" />
+          <Property Type="String" Name="Message" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="Status" Nullable="false" />
+          <Property Type="Int32" Name="TypeMessage" Nullable="false" />
+          <Property Type="String" Name="MessageString" Nullable="true" MaxLength="1000" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="TypeSendUser" Nullable="true" />
+          <Property Type="Binary" Name="Source" Nullable="true" MaxLength="Max" />
+        </ComplexType>
+        <ComplexType Name="spSelTenantsAll_Result">
+          <Property Type="Guid" Name="IdTenants" Nullable="false" />
+          <Property Type="Guid" Name="IdRoom" Nullable="true" />
+          <Property Type="String" Name="NameRoom" Nullable="false" MaxLength="100" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="100" />
+          <Property Type="DateTime" Name="Date" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spSelTenantsID_Result">
+          <Property Type="Guid" Name="IdTenants" Nullable="false" />
+          <Property Type="Guid" Name="IdRoom" Nullable="true" />
+          <Property Type="String" Name="NameRoom" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="100" />
+          <Property Type="Guid" Name="UserId" Nullable="true" />
+          <Property Type="DateTime" Name="Date" Nullable="true" Precision="23" />
+          <Property Type="Boolean" Name="Status" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KYAModelStoreContainer" CdmEntityContainer="KYAEntities" >
+          <FunctionImportMapping FunctionImportName="spDeleteAdditionalFeatures" FunctionName="KYAModel.Store.spDeleteAdditionalFeatures" />
+          <FunctionImportMapping FunctionImportName="spDeleteCompany" FunctionName="KYAModel.Store.spDeleteCompany" />
+          <FunctionImportMapping FunctionImportName="spDeleteMonthlyPayment" FunctionName="KYAModel.Store.spDeleteMonthlyPayment" />
+          <FunctionImportMapping FunctionImportName="spDeleteRooms" FunctionName="KYAModel.Store.spDeleteRooms" />
+          <FunctionImportMapping FunctionImportName="spDeleteRoomService" FunctionName="KYAModel.Store.spDeleteRoomService" />
+          <FunctionImportMapping FunctionImportName="spDeleteService" FunctionName="KYAModel.Store.spDeleteService" />
+          <FunctionImportMapping FunctionImportName="spDeleteTenants" FunctionName="KYAModel.Store.spDeleteTenants" />
+          <FunctionImportMapping FunctionImportName="spDeleteUserKYA" FunctionName="KYAModel.Store.spDeleteUserKYA" />
+          <FunctionImportMapping FunctionImportName="spInsertAdditionalFeatures" FunctionName="KYAModel.Store.spInsertAdditionalFeatures" />
+          <FunctionImportMapping FunctionImportName="spInsertCompany" FunctionName="KYAModel.Store.spInsertCompany" />
+          <FunctionImportMapping FunctionImportName="spInsertMonthlyPayment" FunctionName="KYAModel.Store.spInsertMonthlyPayment" />
+          <FunctionImportMapping FunctionImportName="spInsertRooms" FunctionName="KYAModel.Store.spInsertRooms" />
+          <FunctionImportMapping FunctionImportName="spInsertRoomService" FunctionName="KYAModel.Store.spInsertRoomService" />
+          <FunctionImportMapping FunctionImportName="spInsertService" FunctionName="KYAModel.Store.spInsertService" />
+          <FunctionImportMapping FunctionImportName="spInsertTenants" FunctionName="KYAModel.Store.spInsertTenants" />
+          <FunctionImportMapping FunctionImportName="spInsertUserKYA" FunctionName="KYAModel.Store.spInsertUserKYA" />
+          <FunctionImportMapping FunctionImportName="spInsMessage" FunctionName="KYAModel.Store.spInsMessage" />
+          <FunctionImportMapping FunctionImportName="spInsNotification" FunctionName="KYAModel.Store.spInsNotification" />
+          <FunctionImportMapping FunctionImportName="spPaymentMonthly" FunctionName="KYAModel.Store.spPaymentMonthly" />
+          <FunctionImportMapping FunctionImportName="spSelAdditionalFeatures" FunctionName="KYAModel.Store.spSelAdditionalFeatures">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelAdditionalFeatures_Result">
+                <ScalarProperty Name="IdAdditional" ColumnName="IdAdditional" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="IdRoom" ColumnName="IdRoom" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelectAdditionalFeatures" FunctionName="KYAModel.Store.spSelectAdditionalFeatures">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelectAdditionalFeatures_Result">
+                <ScalarProperty Name="IdAdditional" ColumnName="IdAdditional" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="IdRoom" ColumnName="IdRoom" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelectCompany" FunctionName="KYAModel.Store.spSelectCompany">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelectCompany_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelectUserAll" FunctionName="KYAModel.Store.spSelectUserAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelectUserAll_Result">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserUser" ColumnName="UserUser" />
+                <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+                <ScalarProperty Name="UserTelephone" ColumnName="UserTelephone" />
+                <ScalarProperty Name="UserAddress" ColumnName="UserAddress" />
+                <ScalarProperty Name="UserDateCreated" ColumnName="UserDateCreated" />
+                <ScalarProperty Name="UserDateModified" ColumnName="UserDateModified" />
+                <ScalarProperty Name="UserActive" ColumnName="UserActive" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelectUserKYA" FunctionName="KYAModel.Store.spSelectUserKYA">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelectUserKYA_Result">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserUser" ColumnName="UserUser" />
+                <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+                <ScalarProperty Name="UserTelephone" ColumnName="UserTelephone" />
+                <ScalarProperty Name="UserAddress" ColumnName="UserAddress" />
+                <ScalarProperty Name="UserDateCreated" ColumnName="UserDateCreated" />
+                <ScalarProperty Name="UserDateModified" ColumnName="UserDateModified" />
+                <ScalarProperty Name="UserActive" ColumnName="UserActive" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelMessageAdmin" FunctionName="KYAModel.Store.spSelMessageAdmin">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelMessageAdmin_Result">
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="TypeMessage" ColumnName="TypeMessage" />
+                <ScalarProperty Name="MessageString" ColumnName="MessageString" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="TypeSendUser" ColumnName="TypeSendUser" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelMessageAdminAll" FunctionName="KYAModel.Store.spSelMessageAdminAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelMessageAdminAll_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelMessageAdminStatusAllWS" FunctionName="KYAModel.Store.spSelMessageAdminStatusAllWS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelMessageAdminStatusAllWS_Result">
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="TypeMessage" ColumnName="TypeMessage" />
+                <ScalarProperty Name="MessageString" ColumnName="MessageString" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="TypeSendUser" ColumnName="TypeSendUser" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelMessageAdminStatusXIDUSERWS" FunctionName="KYAModel.Store.spSelMessageAdminStatusXIDUSERWS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelMessageAdminStatusXIDUSERWS_Result">
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="TypeMessage" ColumnName="TypeMessage" />
+                <ScalarProperty Name="MessageString" ColumnName="MessageString" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="TypeSendUser" ColumnName="TypeSendUser" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelMessageUser" FunctionName="KYAModel.Store.spSelMessageUser">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelMessageUser_Result">
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="TypeMessage" ColumnName="TypeMessage" />
+                <ScalarProperty Name="MessageString" ColumnName="MessageString" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="TypeSendUser" ColumnName="TypeSendUser" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelMessageUserStatusWS" FunctionName="KYAModel.Store.spSelMessageUserStatusWS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelMessageUserStatusWS_Result">
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="TypeMessage" ColumnName="TypeMessage" />
+                <ScalarProperty Name="MessageString" ColumnName="MessageString" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="TypeSendUser" ColumnName="TypeSendUser" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelMessageUserWS" FunctionName="KYAModel.Store.spSelMessageUserWS">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelMessageUserWS_Result">
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="TypeMessage" ColumnName="TypeMessage" />
+                <ScalarProperty Name="MessageString" ColumnName="MessageString" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="TypeSendUser" ColumnName="TypeSendUser" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelMonthlyPayment" FunctionName="KYAModel.Store.spSelMonthlyPayment">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelMonthlyPayment_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="IdRoom" ColumnName="IdRoom" />
+                <ScalarProperty Name="NameRoom" ColumnName="NameRoom" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="StatusActivePay" ColumnName="StatusActivePay" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelMonthlyPaymentXID" FunctionName="KYAModel.Store.spSelMonthlyPaymentXID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelMonthlyPaymentXID_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="IdRoom" ColumnName="IdRoom" />
+                <ScalarProperty Name="NameRoom" ColumnName="NameRoom" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="StatusActivePay" ColumnName="StatusActivePay" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelNotification" FunctionName="KYAModel.Store.spSelNotification">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelNotification_Result">
+                <ScalarProperty Name="IdNotification" ColumnName="IdNotification" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+                <ScalarProperty Name="PushToken" ColumnName="PushToken" />
+                <ScalarProperty Name="TypeUser" ColumnName="TypeUser" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelRoom" FunctionName="KYAModel.Store.spSelRoom">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelRoom_Result">
+                <ScalarProperty Name="IdRoom" ColumnName="IdRoom" />
+                <ScalarProperty Name="NameRoom" ColumnName="NameRoom" />
+                <ScalarProperty Name="StatusRoom" ColumnName="StatusRoom" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelRoomAll" FunctionName="KYAModel.Store.spSelRoomAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelRoomAll_Result">
+                <ScalarProperty Name="IdRoom" ColumnName="IdRoom" />
+                <ScalarProperty Name="NameRoom" ColumnName="NameRoom" />
+                <ScalarProperty Name="StatusRoom" ColumnName="StatusRoom" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelRoomService" FunctionName="KYAModel.Store.spSelRoomService">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelRoomService_Result">
+                <ScalarProperty Name="IdRoomService" ColumnName="IdRoomService" />
+                <ScalarProperty Name="IdService" ColumnName="IdService" />
+                <ScalarProperty Name="NameService" ColumnName="NameService" />
+                <ScalarProperty Name="PriceService" ColumnName="PriceService" />
+                <ScalarProperty Name="IdRoom" ColumnName="IdRoom" />
+                <ScalarProperty Name="NameRoom" ColumnName="NameRoom" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelRoomServiceXIDRoom" FunctionName="KYAModel.Store.spSelRoomServiceXIDRoom">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelRoomServiceXIDRoom_Result">
+                <ScalarProperty Name="IdRoomService" ColumnName="IdRoomService" />
+                <ScalarProperty Name="PriceService" ColumnName="PriceService" />
+                <ScalarProperty Name="IdRoom" ColumnName="IdRoom" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelService" FunctionName="KYAModel.Store.spSelService">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelService_Result">
+                <ScalarProperty Name="IdService" ColumnName="IdService" />
+                <ScalarProperty Name="NameService" ColumnName="NameService" />
+                <ScalarProperty Name="PriceService" ColumnName="PriceService" />
+                <ScalarProperty Name="StatusService" ColumnName="StatusService" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelStatusMessage" FunctionName="KYAModel.Store.spSelStatusMessage">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelStatusMessage_Result">
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="TypeMessage" ColumnName="TypeMessage" />
+                <ScalarProperty Name="MessageString" ColumnName="MessageString" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="TypeSendUser" ColumnName="TypeSendUser" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelTenantsAll" FunctionName="KYAModel.Store.spSelTenantsAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelTenantsAll_Result">
+                <ScalarProperty Name="IdTenants" ColumnName="IdTenants" />
+                <ScalarProperty Name="IdRoom" ColumnName="IdRoom" />
+                <ScalarProperty Name="NameRoom" ColumnName="NameRoom" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spSelTenantsID" FunctionName="KYAModel.Store.spSelTenantsID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KYAModel.spSelTenantsID_Result">
+                <ScalarProperty Name="IdTenants" ColumnName="IdTenants" />
+                <ScalarProperty Name="IdRoom" ColumnName="IdRoom" />
+                <ScalarProperty Name="NameRoom" ColumnName="NameRoom" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spUpdateAdditionalFeatures" FunctionName="KYAModel.Store.spUpdateAdditionalFeatures" />
+          <FunctionImportMapping FunctionImportName="spUpdateCompany" FunctionName="KYAModel.Store.spUpdateCompany" />
+          <FunctionImportMapping FunctionImportName="spUpdateMonthlyPayment" FunctionName="KYAModel.Store.spUpdateMonthlyPayment" />
+          <FunctionImportMapping FunctionImportName="spUpdateRooms" FunctionName="KYAModel.Store.spUpdateRooms" />
+          <FunctionImportMapping FunctionImportName="spUpdateRoomService" FunctionName="KYAModel.Store.spUpdateRoomService" />
+          <FunctionImportMapping FunctionImportName="spUpdateService" FunctionName="KYAModel.Store.spUpdateService" />
+          <FunctionImportMapping FunctionImportName="spUpdateTenants" FunctionName="KYAModel.Store.spUpdateTenants" />
+          <FunctionImportMapping FunctionImportName="spUpdateUserKYA" FunctionName="KYAModel.Store.spUpdateUserKYA" />
+          <FunctionImportMapping FunctionImportName="spUpdMessage" FunctionName="KYAModel.Store.spUpdMessage" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
