@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+    x:Class="KyAApp.Controls.EmptyView">
+    <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+<forms:AnimationView
+    Grid.Row="0"
+    x:Name="viewAnimation"
+	        Animation="empty.json" 
+	        Loop="True" 
+	        AutoPlay="True"
+            HeightRequest="300"
+	        VerticalOptions="FillAndExpand" 
+	        HorizontalOptions="FillAndExpand" />
+            <Button
+                Padding="20,0"
+                x:Name="btnEmpty"             
+                Grid.Row="1"
+                BorderWidth="2"
+                TextColor="Black"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Margin="0,-36,0,0"
+                BorderColor="Black"
+                BackgroundColor="White"/>
+        </Grid>
+        
+    </ContentView.Content>
+</ContentView>

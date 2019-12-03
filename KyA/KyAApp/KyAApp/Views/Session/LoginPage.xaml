@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:KyAApp.Controls"
+    x:Class="KyAApp.Views.Session.LoginPage"
+    BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView
+            VerticalScrollBarVisibility="Never">
+            <StackLayout
+                VerticalOptions="Center"
+                Spacing="20">
+                <Image
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    WidthRequest="150"
+                    HeightRequest="150"
+                    Source="logosplash"/>
+                <Frame
+                    HasShadow="True"
+                    CornerRadius="10"
+                    Margin="30,0"
+                    Padding="10,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image
+                            Grid.Column="0"
+                            Source="ic_user"/>
+                        <Entry
+                            Text="{Binding User}"
+                            Placeholder="Usuario"
+                            PlaceholderColor="Gray"
+                            TextColor="Black"
+                            Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+                <Frame
+                    HasShadow="True"
+                    CornerRadius="10"
+                    Margin="30,0"
+                    Padding="10,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Image
+                            Grid.Column="0"
+                            Source="ic_password"/>
+                        <Entry
+                            Text="{Binding Password}"
+                            Placeholder="Usuario"
+                            PlaceholderColor="Gray"
+                            TextColor="Black"
+                            Grid.Column="1"/>
+                        <Image
+                            Grid.Column="2"
+                            Source="ic_password"/>
+                    </Grid>
+                </Frame>
+                <controls:CustomPicker
+                    Margin="30,0"
+                    BorderWidth="4"
+                    TextColor="Black"
+                    CornerRadius="6"
+                    IsCurvedCornersEnabled="True"
+                    BorderColor="Black"
+                    TitleColor="Gray"
+                    ItemsSource="{Binding ListTypeUser}"
+                    ItemDisplayBinding="{Binding Type}"
+                    SelectedItem="{Binding SelectedTypeUser}"
+                    Title="Seleccione un usuario"
+                    Image="ic_arrow_left">
+                </controls:CustomPicker>
+                <Button
+                    Margin="30,0"
+                    BorderWidth="2"
+                    BorderColor="Black"
+                    BackgroundColor="White"
+                    Text="Iniciar sesion"
+                    TextColor="Black"
+                    Command="{Binding LoginCommand}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

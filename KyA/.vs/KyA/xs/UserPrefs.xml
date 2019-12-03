@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{83733CF5-2457-4382-9B50-200A2C9B31C6}|Default">
+  <MonoDevelop.Ide.ItemProperties.KyAApp.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.DVR0219415003527" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="KyA" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" line="60" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" line="67" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/Administrator/Popup/AddMonthlyPaymentPopupViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/Popup/AddMonthlyPaymentPopupViewModel.cs" line="84" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" line="86" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" line="70" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MonthlyPaymentPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MonthlyPaymentPageViewModel.cs" line="109" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
