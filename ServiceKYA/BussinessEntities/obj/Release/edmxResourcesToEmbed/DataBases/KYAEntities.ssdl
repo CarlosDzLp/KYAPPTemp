@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RentAppModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="spDelDocument" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdDocument" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="spDelOwner" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="spDelRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="spDelService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdService" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="spDelUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdUser" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="spInsDocument" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="FileDocument" Type="binary" Mode="In" />
+    <Parameter Name="StringFile" Type="varchar" Mode="In" />
+    <Parameter Name="Extensions" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spInsNotifications" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="PlayerId" Type="varchar" Mode="In" />
+    <Parameter Name="PushToken" Type="varchar" Mode="In" />
+    <Parameter Name="TypeUser" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spInsOwner" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Address" Type="varchar" Mode="In" />
+    <Parameter Name="Phone" Type="varchar" Mode="In" />
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="Icon" Type="image" Mode="In" />
+    <Parameter Name="IconSitrng" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spInsRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Price" Type="money" Mode="In" />
+  </Function>
+  <Function Name="spInsService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Price" Type="money" Mode="In" />
+    <Parameter Name="Icon" Type="image" Mode="In" />
+    <Parameter Name="IconString" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spInsUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Address" Type="varchar" Mode="In" />
+    <Parameter Name="Phone" Type="varchar" Mode="In" />
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+    <Parameter Name="Icon" Type="image" Mode="In" />
+    <Parameter Name="IconString" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spSelAdministratorDoLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spSelDocuments" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="spSelNotifications" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="TypeUser" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spSelOwner" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spSelOwnerDoLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spSelRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="StatusRoom" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spSelService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="StatusService" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spSelUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="spSelUserDoLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spUpdDocument" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdDocument" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="FileDocument" Type="binary" Mode="In" />
+    <Parameter Name="StringFile" Type="varchar" Mode="In" />
+    <Parameter Name="Extensions" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spUpdOwner" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Address" Type="varchar" Mode="In" />
+    <Parameter Name="Phone" Type="varchar" Mode="In" />
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="Icon" Type="image" Mode="In" />
+    <Parameter Name="IconSitrng" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+    <Parameter Name="Status" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="spUpdRoom" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdRoom" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Price" Type="money" Mode="In" />
+  </Function>
+  <Function Name="spUpdService" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdService" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Price" Type="money" Mode="In" />
+    <Parameter Name="Icon" Type="image" Mode="In" />
+    <Parameter Name="IconString" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spUpdUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="userID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdOwner" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="IdAdmin" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Address" Type="varchar" Mode="In" />
+    <Parameter Name="Phone" Type="varchar" Mode="In" />
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+    <Parameter Name="Icon" Type="image" Mode="In" />
+    <Parameter Name="IconString" Type="varchar" Mode="In" />
+    <Parameter Name="StatusUser" Type="bit" Mode="In" />
+  </Function>
+  <EntityContainer Name="RentAppModelStoreContainer" />
+</Schema>

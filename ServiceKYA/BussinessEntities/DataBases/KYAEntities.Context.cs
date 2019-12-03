@@ -15,10 +15,10 @@ namespace BussinessEntities.DataBases
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class KYAEntities : DbContext
+    public partial class RentAppEntities : DbContext
     {
-        public KYAEntities()
-            : base("name=KYAEntities")
+        public RentAppEntities()
+            : base("name=RentAppEntities")
         {
         }
     
@@ -28,109 +28,107 @@ namespace BussinessEntities.DataBases
         }
     
     
-        public virtual int spDeleteAdditionalFeatures(Nullable<System.Guid> idAdditional)
+        public virtual int spDelDocument(Nullable<System.Guid> idDocument)
         {
-            var idAdditionalParameter = idAdditional.HasValue ?
-                new ObjectParameter("IdAdditional", idAdditional) :
-                new ObjectParameter("IdAdditional", typeof(System.Guid));
+            var idDocumentParameter = idDocument.HasValue ?
+                new ObjectParameter("IdDocument", idDocument) :
+                new ObjectParameter("IdDocument", typeof(System.Guid));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDeleteAdditionalFeatures", idAdditionalParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDelDocument", idDocumentParameter);
         }
     
-        public virtual int spDeleteCompany(Nullable<System.Guid> id)
+        public virtual int spDelOwner(Nullable<System.Guid> idOwner)
         {
-            var idParameter = id.HasValue ?
-                new ObjectParameter("Id", id) :
-                new ObjectParameter("Id", typeof(System.Guid));
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDeleteCompany", idParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDelOwner", idOwnerParameter);
         }
     
-        public virtual int spDeleteMonthlyPayment(Nullable<System.Guid> id)
-        {
-            var idParameter = id.HasValue ?
-                new ObjectParameter("Id", id) :
-                new ObjectParameter("Id", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDeleteMonthlyPayment", idParameter);
-        }
-    
-        public virtual int spDeleteRooms(Nullable<System.Guid> idRoom)
+        public virtual int spDelRoom(Nullable<System.Guid> idRoom)
         {
             var idRoomParameter = idRoom.HasValue ?
                 new ObjectParameter("IdRoom", idRoom) :
                 new ObjectParameter("IdRoom", typeof(System.Guid));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDeleteRooms", idRoomParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDelRoom", idRoomParameter);
         }
     
-        public virtual int spDeleteRoomService(Nullable<System.Guid> idRoomService)
-        {
-            var idRoomServiceParameter = idRoomService.HasValue ?
-                new ObjectParameter("IdRoomService", idRoomService) :
-                new ObjectParameter("IdRoomService", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDeleteRoomService", idRoomServiceParameter);
-        }
-    
-        public virtual int spDeleteService(Nullable<System.Guid> idService)
+        public virtual int spDelService(Nullable<System.Guid> idService)
         {
             var idServiceParameter = idService.HasValue ?
                 new ObjectParameter("IdService", idService) :
                 new ObjectParameter("IdService", typeof(System.Guid));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDeleteService", idServiceParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDelService", idServiceParameter);
         }
     
-        public virtual int spDeleteTenants(Nullable<System.Guid> idTenants)
+        public virtual int spDelUser(Nullable<System.Guid> idUser)
         {
-            var idTenantsParameter = idTenants.HasValue ?
-                new ObjectParameter("IdTenants", idTenants) :
-                new ObjectParameter("IdTenants", typeof(System.Guid));
+            var idUserParameter = idUser.HasValue ?
+                new ObjectParameter("IdUser", idUser) :
+                new ObjectParameter("IdUser", typeof(System.Guid));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDeleteTenants", idTenantsParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDelUser", idUserParameter);
         }
     
-        public virtual int spDeleteUserKYA(Nullable<System.Guid> userId)
+        public virtual int spInsDocument(Nullable<System.Guid> idOwner, Nullable<System.Guid> idAdmin, string name, byte[] fileDocument, string stringFile, string extensions)
         {
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spDeleteUserKYA", userIdParameter);
+            var idAdminParameter = idAdmin.HasValue ?
+                new ObjectParameter("IdAdmin", idAdmin) :
+                new ObjectParameter("IdAdmin", typeof(System.Guid));
+    
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
+    
+            var fileDocumentParameter = fileDocument != null ?
+                new ObjectParameter("FileDocument", fileDocument) :
+                new ObjectParameter("FileDocument", typeof(byte[]));
+    
+            var stringFileParameter = stringFile != null ?
+                new ObjectParameter("StringFile", stringFile) :
+                new ObjectParameter("StringFile", typeof(string));
+    
+            var extensionsParameter = extensions != null ?
+                new ObjectParameter("Extensions", extensions) :
+                new ObjectParameter("Extensions", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsDocument", idOwnerParameter, idAdminParameter, nameParameter, fileDocumentParameter, stringFileParameter, extensionsParameter);
         }
     
-        public virtual int spInsertAdditionalFeatures(string description, Nullable<decimal> price, Nullable<System.Guid> idRoom, Nullable<System.Guid> userId, Nullable<System.Guid> id, Nullable<System.DateTime> dateCreated)
+        public virtual int spInsNotifications(Nullable<System.Guid> id, string playerId, string pushToken, Nullable<int> typeUser)
         {
-            var descriptionParameter = description != null ?
-                new ObjectParameter("Description", description) :
-                new ObjectParameter("Description", typeof(string));
-    
-            var priceParameter = price.HasValue ?
-                new ObjectParameter("Price", price) :
-                new ObjectParameter("Price", typeof(decimal));
-    
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("IdRoom", idRoom) :
-                new ObjectParameter("IdRoom", typeof(System.Guid));
-    
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
             var idParameter = id.HasValue ?
                 new ObjectParameter("Id", id) :
                 new ObjectParameter("Id", typeof(System.Guid));
     
-            var dateCreatedParameter = dateCreated.HasValue ?
-                new ObjectParameter("DateCreated", dateCreated) :
-                new ObjectParameter("DateCreated", typeof(System.DateTime));
+            var playerIdParameter = playerId != null ?
+                new ObjectParameter("PlayerId", playerId) :
+                new ObjectParameter("PlayerId", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsertAdditionalFeatures", descriptionParameter, priceParameter, idRoomParameter, userIdParameter, idParameter, dateCreatedParameter);
+            var pushTokenParameter = pushToken != null ?
+                new ObjectParameter("PushToken", pushToken) :
+                new ObjectParameter("PushToken", typeof(string));
+    
+            var typeUserParameter = typeUser.HasValue ?
+                new ObjectParameter("TypeUser", typeUser) :
+                new ObjectParameter("TypeUser", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsNotifications", idParameter, playerIdParameter, pushTokenParameter, typeUserParameter);
         }
     
-        public virtual int spInsertCompany(string name, string address, string telephone, Nullable<System.DateTime> date)
+        public virtual int spInsOwner(Nullable<System.Guid> idAdmin, string name, string address, string phone, string user, byte[] icon, string iconSitrng, string password)
         {
+            var idAdminParameter = idAdmin.HasValue ?
+                new ObjectParameter("IdAdmin", idAdmin) :
+                new ObjectParameter("IdAdmin", typeof(System.Guid));
+    
             var nameParameter = name != null ?
                 new ObjectParameter("Name", name) :
                 new ObjectParameter("Name", typeof(string));
@@ -139,263 +137,121 @@ namespace BussinessEntities.DataBases
                 new ObjectParameter("Address", address) :
                 new ObjectParameter("Address", typeof(string));
     
-            var telephoneParameter = telephone != null ?
-                new ObjectParameter("Telephone", telephone) :
-                new ObjectParameter("Telephone", typeof(string));
-    
-            var dateParameter = date.HasValue ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsertCompany", nameParameter, addressParameter, telephoneParameter, dateParameter);
-        }
-    
-        public virtual int spInsertMonthlyPayment(string date, Nullable<decimal> price, Nullable<System.Guid> idRoom, Nullable<System.Guid> userId, Nullable<System.DateTime> dateCreated)
-        {
-            var dateParameter = date != null ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(string));
-    
-            var priceParameter = price.HasValue ?
-                new ObjectParameter("Price", price) :
-                new ObjectParameter("Price", typeof(decimal));
-    
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("IdRoom", idRoom) :
-                new ObjectParameter("IdRoom", typeof(System.Guid));
-    
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            var dateCreatedParameter = dateCreated.HasValue ?
-                new ObjectParameter("DateCreated", dateCreated) :
-                new ObjectParameter("DateCreated", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsertMonthlyPayment", dateParameter, priceParameter, idRoomParameter, userIdParameter, dateCreatedParameter);
-        }
-    
-        public virtual int spInsertRooms(string nameRoom, Nullable<System.DateTime> date, Nullable<decimal> price)
-        {
-            var nameRoomParameter = nameRoom != null ?
-                new ObjectParameter("NameRoom", nameRoom) :
-                new ObjectParameter("NameRoom", typeof(string));
-    
-            var dateParameter = date.HasValue ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(System.DateTime));
-    
-            var priceParameter = price.HasValue ?
-                new ObjectParameter("Price", price) :
-                new ObjectParameter("Price", typeof(decimal));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsertRooms", nameRoomParameter, dateParameter, priceParameter);
-        }
-    
-        public virtual int spInsertRoomService(Nullable<System.Guid> idService, Nullable<System.Guid> idRoom, Nullable<System.DateTime> date)
-        {
-            var idServiceParameter = idService.HasValue ?
-                new ObjectParameter("IdService", idService) :
-                new ObjectParameter("IdService", typeof(System.Guid));
-    
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("IdRoom", idRoom) :
-                new ObjectParameter("IdRoom", typeof(System.Guid));
-    
-            var dateParameter = date.HasValue ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsertRoomService", idServiceParameter, idRoomParameter, dateParameter);
-        }
-    
-        public virtual int spInsertService(string nameService, Nullable<decimal> priceService, Nullable<System.DateTime> date)
-        {
-            var nameServiceParameter = nameService != null ?
-                new ObjectParameter("NameService", nameService) :
-                new ObjectParameter("NameService", typeof(string));
-    
-            var priceServiceParameter = priceService.HasValue ?
-                new ObjectParameter("PriceService", priceService) :
-                new ObjectParameter("PriceService", typeof(decimal));
-    
-            var dateParameter = date.HasValue ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsertService", nameServiceParameter, priceServiceParameter, dateParameter);
-        }
-    
-        public virtual int spInsertTenants(Nullable<System.Guid> idRoom, Nullable<System.Guid> userId, Nullable<System.DateTime> date)
-        {
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("IdRoom", idRoom) :
-                new ObjectParameter("IdRoom", typeof(System.Guid));
-    
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            var dateParameter = date.HasValue ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsertTenants", idRoomParameter, userIdParameter, dateParameter);
-        }
-    
-        public virtual int spInsertUserKYA(string userName, string userUser, string userPassword, string userTelephone, string userAddress, Nullable<System.DateTime> userDateCreated, Nullable<System.DateTime> userDateModified)
-        {
-            var userNameParameter = userName != null ?
-                new ObjectParameter("UserName", userName) :
-                new ObjectParameter("UserName", typeof(string));
-    
-            var userUserParameter = userUser != null ?
-                new ObjectParameter("UserUser", userUser) :
-                new ObjectParameter("UserUser", typeof(string));
-    
-            var userPasswordParameter = userPassword != null ?
-                new ObjectParameter("UserPassword", userPassword) :
-                new ObjectParameter("UserPassword", typeof(string));
-    
-            var userTelephoneParameter = userTelephone != null ?
-                new ObjectParameter("UserTelephone", userTelephone) :
-                new ObjectParameter("UserTelephone", typeof(string));
-    
-            var userAddressParameter = userAddress != null ?
-                new ObjectParameter("UserAddress", userAddress) :
-                new ObjectParameter("UserAddress", typeof(string));
-    
-            var userDateCreatedParameter = userDateCreated.HasValue ?
-                new ObjectParameter("UserDateCreated", userDateCreated) :
-                new ObjectParameter("UserDateCreated", typeof(System.DateTime));
-    
-            var userDateModifiedParameter = userDateModified.HasValue ?
-                new ObjectParameter("UserDateModified", userDateModified) :
-                new ObjectParameter("UserDateModified", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsertUserKYA", userNameParameter, userUserParameter, userPasswordParameter, userTelephoneParameter, userAddressParameter, userDateCreatedParameter, userDateModifiedParameter);
-        }
-    
-        public virtual int spInsMessage(Nullable<System.Guid> messageID, Nullable<System.Guid> userId, Nullable<System.Guid> id, string message, Nullable<bool> status, byte[] source, Nullable<int> typeMessage, Nullable<bool> typeSendUser, string messageString, Nullable<System.DateTime> dateCreated)
-        {
-            var messageIDParameter = messageID.HasValue ?
-                new ObjectParameter("MessageID", messageID) :
-                new ObjectParameter("MessageID", typeof(System.Guid));
-    
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            var idParameter = id.HasValue ?
-                new ObjectParameter("Id", id) :
-                new ObjectParameter("Id", typeof(System.Guid));
-    
-            var messageParameter = message != null ?
-                new ObjectParameter("Message", message) :
-                new ObjectParameter("Message", typeof(string));
-    
-            var statusParameter = status.HasValue ?
-                new ObjectParameter("Status", status) :
-                new ObjectParameter("Status", typeof(bool));
-    
-            var sourceParameter = source != null ?
-                new ObjectParameter("Source", source) :
-                new ObjectParameter("Source", typeof(byte[]));
-    
-            var typeMessageParameter = typeMessage.HasValue ?
-                new ObjectParameter("TypeMessage", typeMessage) :
-                new ObjectParameter("TypeMessage", typeof(int));
-    
-            var typeSendUserParameter = typeSendUser.HasValue ?
-                new ObjectParameter("TypeSendUser", typeSendUser) :
-                new ObjectParameter("TypeSendUser", typeof(bool));
-    
-            var messageStringParameter = messageString != null ?
-                new ObjectParameter("MessageString", messageString) :
-                new ObjectParameter("MessageString", typeof(string));
-    
-            var dateCreatedParameter = dateCreated.HasValue ?
-                new ObjectParameter("DateCreated", dateCreated) :
-                new ObjectParameter("DateCreated", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsMessage", messageIDParameter, userIdParameter, idParameter, messageParameter, statusParameter, sourceParameter, typeMessageParameter, typeSendUserParameter, messageStringParameter, dateCreatedParameter);
-        }
-    
-        public virtual int spInsNotification(string playerID, string pushToken, Nullable<System.Guid> idUser, Nullable<bool> typeUser)
-        {
-            var playerIDParameter = playerID != null ?
-                new ObjectParameter("PlayerID", playerID) :
-                new ObjectParameter("PlayerID", typeof(string));
-    
-            var pushTokenParameter = pushToken != null ?
-                new ObjectParameter("PushToken", pushToken) :
-                new ObjectParameter("PushToken", typeof(string));
-    
-            var idUserParameter = idUser.HasValue ?
-                new ObjectParameter("IdUser", idUser) :
-                new ObjectParameter("IdUser", typeof(System.Guid));
-    
-            var typeUserParameter = typeUser.HasValue ?
-                new ObjectParameter("TypeUser", typeUser) :
-                new ObjectParameter("TypeUser", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsNotification", playerIDParameter, pushTokenParameter, idUserParameter, typeUserParameter);
-        }
-    
-        public virtual int spPaymentMonthly(Nullable<System.Guid> idMonthly)
-        {
-            var idMonthlyParameter = idMonthly.HasValue ?
-                new ObjectParameter("IdMonthly", idMonthly) :
-                new ObjectParameter("IdMonthly", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spPaymentMonthly", idMonthlyParameter);
-        }
-    
-        public virtual ObjectResult<spSelAdditionalFeatures_Result> spSelAdditionalFeatures(Nullable<System.Guid> idMonthly)
-        {
-            var idMonthlyParameter = idMonthly.HasValue ?
-                new ObjectParameter("IdMonthly", idMonthly) :
-                new ObjectParameter("IdMonthly", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelAdditionalFeatures_Result>("spSelAdditionalFeatures", idMonthlyParameter);
-        }
-    
-        public virtual ObjectResult<spSelectAdditionalFeatures_Result> spSelectAdditionalFeatures(Nullable<System.Guid> idRoom, Nullable<System.Guid> userId, Nullable<System.Guid> id)
-        {
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("IdRoom", idRoom) :
-                new ObjectParameter("IdRoom", typeof(System.Guid));
-    
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            var idParameter = id.HasValue ?
-                new ObjectParameter("Id", id) :
-                new ObjectParameter("Id", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelectAdditionalFeatures_Result>("spSelectAdditionalFeatures", idRoomParameter, userIdParameter, idParameter);
-        }
-    
-        public virtual ObjectResult<spSelectCompany_Result> spSelectCompany(string phone, string name)
-        {
             var phoneParameter = phone != null ?
-                new ObjectParameter("phone", phone) :
-                new ObjectParameter("phone", typeof(string));
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
+    
+            var userParameter = user != null ?
+                new ObjectParameter("User", user) :
+                new ObjectParameter("User", typeof(string));
+    
+            var iconParameter = icon != null ?
+                new ObjectParameter("Icon", icon) :
+                new ObjectParameter("Icon", typeof(byte[]));
+    
+            var iconSitrngParameter = iconSitrng != null ?
+                new ObjectParameter("IconSitrng", iconSitrng) :
+                new ObjectParameter("IconSitrng", typeof(string));
+    
+            var passwordParameter = password != null ?
+                new ObjectParameter("Password", password) :
+                new ObjectParameter("Password", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsOwner", idAdminParameter, nameParameter, addressParameter, phoneParameter, userParameter, iconParameter, iconSitrngParameter, passwordParameter);
+        }
+    
+        public virtual int spInsRoom(Nullable<System.Guid> idOwner, Nullable<System.Guid> idAdmin, string name, Nullable<decimal> price)
+        {
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
+    
+            var idAdminParameter = idAdmin.HasValue ?
+                new ObjectParameter("IdAdmin", idAdmin) :
+                new ObjectParameter("IdAdmin", typeof(System.Guid));
     
             var nameParameter = name != null ?
                 new ObjectParameter("Name", name) :
                 new ObjectParameter("Name", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelectCompany_Result>("spSelectCompany", phoneParameter, nameParameter);
+            var priceParameter = price.HasValue ?
+                new ObjectParameter("Price", price) :
+                new ObjectParameter("Price", typeof(decimal));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsRoom", idOwnerParameter, idAdminParameter, nameParameter, priceParameter);
         }
     
-        public virtual ObjectResult<spSelectUserAll_Result> spSelectUserAll()
+        public virtual int spInsService(Nullable<System.Guid> idOwner, Nullable<System.Guid> idAdmin, string name, Nullable<decimal> price, byte[] icon, string iconString)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelectUserAll_Result>("spSelectUserAll");
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
+    
+            var idAdminParameter = idAdmin.HasValue ?
+                new ObjectParameter("IdAdmin", idAdmin) :
+                new ObjectParameter("IdAdmin", typeof(System.Guid));
+    
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
+    
+            var priceParameter = price.HasValue ?
+                new ObjectParameter("Price", price) :
+                new ObjectParameter("Price", typeof(decimal));
+    
+            var iconParameter = icon != null ?
+                new ObjectParameter("Icon", icon) :
+                new ObjectParameter("Icon", typeof(byte[]));
+    
+            var iconStringParameter = iconString != null ?
+                new ObjectParameter("IconString", iconString) :
+                new ObjectParameter("IconString", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsService", idOwnerParameter, idAdminParameter, nameParameter, priceParameter, iconParameter, iconStringParameter);
         }
     
-        public virtual ObjectResult<spSelectUserKYA_Result> spSelectUserKYA(string user, string password, string phone)
+        public virtual int spInsUser(Nullable<System.Guid> idOwner, Nullable<System.Guid> idAdmin, string name, string address, string phone, string user, string password, byte[] icon, string iconString)
+        {
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
+    
+            var idAdminParameter = idAdmin.HasValue ?
+                new ObjectParameter("IdAdmin", idAdmin) :
+                new ObjectParameter("IdAdmin", typeof(System.Guid));
+    
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            var phoneParameter = phone != null ?
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
+    
+            var userParameter = user != null ?
+                new ObjectParameter("User", user) :
+                new ObjectParameter("User", typeof(string));
+    
+            var passwordParameter = password != null ?
+                new ObjectParameter("Password", password) :
+                new ObjectParameter("Password", typeof(string));
+    
+            var iconParameter = icon != null ?
+                new ObjectParameter("Icon", icon) :
+                new ObjectParameter("Icon", typeof(byte[]));
+    
+            var iconStringParameter = iconString != null ?
+                new ObjectParameter("IconString", iconString) :
+                new ObjectParameter("IconString", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spInsUser", idOwnerParameter, idAdminParameter, nameParameter, addressParameter, phoneParameter, userParameter, passwordParameter, iconParameter, iconStringParameter);
+        }
+    
+        public virtual ObjectResult<spSelAdministratorDoLogin_Result> spSelAdministratorDoLogin(string user, string password)
         {
             var userParameter = user != null ?
                 new ObjectParameter("User", user) :
@@ -405,241 +261,135 @@ namespace BussinessEntities.DataBases
                 new ObjectParameter("Password", password) :
                 new ObjectParameter("Password", typeof(string));
     
-            var phoneParameter = phone != null ?
-                new ObjectParameter("Phone", phone) :
-                new ObjectParameter("Phone", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelectUserKYA_Result>("spSelectUserKYA", userParameter, passwordParameter, phoneParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelAdministratorDoLogin_Result>("spSelAdministratorDoLogin", userParameter, passwordParameter);
         }
     
-        public virtual ObjectResult<spSelMessageAdmin_Result> spSelMessageAdmin(Nullable<System.Guid> userId, Nullable<System.Guid> idAdmin, Nullable<bool> status)
+        public virtual ObjectResult<spSelDocuments_Result> spSelDocuments(Nullable<System.Guid> idOwner)
         {
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
     
-            var idAdminParameter = idAdmin.HasValue ?
-                new ObjectParameter("IdAdmin", idAdmin) :
-                new ObjectParameter("IdAdmin", typeof(System.Guid));
-    
-            var statusParameter = status.HasValue ?
-                new ObjectParameter("Status", status) :
-                new ObjectParameter("Status", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelMessageAdmin_Result>("spSelMessageAdmin", userIdParameter, idAdminParameter, statusParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelDocuments_Result>("spSelDocuments", idOwnerParameter);
         }
     
-        public virtual ObjectResult<spSelMessageAdminAll_Result> spSelMessageAdminAll()
+        public virtual ObjectResult<spSelNotifications_Result> spSelNotifications(Nullable<System.Guid> id, Nullable<int> typeUser)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelMessageAdminAll_Result>("spSelMessageAdminAll");
-        }
-    
-        public virtual ObjectResult<spSelMessageAdminStatusAllWS_Result> spSelMessageAdminStatusAllWS(Nullable<System.Guid> adminID)
-        {
-            var adminIDParameter = adminID.HasValue ?
-                new ObjectParameter("AdminID", adminID) :
-                new ObjectParameter("AdminID", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelMessageAdminStatusAllWS_Result>("spSelMessageAdminStatusAllWS", adminIDParameter);
-        }
-    
-        public virtual ObjectResult<spSelMessageAdminStatusXIDUSERWS_Result> spSelMessageAdminStatusXIDUSERWS(Nullable<System.Guid> adminID, Nullable<System.Guid> userID)
-        {
-            var adminIDParameter = adminID.HasValue ?
-                new ObjectParameter("AdminID", adminID) :
-                new ObjectParameter("AdminID", typeof(System.Guid));
-    
-            var userIDParameter = userID.HasValue ?
-                new ObjectParameter("UserID", userID) :
-                new ObjectParameter("UserID", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelMessageAdminStatusXIDUSERWS_Result>("spSelMessageAdminStatusXIDUSERWS", adminIDParameter, userIDParameter);
-        }
-    
-        public virtual ObjectResult<spSelMessageUser_Result> spSelMessageUser(Nullable<System.Guid> userId, Nullable<bool> status)
-        {
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            var statusParameter = status.HasValue ?
-                new ObjectParameter("Status", status) :
-                new ObjectParameter("Status", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelMessageUser_Result>("spSelMessageUser", userIdParameter, statusParameter);
-        }
-    
-        public virtual ObjectResult<spSelMessageUserStatusWS_Result> spSelMessageUserStatusWS(Nullable<System.Guid> userId)
-        {
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelMessageUserStatusWS_Result>("spSelMessageUserStatusWS", userIdParameter);
-        }
-    
-        public virtual ObjectResult<spSelMessageUserWS_Result> spSelMessageUserWS(Nullable<System.Guid> userId)
-        {
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelMessageUserWS_Result>("spSelMessageUserWS", userIdParameter);
-        }
-    
-        public virtual ObjectResult<spSelMonthlyPayment_Result> spSelMonthlyPayment(Nullable<System.Guid> userId)
-        {
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelMonthlyPayment_Result>("spSelMonthlyPayment", userIdParameter);
-        }
-    
-        public virtual ObjectResult<spSelMonthlyPaymentXID_Result> spSelMonthlyPaymentXID(Nullable<System.Guid> userID, Nullable<System.Guid> iDMonthlyPayment)
-        {
-            var userIDParameter = userID.HasValue ?
-                new ObjectParameter("UserID", userID) :
-                new ObjectParameter("UserID", typeof(System.Guid));
-    
-            var iDMonthlyPaymentParameter = iDMonthlyPayment.HasValue ?
-                new ObjectParameter("IDMonthlyPayment", iDMonthlyPayment) :
-                new ObjectParameter("IDMonthlyPayment", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelMonthlyPaymentXID_Result>("spSelMonthlyPaymentXID", userIDParameter, iDMonthlyPaymentParameter);
-        }
-    
-        public virtual ObjectResult<spSelNotification_Result> spSelNotification(Nullable<System.Guid> idUser, Nullable<bool> typeUser)
-        {
-            var idUserParameter = idUser.HasValue ?
-                new ObjectParameter("IdUser", idUser) :
-                new ObjectParameter("IdUser", typeof(System.Guid));
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(System.Guid));
     
             var typeUserParameter = typeUser.HasValue ?
                 new ObjectParameter("TypeUser", typeUser) :
-                new ObjectParameter("TypeUser", typeof(bool));
+                new ObjectParameter("TypeUser", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelNotification_Result>("spSelNotification", idUserParameter, typeUserParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelNotifications_Result>("spSelNotifications", idParameter, typeUserParameter);
         }
     
-        public virtual ObjectResult<spSelRoom_Result> spSelRoom(Nullable<System.Guid> idRoom)
+        public virtual ObjectResult<spSelOwner_Result> spSelOwner()
         {
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("idRoom", idRoom) :
-                new ObjectParameter("idRoom", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelRoom_Result>("spSelRoom", idRoomParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelOwner_Result>("spSelOwner");
         }
     
-        public virtual ObjectResult<spSelRoomAll_Result> spSelRoomAll()
+        public virtual ObjectResult<spSelOwnerDoLogin_Result> spSelOwnerDoLogin(string user, string password)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelRoomAll_Result>("spSelRoomAll");
+            var userParameter = user != null ?
+                new ObjectParameter("User", user) :
+                new ObjectParameter("User", typeof(string));
+    
+            var passwordParameter = password != null ?
+                new ObjectParameter("Password", password) :
+                new ObjectParameter("Password", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelOwnerDoLogin_Result>("spSelOwnerDoLogin", userParameter, passwordParameter);
         }
     
-        public virtual ObjectResult<spSelRoomService_Result> spSelRoomService(Nullable<System.Guid> idRoom, Nullable<System.Guid> idService)
+        public virtual ObjectResult<spSelRoom_Result> spSelRoom(Nullable<System.Guid> idOwner, Nullable<bool> statusRoom)
         {
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("idRoom", idRoom) :
-                new ObjectParameter("idRoom", typeof(System.Guid));
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
     
-            var idServiceParameter = idService.HasValue ?
-                new ObjectParameter("idService", idService) :
-                new ObjectParameter("idService", typeof(System.Guid));
+            var statusRoomParameter = statusRoom.HasValue ?
+                new ObjectParameter("StatusRoom", statusRoom) :
+                new ObjectParameter("StatusRoom", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelRoomService_Result>("spSelRoomService", idRoomParameter, idServiceParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelRoom_Result>("spSelRoom", idOwnerParameter, statusRoomParameter);
         }
     
-        public virtual ObjectResult<spSelRoomServiceXIDRoom_Result> spSelRoomServiceXIDRoom(Nullable<System.Guid> idRoom)
+        public virtual ObjectResult<spSelService_Result> spSelService(Nullable<System.Guid> idOwner, Nullable<bool> statusService)
         {
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("idRoom", idRoom) :
-                new ObjectParameter("idRoom", typeof(System.Guid));
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelRoomServiceXIDRoom_Result>("spSelRoomServiceXIDRoom", idRoomParameter);
+            var statusServiceParameter = statusService.HasValue ?
+                new ObjectParameter("StatusService", statusService) :
+                new ObjectParameter("StatusService", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelService_Result>("spSelService", idOwnerParameter, statusServiceParameter);
         }
     
-        public virtual ObjectResult<spSelService_Result> spSelService()
+        public virtual ObjectResult<spSelUser_Result> spSelUser(Nullable<System.Guid> idOwner)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelService_Result>("spSelService");
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelUser_Result>("spSelUser", idOwnerParameter);
         }
     
-        public virtual ObjectResult<spSelStatusMessage_Result> spSelStatusMessage(Nullable<System.Guid> idUser, Nullable<System.Guid> idAdmin, Nullable<bool> status)
+        public virtual ObjectResult<spSelUserDoLogin_Result> spSelUserDoLogin(string user, string password)
         {
-            var idUserParameter = idUser.HasValue ?
-                new ObjectParameter("IdUser", idUser) :
-                new ObjectParameter("IdUser", typeof(System.Guid));
+            var userParameter = user != null ?
+                new ObjectParameter("User", user) :
+                new ObjectParameter("User", typeof(string));
+    
+            var passwordParameter = password != null ?
+                new ObjectParameter("Password", password) :
+                new ObjectParameter("Password", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelUserDoLogin_Result>("spSelUserDoLogin", userParameter, passwordParameter);
+        }
+    
+        public virtual int spUpdDocument(Nullable<System.Guid> idDocument, Nullable<System.Guid> idOwner, Nullable<System.Guid> idAdmin, string name, byte[] fileDocument, string stringFile, string extensions)
+        {
+            var idDocumentParameter = idDocument.HasValue ?
+                new ObjectParameter("IdDocument", idDocument) :
+                new ObjectParameter("IdDocument", typeof(System.Guid));
+    
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
     
             var idAdminParameter = idAdmin.HasValue ?
                 new ObjectParameter("IdAdmin", idAdmin) :
                 new ObjectParameter("IdAdmin", typeof(System.Guid));
     
-            var statusParameter = status.HasValue ?
-                new ObjectParameter("Status", status) :
-                new ObjectParameter("Status", typeof(bool));
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelStatusMessage_Result>("spSelStatusMessage", idUserParameter, idAdminParameter, statusParameter);
+            var fileDocumentParameter = fileDocument != null ?
+                new ObjectParameter("FileDocument", fileDocument) :
+                new ObjectParameter("FileDocument", typeof(byte[]));
+    
+            var stringFileParameter = stringFile != null ?
+                new ObjectParameter("StringFile", stringFile) :
+                new ObjectParameter("StringFile", typeof(string));
+    
+            var extensionsParameter = extensions != null ?
+                new ObjectParameter("Extensions", extensions) :
+                new ObjectParameter("Extensions", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdDocument", idDocumentParameter, idOwnerParameter, idAdminParameter, nameParameter, fileDocumentParameter, stringFileParameter, extensionsParameter);
         }
     
-        public virtual ObjectResult<spSelTenantsAll_Result> spSelTenantsAll()
+        public virtual int spUpdOwner(Nullable<System.Guid> idOwner, string name, string address, string phone, string user, byte[] icon, string iconSitrng, string password, Nullable<bool> status)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelTenantsAll_Result>("spSelTenantsAll");
-        }
-    
-        public virtual ObjectResult<spSelTenantsID_Result> spSelTenantsID(Nullable<System.Guid> roomID, Nullable<System.Guid> userID)
-        {
-            var roomIDParameter = roomID.HasValue ?
-                new ObjectParameter("RoomID", roomID) :
-                new ObjectParameter("RoomID", typeof(System.Guid));
-    
-            var userIDParameter = userID.HasValue ?
-                new ObjectParameter("userID", userID) :
-                new ObjectParameter("userID", typeof(System.Guid));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spSelTenantsID_Result>("spSelTenantsID", roomIDParameter, userIDParameter);
-        }
-    
-        public virtual int spUpdateAdditionalFeatures(Nullable<System.Guid> idAdditional, string description, Nullable<decimal> price, Nullable<System.Guid> idRoom, Nullable<System.Guid> userId, Nullable<System.Guid> id, Nullable<System.DateTime> dateCreated, Nullable<bool> status)
-        {
-            var idAdditionalParameter = idAdditional.HasValue ?
-                new ObjectParameter("IdAdditional", idAdditional) :
-                new ObjectParameter("IdAdditional", typeof(System.Guid));
-    
-            var descriptionParameter = description != null ?
-                new ObjectParameter("Description", description) :
-                new ObjectParameter("Description", typeof(string));
-    
-            var priceParameter = price.HasValue ?
-                new ObjectParameter("Price", price) :
-                new ObjectParameter("Price", typeof(decimal));
-    
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("IdRoom", idRoom) :
-                new ObjectParameter("IdRoom", typeof(System.Guid));
-    
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            var idParameter = id.HasValue ?
-                new ObjectParameter("Id", id) :
-                new ObjectParameter("Id", typeof(System.Guid));
-    
-            var dateCreatedParameter = dateCreated.HasValue ?
-                new ObjectParameter("DateCreated", dateCreated) :
-                new ObjectParameter("DateCreated", typeof(System.DateTime));
-    
-            var statusParameter = status.HasValue ?
-                new ObjectParameter("Status", status) :
-                new ObjectParameter("Status", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdateAdditionalFeatures", idAdditionalParameter, descriptionParameter, priceParameter, idRoomParameter, userIdParameter, idParameter, dateCreatedParameter, statusParameter);
-        }
-    
-        public virtual int spUpdateCompany(Nullable<System.Guid> id, string name, string address, string telephone, Nullable<System.DateTime> date, Nullable<bool> status)
-        {
-            var idParameter = id.HasValue ?
-                new ObjectParameter("Id", id) :
-                new ObjectParameter("Id", typeof(System.Guid));
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
     
             var nameParameter = name != null ?
                 new ObjectParameter("Name", name) :
@@ -649,206 +399,138 @@ namespace BussinessEntities.DataBases
                 new ObjectParameter("Address", address) :
                 new ObjectParameter("Address", typeof(string));
     
-            var telephoneParameter = telephone != null ?
-                new ObjectParameter("Telephone", telephone) :
-                new ObjectParameter("Telephone", typeof(string));
+            var phoneParameter = phone != null ?
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
     
-            var dateParameter = date.HasValue ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(System.DateTime));
+            var userParameter = user != null ?
+                new ObjectParameter("User", user) :
+                new ObjectParameter("User", typeof(string));
     
-            var statusParameter = status.HasValue ?
-                new ObjectParameter("Status", status) :
-                new ObjectParameter("Status", typeof(bool));
+            var iconParameter = icon != null ?
+                new ObjectParameter("Icon", icon) :
+                new ObjectParameter("Icon", typeof(byte[]));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdateCompany", idParameter, nameParameter, addressParameter, telephoneParameter, dateParameter, statusParameter);
-        }
+            var iconSitrngParameter = iconSitrng != null ?
+                new ObjectParameter("IconSitrng", iconSitrng) :
+                new ObjectParameter("IconSitrng", typeof(string));
     
-        public virtual int spUpdateMonthlyPayment(Nullable<System.Guid> id, string date, Nullable<decimal> price, Nullable<System.Guid> idRoom, Nullable<System.Guid> userId, Nullable<System.DateTime> dateCreated, Nullable<bool> status, Nullable<bool> statusActivePay)
-        {
-            var idParameter = id.HasValue ?
-                new ObjectParameter("Id", id) :
-                new ObjectParameter("Id", typeof(System.Guid));
-    
-            var dateParameter = date != null ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(string));
-    
-            var priceParameter = price.HasValue ?
-                new ObjectParameter("Price", price) :
-                new ObjectParameter("Price", typeof(decimal));
-    
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("IdRoom", idRoom) :
-                new ObjectParameter("IdRoom", typeof(System.Guid));
-    
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            var dateCreatedParameter = dateCreated.HasValue ?
-                new ObjectParameter("DateCreated", dateCreated) :
-                new ObjectParameter("DateCreated", typeof(System.DateTime));
+            var passwordParameter = password != null ?
+                new ObjectParameter("Password", password) :
+                new ObjectParameter("Password", typeof(string));
     
             var statusParameter = status.HasValue ?
                 new ObjectParameter("Status", status) :
                 new ObjectParameter("Status", typeof(bool));
     
-            var statusActivePayParameter = statusActivePay.HasValue ?
-                new ObjectParameter("StatusActivePay", statusActivePay) :
-                new ObjectParameter("StatusActivePay", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdateMonthlyPayment", idParameter, dateParameter, priceParameter, idRoomParameter, userIdParameter, dateCreatedParameter, statusParameter, statusActivePayParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdOwner", idOwnerParameter, nameParameter, addressParameter, phoneParameter, userParameter, iconParameter, iconSitrngParameter, passwordParameter, statusParameter);
         }
     
-        public virtual int spUpdateRooms(Nullable<System.Guid> idRoom, string nameRoom, Nullable<bool> statusRoom, Nullable<System.DateTime> date)
+        public virtual int spUpdRoom(Nullable<System.Guid> idRoom, Nullable<System.Guid> idOwner, Nullable<System.Guid> idAdmin, string name, Nullable<decimal> price)
         {
             var idRoomParameter = idRoom.HasValue ?
                 new ObjectParameter("IdRoom", idRoom) :
                 new ObjectParameter("IdRoom", typeof(System.Guid));
     
-            var nameRoomParameter = nameRoom != null ?
-                new ObjectParameter("NameRoom", nameRoom) :
-                new ObjectParameter("NameRoom", typeof(string));
-    
-            var statusRoomParameter = statusRoom.HasValue ?
-                new ObjectParameter("StatusRoom", statusRoom) :
-                new ObjectParameter("StatusRoom", typeof(bool));
-    
-            var dateParameter = date.HasValue ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdateRooms", idRoomParameter, nameRoomParameter, statusRoomParameter, dateParameter);
-        }
-    
-        public virtual int spUpdateRoomService(Nullable<System.Guid> idRoomService, Nullable<System.Guid> idService, Nullable<System.Guid> idRoom, Nullable<System.DateTime> date, Nullable<bool> status)
-        {
-            var idRoomServiceParameter = idRoomService.HasValue ?
-                new ObjectParameter("IdRoomService", idRoomService) :
-                new ObjectParameter("IdRoomService", typeof(System.Guid));
-    
-            var idServiceParameter = idService.HasValue ?
-                new ObjectParameter("IdService", idService) :
-                new ObjectParameter("IdService", typeof(System.Guid));
-    
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("IdRoom", idRoom) :
-                new ObjectParameter("IdRoom", typeof(System.Guid));
-    
-            var dateParameter = date.HasValue ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(System.DateTime));
-    
-            var statusParameter = status.HasValue ?
-                new ObjectParameter("Status", status) :
-                new ObjectParameter("Status", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdateRoomService", idRoomServiceParameter, idServiceParameter, idRoomParameter, dateParameter, statusParameter);
-        }
-    
-        public virtual int spUpdateService(Nullable<System.Guid> idService, string nameService, Nullable<decimal> priceService, Nullable<bool> statusService, Nullable<System.DateTime> date)
-        {
-            var idServiceParameter = idService.HasValue ?
-                new ObjectParameter("IdService", idService) :
-                new ObjectParameter("IdService", typeof(System.Guid));
-    
-            var nameServiceParameter = nameService != null ?
-                new ObjectParameter("NameService", nameService) :
-                new ObjectParameter("NameService", typeof(string));
-    
-            var priceServiceParameter = priceService.HasValue ?
-                new ObjectParameter("PriceService", priceService) :
-                new ObjectParameter("PriceService", typeof(decimal));
-    
-            var statusServiceParameter = statusService.HasValue ?
-                new ObjectParameter("StatusService", statusService) :
-                new ObjectParameter("StatusService", typeof(bool));
-    
-            var dateParameter = date.HasValue ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdateService", idServiceParameter, nameServiceParameter, priceServiceParameter, statusServiceParameter, dateParameter);
-        }
-    
-        public virtual int spUpdateTenants(Nullable<System.Guid> idTenants, Nullable<System.Guid> idRoom, Nullable<System.Guid> userId, Nullable<System.DateTime> date, Nullable<bool> status)
-        {
-            var idTenantsParameter = idTenants.HasValue ?
-                new ObjectParameter("IdTenants", idTenants) :
-                new ObjectParameter("IdTenants", typeof(System.Guid));
-    
-            var idRoomParameter = idRoom.HasValue ?
-                new ObjectParameter("IdRoom", idRoom) :
-                new ObjectParameter("IdRoom", typeof(System.Guid));
-    
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            var dateParameter = date.HasValue ?
-                new ObjectParameter("Date", date) :
-                new ObjectParameter("Date", typeof(System.DateTime));
-    
-            var statusParameter = status.HasValue ?
-                new ObjectParameter("Status", status) :
-                new ObjectParameter("Status", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdateTenants", idTenantsParameter, idRoomParameter, userIdParameter, dateParameter, statusParameter);
-        }
-    
-        public virtual int spUpdateUserKYA(Nullable<System.Guid> userId, string userName, string userUser, string userPassword, string userTelephone, string userAddress, Nullable<System.DateTime> userDateCreated, Nullable<System.DateTime> userDateModified, Nullable<bool> userActive)
-        {
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
-    
-            var userNameParameter = userName != null ?
-                new ObjectParameter("UserName", userName) :
-                new ObjectParameter("UserName", typeof(string));
-    
-            var userUserParameter = userUser != null ?
-                new ObjectParameter("UserUser", userUser) :
-                new ObjectParameter("UserUser", typeof(string));
-    
-            var userPasswordParameter = userPassword != null ?
-                new ObjectParameter("UserPassword", userPassword) :
-                new ObjectParameter("UserPassword", typeof(string));
-    
-            var userTelephoneParameter = userTelephone != null ?
-                new ObjectParameter("UserTelephone", userTelephone) :
-                new ObjectParameter("UserTelephone", typeof(string));
-    
-            var userAddressParameter = userAddress != null ?
-                new ObjectParameter("UserAddress", userAddress) :
-                new ObjectParameter("UserAddress", typeof(string));
-    
-            var userDateCreatedParameter = userDateCreated.HasValue ?
-                new ObjectParameter("UserDateCreated", userDateCreated) :
-                new ObjectParameter("UserDateCreated", typeof(System.DateTime));
-    
-            var userDateModifiedParameter = userDateModified.HasValue ?
-                new ObjectParameter("UserDateModified", userDateModified) :
-                new ObjectParameter("UserDateModified", typeof(System.DateTime));
-    
-            var userActiveParameter = userActive.HasValue ?
-                new ObjectParameter("UserActive", userActive) :
-                new ObjectParameter("UserActive", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdateUserKYA", userIdParameter, userNameParameter, userUserParameter, userPasswordParameter, userTelephoneParameter, userAddressParameter, userDateCreatedParameter, userDateModifiedParameter, userActiveParameter);
-        }
-    
-        public virtual int spUpdMessage(Nullable<System.Guid> userId, Nullable<System.Guid> idAdmin)
-        {
-            var userIdParameter = userId.HasValue ?
-                new ObjectParameter("UserId", userId) :
-                new ObjectParameter("UserId", typeof(System.Guid));
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
     
             var idAdminParameter = idAdmin.HasValue ?
                 new ObjectParameter("IdAdmin", idAdmin) :
                 new ObjectParameter("IdAdmin", typeof(System.Guid));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdMessage", userIdParameter, idAdminParameter);
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
+    
+            var priceParameter = price.HasValue ?
+                new ObjectParameter("Price", price) :
+                new ObjectParameter("Price", typeof(decimal));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdRoom", idRoomParameter, idOwnerParameter, idAdminParameter, nameParameter, priceParameter);
+        }
+    
+        public virtual int spUpdService(Nullable<System.Guid> idService, Nullable<System.Guid> idOwner, Nullable<System.Guid> idAdmin, string name, Nullable<decimal> price, byte[] icon, string iconString)
+        {
+            var idServiceParameter = idService.HasValue ?
+                new ObjectParameter("IdService", idService) :
+                new ObjectParameter("IdService", typeof(System.Guid));
+    
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
+    
+            var idAdminParameter = idAdmin.HasValue ?
+                new ObjectParameter("IdAdmin", idAdmin) :
+                new ObjectParameter("IdAdmin", typeof(System.Guid));
+    
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
+    
+            var priceParameter = price.HasValue ?
+                new ObjectParameter("Price", price) :
+                new ObjectParameter("Price", typeof(decimal));
+    
+            var iconParameter = icon != null ?
+                new ObjectParameter("Icon", icon) :
+                new ObjectParameter("Icon", typeof(byte[]));
+    
+            var iconStringParameter = iconString != null ?
+                new ObjectParameter("IconString", iconString) :
+                new ObjectParameter("IconString", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdService", idServiceParameter, idOwnerParameter, idAdminParameter, nameParameter, priceParameter, iconParameter, iconStringParameter);
+        }
+    
+        public virtual int spUpdUser(Nullable<System.Guid> userID, Nullable<System.Guid> idOwner, Nullable<System.Guid> idAdmin, string name, string address, string phone, string user, string password, byte[] icon, string iconString, Nullable<bool> statusUser)
+        {
+            var userIDParameter = userID.HasValue ?
+                new ObjectParameter("userID", userID) :
+                new ObjectParameter("userID", typeof(System.Guid));
+    
+            var idOwnerParameter = idOwner.HasValue ?
+                new ObjectParameter("IdOwner", idOwner) :
+                new ObjectParameter("IdOwner", typeof(System.Guid));
+    
+            var idAdminParameter = idAdmin.HasValue ?
+                new ObjectParameter("IdAdmin", idAdmin) :
+                new ObjectParameter("IdAdmin", typeof(System.Guid));
+    
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            var phoneParameter = phone != null ?
+                new ObjectParameter("Phone", phone) :
+                new ObjectParameter("Phone", typeof(string));
+    
+            var userParameter = user != null ?
+                new ObjectParameter("User", user) :
+                new ObjectParameter("User", typeof(string));
+    
+            var passwordParameter = password != null ?
+                new ObjectParameter("Password", password) :
+                new ObjectParameter("Password", typeof(string));
+    
+            var iconParameter = icon != null ?
+                new ObjectParameter("Icon", icon) :
+                new ObjectParameter("Icon", typeof(byte[]));
+    
+            var iconStringParameter = iconString != null ?
+                new ObjectParameter("IconString", iconString) :
+                new ObjectParameter("IconString", typeof(string));
+    
+            var statusUserParameter = statusUser.HasValue ?
+                new ObjectParameter("StatusUser", statusUser) :
+                new ObjectParameter("StatusUser", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdUser", userIDParameter, idOwnerParameter, idAdminParameter, nameParameter, addressParameter, phoneParameter, userParameter, passwordParameter, iconParameter, iconStringParameter, statusUserParameter);
         }
     }
 }

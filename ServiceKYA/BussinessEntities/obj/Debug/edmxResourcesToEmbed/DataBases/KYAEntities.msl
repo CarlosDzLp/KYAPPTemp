@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RentAppModelStoreContainer" CdmEntityContainer="RentAppEntities">
+    <FunctionImportMapping FunctionImportName="spDelDocument" FunctionName="RentAppModel.Store.spDelDocument" />
+    <FunctionImportMapping FunctionImportName="spDelOwner" FunctionName="RentAppModel.Store.spDelOwner" />
+    <FunctionImportMapping FunctionImportName="spDelRoom" FunctionName="RentAppModel.Store.spDelRoom" />
+    <FunctionImportMapping FunctionImportName="spDelService" FunctionName="RentAppModel.Store.spDelService" />
+    <FunctionImportMapping FunctionImportName="spDelUser" FunctionName="RentAppModel.Store.spDelUser" />
+    <FunctionImportMapping FunctionImportName="spInsDocument" FunctionName="RentAppModel.Store.spInsDocument" />
+    <FunctionImportMapping FunctionImportName="spInsNotifications" FunctionName="RentAppModel.Store.spInsNotifications" />
+    <FunctionImportMapping FunctionImportName="spInsOwner" FunctionName="RentAppModel.Store.spInsOwner" />
+    <FunctionImportMapping FunctionImportName="spInsRoom" FunctionName="RentAppModel.Store.spInsRoom" />
+    <FunctionImportMapping FunctionImportName="spInsService" FunctionName="RentAppModel.Store.spInsService" />
+    <FunctionImportMapping FunctionImportName="spInsUser" FunctionName="RentAppModel.Store.spInsUser" />
+    <FunctionImportMapping FunctionImportName="spSelAdministratorDoLogin" FunctionName="RentAppModel.Store.spSelAdministratorDoLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RentAppModel.spSelAdministratorDoLogin_Result">
+          <ScalarProperty Name="IdAdmin" ColumnName="IdAdmin" />
+          <ScalarProperty Name="NameAdmin" ColumnName="NameAdmin" />
+          <ScalarProperty Name="AdddresAdmin" ColumnName="AdddresAdmin" />
+          <ScalarProperty Name="PhoneAdmin" ColumnName="PhoneAdmin" />
+          <ScalarProperty Name="UserAdmin" ColumnName="UserAdmin" />
+          <ScalarProperty Name="IconAdmin" ColumnName="IconAdmin" />
+          <ScalarProperty Name="IconStringAdmin" ColumnName="IconStringAdmin" />
+          <ScalarProperty Name="PasswordAdmin" ColumnName="PasswordAdmin" />
+          <ScalarProperty Name="DateCreatedAdmin" ColumnName="DateCreatedAdmin" />
+          <ScalarProperty Name="DateModifiedAdmin" ColumnName="DateModifiedAdmin" />
+          <ScalarProperty Name="StatusAdmin" ColumnName="StatusAdmin" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelDocuments" FunctionName="RentAppModel.Store.spSelDocuments">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RentAppModel.spSelDocuments_Result">
+          <ScalarProperty Name="IdDocuments" ColumnName="IdDocuments" />
+          <ScalarProperty Name="IdOwner" ColumnName="IdOwner" />
+          <ScalarProperty Name="IdAdmin" ColumnName="IdAdmin" />
+          <ScalarProperty Name="NameDocument" ColumnName="NameDocument" />
+          <ScalarProperty Name="FileDocument" ColumnName="FileDocument" />
+          <ScalarProperty Name="StringFile" ColumnName="StringFile" />
+          <ScalarProperty Name="Extensions" ColumnName="Extensions" />
+          <ScalarProperty Name="DateCreatedDocument" ColumnName="DateCreatedDocument" />
+          <ScalarProperty Name="DateModifiedDocument" ColumnName="DateModifiedDocument" />
+          <ScalarProperty Name="StatusDocument" ColumnName="StatusDocument" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelNotifications" FunctionName="RentAppModel.Store.spSelNotifications">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RentAppModel.spSelNotifications_Result">
+          <ScalarProperty Name="IdNotification" ColumnName="IdNotification" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PlayerId" ColumnName="PlayerId" />
+          <ScalarProperty Name="PushToken" ColumnName="PushToken" />
+          <ScalarProperty Name="TypeUser" ColumnName="TypeUser" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelOwner" FunctionName="RentAppModel.Store.spSelOwner">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RentAppModel.spSelOwner_Result">
+          <ScalarProperty Name="IdOwner" ColumnName="IdOwner" />
+          <ScalarProperty Name="IdAdmin" ColumnName="IdAdmin" />
+          <ScalarProperty Name="NameOwner" ColumnName="NameOwner" />
+          <ScalarProperty Name="AddressOwner" ColumnName="AddressOwner" />
+          <ScalarProperty Name="PhoneOwner" ColumnName="PhoneOwner" />
+          <ScalarProperty Name="UserOwner" ColumnName="UserOwner" />
+          <ScalarProperty Name="IconOwner" ColumnName="IconOwner" />
+          <ScalarProperty Name="IconStringOwner" ColumnName="IconStringOwner" />
+          <ScalarProperty Name="PasswordOwner" ColumnName="PasswordOwner" />
+          <ScalarProperty Name="DateCreatedOwner" ColumnName="DateCreatedOwner" />
+          <ScalarProperty Name="DateModifiedOwner" ColumnName="DateModifiedOwner" />
+          <ScalarProperty Name="StatusOwner" ColumnName="StatusOwner" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelOwnerDoLogin" FunctionName="RentAppModel.Store.spSelOwnerDoLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RentAppModel.spSelOwnerDoLogin_Result">
+          <ScalarProperty Name="IdOwner" ColumnName="IdOwner" />
+          <ScalarProperty Name="IdAdmin" ColumnName="IdAdmin" />
+          <ScalarProperty Name="NameOwner" ColumnName="NameOwner" />
+          <ScalarProperty Name="AddressOwner" ColumnName="AddressOwner" />
+          <ScalarProperty Name="PhoneOwner" ColumnName="PhoneOwner" />
+          <ScalarProperty Name="UserOwner" ColumnName="UserOwner" />
+          <ScalarProperty Name="IconOwner" ColumnName="IconOwner" />
+          <ScalarProperty Name="IconStringOwner" ColumnName="IconStringOwner" />
+          <ScalarProperty Name="PasswordOwner" ColumnName="PasswordOwner" />
+          <ScalarProperty Name="DateCreatedOwner" ColumnName="DateCreatedOwner" />
+          <ScalarProperty Name="DateModifiedOwner" ColumnName="DateModifiedOwner" />
+          <ScalarProperty Name="StatusOwner" ColumnName="StatusOwner" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelRoom" FunctionName="RentAppModel.Store.spSelRoom">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RentAppModel.spSelRoom_Result">
+          <ScalarProperty Name="IdRoom" ColumnName="IdRoom" />
+          <ScalarProperty Name="IdOwner" ColumnName="IdOwner" />
+          <ScalarProperty Name="IdAdmin" ColumnName="IdAdmin" />
+          <ScalarProperty Name="NameRoom" ColumnName="NameRoom" />
+          <ScalarProperty Name="PriceRoom" ColumnName="PriceRoom" />
+          <ScalarProperty Name="DateCreatedRoom" ColumnName="DateCreatedRoom" />
+          <ScalarProperty Name="DateModifiedRoom" ColumnName="DateModifiedRoom" />
+          <ScalarProperty Name="TypeStatusRoom" ColumnName="TypeStatusRoom" />
+          <ScalarProperty Name="StatusRoom" ColumnName="StatusRoom" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelService" FunctionName="RentAppModel.Store.spSelService">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RentAppModel.spSelService_Result">
+          <ScalarProperty Name="IdService" ColumnName="IdService" />
+          <ScalarProperty Name="IdOwner" ColumnName="IdOwner" />
+          <ScalarProperty Name="IdAdmin" ColumnName="IdAdmin" />
+          <ScalarProperty Name="NameService" ColumnName="NameService" />
+          <ScalarProperty Name="PriceService" ColumnName="PriceService" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="IconString" ColumnName="IconString" />
+          <ScalarProperty Name="StatusService" ColumnName="StatusService" />
+          <ScalarProperty Name="DateCreatedService" ColumnName="DateCreatedService" />
+          <ScalarProperty Name="DateModifiedService" ColumnName="DateModifiedService" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelUser" FunctionName="RentAppModel.Store.spSelUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RentAppModel.spSelUser_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdOwner" ColumnName="IdOwner" />
+          <ScalarProperty Name="IdAdmin" ColumnName="IdAdmin" />
+          <ScalarProperty Name="NameUser" ColumnName="NameUser" />
+          <ScalarProperty Name="AddressUser" ColumnName="AddressUser" />
+          <ScalarProperty Name="PhoneUser" ColumnName="PhoneUser" />
+          <ScalarProperty Name="UserUser" ColumnName="UserUser" />
+          <ScalarProperty Name="PasswordUser" ColumnName="PasswordUser" />
+          <ScalarProperty Name="IconUser" ColumnName="IconUser" />
+          <ScalarProperty Name="IconStringUser" ColumnName="IconStringUser" />
+          <ScalarProperty Name="DateCreatedUser" ColumnName="DateCreatedUser" />
+          <ScalarProperty Name="DateModifiedUser" ColumnName="DateModifiedUser" />
+          <ScalarProperty Name="StatusUser" ColumnName="StatusUser" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelUserDoLogin" FunctionName="RentAppModel.Store.spSelUserDoLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RentAppModel.spSelUserDoLogin_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IdOwner" ColumnName="IdOwner" />
+          <ScalarProperty Name="IdAdmin" ColumnName="IdAdmin" />
+          <ScalarProperty Name="NameUser" ColumnName="NameUser" />
+          <ScalarProperty Name="AddressUser" ColumnName="AddressUser" />
+          <ScalarProperty Name="PhoneUser" ColumnName="PhoneUser" />
+          <ScalarProperty Name="UserUser" ColumnName="UserUser" />
+          <ScalarProperty Name="PasswordUser" ColumnName="PasswordUser" />
+          <ScalarProperty Name="IconUser" ColumnName="IconUser" />
+          <ScalarProperty Name="IconStringUser" ColumnName="IconStringUser" />
+          <ScalarProperty Name="DateCreatedUser" ColumnName="DateCreatedUser" />
+          <ScalarProperty Name="DateModifiedUser" ColumnName="DateModifiedUser" />
+          <ScalarProperty Name="StatusUser" ColumnName="StatusUser" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spUpdDocument" FunctionName="RentAppModel.Store.spUpdDocument" />
+    <FunctionImportMapping FunctionImportName="spUpdOwner" FunctionName="RentAppModel.Store.spUpdOwner" />
+    <FunctionImportMapping FunctionImportName="spUpdRoom" FunctionName="RentAppModel.Store.spUpdRoom" />
+    <FunctionImportMapping FunctionImportName="spUpdService" FunctionName="RentAppModel.Store.spUpdService" />
+    <FunctionImportMapping FunctionImportName="spUpdUser" FunctionName="RentAppModel.Store.spUpdUser" />
+  </EntityContainerMapping>
+</Mapping>

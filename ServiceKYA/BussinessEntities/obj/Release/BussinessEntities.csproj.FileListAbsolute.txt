@@ -1,0 +1,11 @@
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\bin\Release\BussinessEntities.dll.config
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\bin\Release\BussinessEntities.dll
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\bin\Release\BussinessEntities.pdb
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\bin\Release\EntityFramework.dll
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\bin\Release\EntityFramework.SqlServer.dll
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\bin\Release\EntityFramework.xml
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\bin\Release\EntityFramework.SqlServer.xml
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\obj\Release\BussinessEntities.csprojAssemblyReference.cache
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\obj\Release\BussinessEntities.csproj.CopyComplete
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\obj\Release\BussinessEntities.dll
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\obj\Release\BussinessEntities.pdb

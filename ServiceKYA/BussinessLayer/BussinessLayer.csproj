@@ -51,11 +51,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrator\BLAdministrator.cs" />
+    <Compile Include="Helpers\Notifications.cs" />
+    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Notifications\BLNotifications.cs" />
+    <Compile Include="Owner\BLOwner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\BLUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BussinessEntities\BussinessEntities.csproj">
+      <Project>{a46957ca-fd12-4438-aebf-c5c101e885c8}</Project>
+      <Name>BussinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
+      <Project>{39134bc2-83f4-4dea-a3fe-acf7c74c64d9}</Project>
+      <Name>ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

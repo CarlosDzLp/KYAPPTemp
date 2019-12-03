@@ -1,0 +1,17 @@
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\BussinessLayer.dll.config
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\BussinessLayer.dll
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\BussinessLayer.pdb
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\BussinessEntities.dll
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\EntityFramework.dll
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\ViewModels.dll
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\BussinessEntities.pdb
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\BussinessEntities.dll.config
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\ViewModels.pdb
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\ViewModels.dll.config
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\EntityFramework.xml
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\obj\Release\BussinessLayer.csprojAssemblyReference.cache
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\obj\Release\BussinessLayer.csproj.CopyComplete
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\obj\Release\BussinessLayer.dll
+C:\KYAPPTemp\ServiceKYA\BussinessLayer\obj\Release\BussinessLayer.pdb

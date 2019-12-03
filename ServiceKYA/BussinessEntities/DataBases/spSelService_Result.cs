@@ -14,9 +14,14 @@ namespace BussinessEntities.DataBases
     public partial class spSelService_Result
     {
         public System.Guid IdService { get; set; }
+        public System.Guid IdOwner { get; set; }
+        public Nullable<System.Guid> IdAdmin { get; set; }
         public string NameService { get; set; }
         public decimal PriceService { get; set; }
+        public byte[] Icon { get; set; }
+        public string IconString { get; set; }
         public Nullable<bool> StatusService { get; set; }
-        public Nullable<System.DateTime> Date { get; set; }
+        public Nullable<System.DateTime> DateCreatedService { get; set; }
+        public Nullable<System.DateTime> DateModifiedService { get; set; }
     }
 }

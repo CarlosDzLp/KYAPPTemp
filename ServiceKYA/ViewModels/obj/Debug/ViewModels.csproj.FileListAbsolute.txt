@@ -1,0 +1,10 @@
+C:\KYAPPTemp\ServiceKYA\ViewModels\bin\Debug\ViewModels.dll.config
+C:\KYAPPTemp\ServiceKYA\ViewModels\bin\Debug\ViewModels.dll
+C:\KYAPPTemp\ServiceKYA\ViewModels\bin\Debug\ViewModels.pdb
+C:\KYAPPTemp\ServiceKYA\ViewModels\bin\Debug\EntityFramework.dll
+C:\KYAPPTemp\ServiceKYA\ViewModels\bin\Debug\EntityFramework.SqlServer.dll
+C:\KYAPPTemp\ServiceKYA\ViewModels\bin\Debug\EntityFramework.xml
+C:\KYAPPTemp\ServiceKYA\ViewModels\bin\Debug\EntityFramework.SqlServer.xml
+C:\KYAPPTemp\ServiceKYA\ViewModels\obj\Debug\ViewModels.csproj.CopyComplete
+C:\KYAPPTemp\ServiceKYA\ViewModels\obj\Debug\ViewModels.dll
+C:\KYAPPTemp\ServiceKYA\ViewModels\obj\Debug\ViewModels.pdb

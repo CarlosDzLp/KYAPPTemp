@@ -68,58 +68,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>KYAEntities.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DataBases\spSelAdditionalFeatures_Result.cs">
+    <Compile Include="DataBases\spSelAdministratorDoLogin_Result.cs">
       <DependentUpon>KYAEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBases\spSelectAdditionalFeatures_Result.cs">
+    <Compile Include="DataBases\spSelDocuments_Result.cs">
       <DependentUpon>KYAEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBases\spSelectCompany_Result.cs">
+    <Compile Include="DataBases\spSelNotifications_Result.cs">
       <DependentUpon>KYAEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBases\spSelectUserAll_Result.cs">
+    <Compile Include="DataBases\spSelOwnerDoLogin_Result.cs">
       <DependentUpon>KYAEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBases\spSelectUserKYA_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelMessageAdminAll_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelMessageAdminStatusAllWS_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelMessageAdminStatusXIDUSERWS_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelMessageAdmin_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelMessageUserStatusWS_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelMessageUserWS_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelMessageUser_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelMonthlyPaymentXID_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelMonthlyPayment_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelNotification_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelRoomAll_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelRoomServiceXIDRoom_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelRoomService_Result.cs">
+    <Compile Include="DataBases\spSelOwner_Result.cs">
       <DependentUpon>KYAEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBases\spSelRoom_Result.cs">
@@ -128,13 +89,10 @@
     <Compile Include="DataBases\spSelService_Result.cs">
       <DependentUpon>KYAEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBases\spSelStatusMessage_Result.cs">
+    <Compile Include="DataBases\spSelUserDoLogin_Result.cs">
       <DependentUpon>KYAEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBases\spSelTenantsAll_Result.cs">
-      <DependentUpon>KYAEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBases\spSelTenantsID_Result.cs">
+    <Compile Include="DataBases\spSelUser_Result.cs">
       <DependentUpon>KYAEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -151,6 +109,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="DataBases\KYAEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>KYAEntities.edmx</DependentUpon>
@@ -161,9 +122,6 @@
       <DependentUpon>KYAEntities.edmx</DependentUpon>
       <LastGenOutput>KYAEntities.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
