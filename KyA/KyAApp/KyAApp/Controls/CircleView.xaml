@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="KyAApp.Controls.CircleView">
+    <ContentView.Content>
+        <Grid x:Name="Container">
+            <BoxView x:Name="Circle" Margin="16" HorizontalOptions="Fill" VerticalOptions="Fill" Color="{Binding CircleColor}" CornerRadius="{Binding CornerRadius}"/>
+            <Label x:Name="InitialsLabel" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="{Binding TextColor}" Font="{Binding Font}" FontSize="{Binding FontSize}" />
+        </Grid>
+    </ContentView.Content>
+</ContentView>
