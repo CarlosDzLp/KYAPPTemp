@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administrator\BLAdministrator.cs" />
+    <Compile Include="Documents\BLDocuments.cs" />
     <Compile Include="Helpers\Notifications.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Notifications\BLNotifications.cs" />

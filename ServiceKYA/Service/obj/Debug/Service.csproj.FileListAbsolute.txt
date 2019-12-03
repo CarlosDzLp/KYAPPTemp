@@ -1,3 +1,4 @@
+C:\KYAPPTemp\ServiceKYA\Service\bin\EntityFramework.xml
 C:\KYAPPTemp\ServiceKYA\Service\bin\Service.dll.config
 C:\KYAPPTemp\ServiceKYA\Service\bin\Service.dll
 C:\KYAPPTemp\ServiceKYA\Service\bin\Service.pdb
@@ -78,7 +79,6 @@ C:\KYAPPTemp\ServiceKYA\Service\bin\BussinessLayer.pdb
 C:\KYAPPTemp\ServiceKYA\Service\bin\BussinessLayer.dll.config
 C:\KYAPPTemp\ServiceKYA\Service\bin\ViewModels.pdb
 C:\KYAPPTemp\ServiceKYA\Service\bin\ViewModels.dll.config
-C:\KYAPPTemp\ServiceKYA\Service\bin\EntityFramework.xml
 C:\KYAPPTemp\ServiceKYA\Service\bin\EntityFramework.SqlServer.xml
 C:\KYAPPTemp\ServiceKYA\Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\KYAPPTemp\ServiceKYA\Service\bin\Microsoft.IdentityModel.JsonWebTokens.xml

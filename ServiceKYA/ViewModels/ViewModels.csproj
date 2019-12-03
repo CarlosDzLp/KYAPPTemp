@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administrator\AdministratorVM.cs" />
+    <Compile Include="DocumentsVM.cs" />
     <Compile Include="Owner\OwnerInsVM.cs" />
     <Compile Include="Owner\OwnerUpdVM.cs" />
     <Compile Include="Owner\OwnerVM.cs" />
