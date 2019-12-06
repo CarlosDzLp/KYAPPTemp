@@ -5,6 +5,7 @@ C:\KYAPPTemp\ServiceKYA\BussinessEntities\bin\Debug\EntityFramework.dll
 C:\KYAPPTemp\ServiceKYA\BussinessEntities\bin\Debug\EntityFramework.SqlServer.dll
 C:\KYAPPTemp\ServiceKYA\BussinessEntities\bin\Debug\EntityFramework.xml
 C:\KYAPPTemp\ServiceKYA\BussinessEntities\bin\Debug\EntityFramework.SqlServer.xml
+C:\KYAPPTemp\ServiceKYA\BussinessEntities\obj\Debug\BussinessEntities.csprojAssemblyReference.cache
 C:\KYAPPTemp\ServiceKYA\BussinessEntities\obj\Debug\BussinessEntities.csproj.CopyComplete
 C:\KYAPPTemp\ServiceKYA\BussinessEntities\obj\Debug\BussinessEntities.dll
 C:\KYAPPTemp\ServiceKYA\BussinessEntities\obj\Debug\BussinessEntities.pdb
