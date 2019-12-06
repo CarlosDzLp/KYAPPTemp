@@ -5,7 +5,9 @@ using KyAApp.DataBase;
 using KyAApp.Helpers;
 using KyAApp.Models.Administrator;
 using KyAApp.Models.Authenticate;
+using KyAApp.Models.Owner;
 using KyAApp.Models.Session;
+using KyAApp.Models.User;
 using KyAApp.Service;
 using KyAApp.ViewModels.Base;
 using Xamarin.Forms;
@@ -44,6 +46,18 @@ namespace KyAApp.ViewModels.Session
             get { return _password; }
             set { SetProperty(ref _password, value); }
         }
+        private bool _isPassword;
+        public bool IsPassword
+        {
+            get { return _isPassword; }
+            set { SetProperty(ref _isPassword, value); }
+        }
+        private string _icon;
+        public string Icon
+        {
+            get { return _icon; }
+            set { SetProperty(ref _icon, value); }
+        }
         #endregion
 
         #region Constructor
@@ -51,12 +65,15 @@ namespace KyAApp.ViewModels.Session
         {
             LoadTypeUser();
             LoginCommand = new Command(LoginCommandExecuted);
+            ImagePasswordCommand = new Command(ImagePasswordCommandExecuted);
         }
         #endregion
 
         #region Methods
         private void LoadTypeUser()
         {
+            IsPassword = true;
+            Icon = "visibility_on";
             ListTypeUser = new ObservableCollection<TypeUser>();
             ListTypeUser.Add(new TypeUser { Id = 0, Type = "Usuario" });
             ListTypeUser.Add(new TypeUser { Id = 1, Type = "Propietario" });
@@ -66,9 +83,27 @@ namespace KyAApp.ViewModels.Session
 
         #region Command
         public ICommand LoginCommand { get; set; }
+        public ICommand ImagePasswordCommand { get; set; }
         #endregion
 
         #region CommandExecuted
+        int band = 0;
+        private void ImagePasswordCommandExecuted()
+        {
+            if(band == 0)
+            {
+                IsPassword = false;
+                Icon = "visibility_off";
+                band = 1;
+            }
+            else
+            {
+                IsPassword = true;
+                Icon = "visibility_on";
+                band = 0;
+            }
+            //visibility_on
+        }
         private async void LoginCommandExecuted()
         {
             if(!string.IsNullOrWhiteSpace(User))
@@ -87,13 +122,53 @@ namespace KyAApp.ViewModels.Session
                         {
                             //Usuario
                             Show("Cargando");
-                            await client.Post<string, AuthenticateModel>(auth, "user/seluser");
+                            var response = await client.Post<Models.User.User, AuthenticateModel>(auth, "user/seluser");
+                            if (response != null)
+                            {
+                                if (response.Result != null && response.Count > 0)
+                                {
+                                    Hide();
+                                    //entra al masterdetailpage del usuario
+                                    DbContext.Instance.InsertUser(response.Result);
+                                    MainPage(new Views.User.MasterDetailUser());
+                                }
+                                else
+                                {
+                                    Hide();
+                                    SnackError(response.Message, "Error", TypeSnackBar.Top);
+                                }
+                            }
+                            else
+                            {
+                                Hide();
+                                SnackError("Hubo un error con el servidor intentelo mas tarde", "Error", TypeSnackBar.Top);
+                            }
                         }
                         else if (SelectedTypeUser.Id == 1)
                         {
                             //propietario
-                            await client.Post<string, AuthenticateModel>(auth, "owner/selowner");
                             Show("Cargando");
+                            var response = await client.Post<Models.Owner.Owner, AuthenticateModel>(auth, "owner/selowner");                           
+                            if (response != null)
+                            {
+                                if (response.Result != null && response.Count > 0)
+                                {
+                                    Hide();
+                                    //entra al masterdetailpage
+                                    DbContext.Instance.InsertOwner(response.Result);
+                                    MainPage(new Views.Owner.MasterDetailOwner());
+                                }
+                                else
+                                {
+                                    Hide();
+                                    SnackError(response.Message, "Error", TypeSnackBar.Top);
+                                }
+                            }
+                            else
+                            {
+                                Hide();
+                                SnackError("Hubo un error con el servidor intentelo mas tarde", "Error", TypeSnackBar.Top);
+                            }
                         }
                         else
                         {
@@ -106,10 +181,12 @@ namespace KyAApp.ViewModels.Session
                                 {
                                     Hide();
                                     //entra al masterdetailpage
-                                    SnackSucces($"Administrador: {response.Result.Name}", "Success", TypeSnackBar.Top);
+                                    DbContext.Instance.InsertAdministrator(response.Result);
+                                    MainPage(new Views.Administrator.MasterDetailAdministrator());
                                 }
                                 else
                                 {
+                                    Hide();
                                     SnackError(response.Message, "Error", TypeSnackBar.Top);
                                 }
                             }

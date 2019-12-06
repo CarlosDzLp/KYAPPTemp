@@ -1,24 +1,52 @@
-﻿<Properties StartupConfiguration="{83733CF5-2457-4382-9B50-200A2C9B31C6}|Default">
+﻿<Properties StartupConfiguration="{83733CF5-2457-4382-9B50-200A2C9B31C6}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.KyAApp.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.DVR0219415003527" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="KyAApp/KyAApp/ViewModels/Owner/RoomServiceOwnerPageViewModel.cs">
+    <Files>
+      <File FileName="KyAApp/KyAApp/Models/RoomServiceModel.cs" Line="37" Column="36" />
+      <File FileName="KyAApp/KyAApp/ViewModels/Owner/RoomServiceOwnerPageViewModel.cs" Line="31" Column="1" />
+      <File FileName="KyAApp/KyAApp/Service/ServiceClient.cs" Line="59" Column="1" />
+      <File FileName="KyAApp/KyAApp/Views/Owner/RoomServiceOwnerPage.xaml" Line="83" Column="69" />
+      <File FileName="KyAApp/KyAApp/Behaviors/FloatingAmountBehavior.cs" Line="19" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="KyA" expanded="True" />
+          <Node name="KyA" expanded="True">
+            <Node name="KyAApp" expanded="True">
+              <Node name="Behaviors" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Service" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="Owner" expanded="True">
+                  <Node name="RoomServiceOwnerPageViewModel.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Administrator" expanded="True" />
+                <Node name="Owner" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../KyAApp/KyAApp/ViewModels/Administrator/ServiceAdminPageViewModel.cs" line="37" offsetX="-1" offsetY="-1" expression="responseService" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" line="60" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" line="67" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/Administrator/Popup/AddMonthlyPaymentPopupViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/Popup/AddMonthlyPaymentPopupViewModel.cs" line="84" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" line="86" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" line="70" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MonthlyPaymentPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MonthlyPaymentPageViewModel.cs" line="109" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" line="60" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" line="67" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/Popup/AddMonthlyPaymentPopupViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/Popup/AddMonthlyPaymentPopupViewModel.cs" line="84" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" line="86" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" line="70" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MonthlyPaymentPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MonthlyPaymentPageViewModel.cs" line="109" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/Helpers/ConvertToBytetoPdf.cs" relfile="KyAApp/KyAApp.Android/Helpers/ConvertToBytetoPdf.cs" line="14" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/Helpers/ConvertToBytetoPdf.cs" relfile="KyAApp/KyAApp.Android/Helpers/ConvertToBytetoPdf.cs" line="27" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Owner/AccountOwnerPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Owner/AccountOwnerPageViewModel.cs" line="122" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/ServiceAdminPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/ServiceAdminPageViewModel.cs" line="72" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

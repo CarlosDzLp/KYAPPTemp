@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
+    xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+    xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    x:Class="KyAApp.Views.Administrator.UserAdminPage"
+    BackgroundColor="White"
+    Title="Propietarios">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid
+                Padding="10,10,10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Frame
+                    Grid.Column="0"
+                    Padding="0,10,0,10"
+                    BackgroundColor="#155fa0"
+                    CornerRadius="0"
+                    HeightRequest="100"
+                    HasShadow="True">
+                    <Grid
+                        ColumnSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout
+                            Grid.Row="0"
+                            VerticalOptions="Center"
+                            Grid.Column="0"
+                            Margin="10,0,0,0">
+                            <Image
+                                Opacity="1"
+                                HeightRequest="50"
+                                Source="owner"/>
+                        </StackLayout>
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            FontSize="15"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            Text="Propietarios"/>
+                    </Grid>
+                    <Frame.Behaviors>
+	                    <xamanimation:EntranceTransition
+	                        Duration="1000"/>
+	                </Frame.Behaviors>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AddOwnerCommand}"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+            </Grid>
+            <flv:FlowListView
+                x:Name="CollectionView"
+                VerticalScrollBarVisibility="Never"
+                                 FlowItemsSource="{Binding ListOwner}"
+                                 BackgroundColor="Transparent"
+                                 FlowColumnCount="2" 
+                                FlowItemTappedCommand="{Binding SelectedOwnerCommand}"
+                                 FlowColumnExpand="None"
+                                 SeparatorVisibility="None"
+                                 HasUnevenRows="True">
+                                 <flv:FlowListView.FlowColumnTemplate>
+                                      <DataTemplate>
+                                              <Frame
+                                              BackgroundColor="White"
+                                              Margin="5"
+                                              HasShadow="True"
+                                              CornerRadius="10"
+                                              Padding="0">
+                                              <StackLayout
+                                                Margin="10">
+                                                    <abstractions:CircleImage
+                                                        HeightRequest="50"
+                                                        Grid.Row="0"
+                                                        Source="{Binding Icon,Converter={StaticResource imageconvert}}"/>
+                                                    <Label
+                                                        Grid.Row="0"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="15"
+                                                        FontAttributes="Bold"
+                                                        VerticalOptions="Center"
+                                                        TextColor="Black"
+                                                    Margin="10,0"
+                                                        Text="{Binding Name}"/>
+                                                  <Label
+                                                        Grid.Row="0"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="8"
+                                                        VerticalOptions="Center"
+                                                        TextColor="Black"
+                                                    Margin="10,0"
+                                                        Text="{Binding DateCreated,StringFormat='{0:dd/MM/yyyy HH:mm:ss}'}"/>    
+                                                  <StackLayout
+                                                      Orientation="Horizontal">
+                                                      <Button
+                                                      
+                                                        BackgroundColor="White"
+                                                    Command="{Binding BindingContext.AddUserOwnerCommand, Source={x:Reference CollectionView}}"
+                                                    CommandParameter="{Binding .}"
+                                                      HeightRequest="30"
+                                                          BorderWidth="2"
+                                                          BorderColor="Black"
+                                                    HorizontalOptions="StartAndExpand"
+                                                    ImageSource="ic_add"
+                                                    VerticalOptions="CenterAndExpand"
+                                                    WidthRequest="40" />
+                                                      <Button
+                                                        BackgroundColor="#0CB392"
+                                                    Command="{Binding BindingContext.DeleteOwnerCommand, Source={x:Reference CollectionView}}"
+                                                    CommandParameter="{Binding .}"
+                                                      HeightRequest="30"
+                                                    HorizontalOptions="EndAndExpand"
+                                                    ImageSource="ic_delete"
+                                                    VerticalOptions="CenterAndExpand"
+                                                    WidthRequest="40" />
+                                                  
+                                                  </StackLayout>
+                                              </StackLayout>
+                                          </Frame>
+                                      </DataTemplate>
+                                 </flv:FlowListView.FlowColumnTemplate>                               
+                            </flv:FlowListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -4,7 +4,7 @@ using Xamarin.Forms.Xaml;
 
 using KyAApp.DataBase;
 using Com.OneSignal;
-
+using DLToolkit.Forms.Controls;
 
 namespace KyAApp
 {
@@ -15,9 +15,26 @@ namespace KyAApp
         public App()
         {
             InitializeComponent();
-
-            MainPage = new Views.Session.LoginPage();
-            
+            FlowListView.Init();
+            var admin = DbContext.Instance.GetAdministrator();
+            var user = DbContext.Instance.GetUser();
+            var owner = DbContext.Instance.GetOwner();
+            if(admin != null)
+            {
+                MainPage = new Views.Administrator.MasterDetailAdministrator();
+            }
+            else if(user != null)
+            {
+                MainPage = new Views.User.MasterDetailUser();
+            }
+            else if(owner != null)
+            {
+                MainPage = new Views.Owner.MasterDetailOwner();
+            }
+            else
+            {
+                MainPage = new Views.Session.LoginPage();
+            }          
             OneSignal.Current.IdsAvailable(IdsAvailable);
         }
 

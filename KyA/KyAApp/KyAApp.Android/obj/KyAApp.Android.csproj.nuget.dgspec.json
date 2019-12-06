@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj": {}
+    "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj": {}
   },
   "projects": {
-    "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj": {
+    "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj",
+        "projectUniqueName": "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj",
         "projectName": "KyAApp.Android",
-        "projectPath": "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj",
+        "projectPath": "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj",
         "packagesPath": "/Users/carlosdiaz/.nuget/packages/",
-        "outputPath": "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp.Android/obj/",
+        "outputPath": "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/KyAApp.csproj": {
-                "projectPath": "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/KyAApp.csproj"
+              "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/KyAApp.csproj": {
+                "projectPath": "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/KyAApp.csproj"
               }
             }
           }
@@ -42,7 +42,11 @@
             },
             "Com.OneSignal": {
               "target": "Package",
-              "version": "[3.6.0, )"
+              "version": "[3.7.0, )"
+            },
+            "DLToolkit.Forms.Controls.FlowListView": {
+              "target": "Package",
+              "version": "[2.0.11, )"
             },
             "FormsToolkit": {
               "target": "Package",
@@ -72,6 +76,14 @@
               "target": "Package",
               "version": "[4.0.1.5, )"
             },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
+            },
+            "Xamanimation": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
               "version": "[28.0.0.3, )"
@@ -82,7 +94,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.991211, )"
+              "version": "[4.4.0.991220-pre3, )"
+            },
+            "pt.Xamarin.Plugin.FilePicker": {
+              "target": "Package",
+              "version": "[1.3.11, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -92,14 +108,14 @@
         }
       }
     },
-    "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/KyAApp.csproj": {
+    "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/KyAApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/KyAApp.csproj",
+        "projectUniqueName": "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/KyAApp.csproj",
         "projectName": "KyAApp",
-        "projectPath": "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/KyAApp.csproj",
+        "projectPath": "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/KyAApp.csproj",
         "packagesPath": "/Users/carlosdiaz/.nuget/packages/",
-        "outputPath": "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/obj/",
+        "outputPath": "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/carlosdiaz/.config/NuGet/NuGet.Config"
@@ -130,7 +146,11 @@
             },
             "Com.OneSignal": {
               "target": "Package",
-              "version": "[3.6.0, )"
+              "version": "[3.7.0, )"
+            },
+            "DLToolkit.Forms.Controls.FlowListView": {
+              "target": "Package",
+              "version": "[2.0.11, )"
             },
             "FormsToolkit": {
               "target": "Package",
@@ -158,13 +178,25 @@
               "target": "Package",
               "version": "[4.0.1.5, )"
             },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
+            },
+            "Xamanimation": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.3.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.3.0.991211, )"
+              "version": "[4.4.0.991220-pre3, )"
+            },
+            "pt.Xamarin.Plugin.FilePicker": {
+              "target": "Package",
+              "version": "[1.3.11, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

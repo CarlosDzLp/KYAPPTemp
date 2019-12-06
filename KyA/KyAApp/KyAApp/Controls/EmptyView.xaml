@@ -13,7 +13,7 @@
 <forms:AnimationView
     Grid.Row="0"
     x:Name="viewAnimation"
-	        Animation="empty.json" 
+	        Animation="search_empty.json" 
 	        Loop="True" 
 	        AutoPlay="True"
             HeightRequest="300"

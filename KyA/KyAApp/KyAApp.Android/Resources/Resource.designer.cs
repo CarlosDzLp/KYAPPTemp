@@ -2909,8 +2909,8 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_overlapTop = global::KyAApp.Droid.Resource.Attribute.behavior_overlapTop;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_peekHeight = global::KyAApp.Droid.Resource.Attribute.behavior_peekHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_skipCollapsed = global::KyAApp.Droid.Resource.Attribute.behavior_skipCollapsed;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.borderWidth = global::KyAApp.Droid.Resource.Attribute.borderWidth;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.borderlessButtonStyle = global::KyAApp.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.borderWidth = global::KyAApp.Droid.Resource.Attribute.borderWidth;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.bottomAppBarStyle = global::KyAApp.Droid.Resource.Attribute.bottomAppBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.bottomNavigationStyle = global::KyAApp.Droid.Resource.Attribute.bottomNavigationStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.bottomSheetDialogTheme = global::KyAApp.Droid.Resource.Attribute.bottomSheetDialogTheme;
@@ -2976,9 +2976,9 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.closeIconVisible = global::KyAApp.Droid.Resource.Attribute.closeIconVisible;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.closeItemLayout = global::KyAApp.Droid.Resource.Attribute.closeItemLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseContentDescription = global::KyAApp.Droid.Resource.Attribute.collapseContentDescription;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseIcon = global::KyAApp.Droid.Resource.Attribute.collapseIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleGravity = global::KyAApp.Droid.Resource.Attribute.collapsedTitleGravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleTextAppearance = global::KyAApp.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseIcon = global::KyAApp.Droid.Resource.Attribute.collapseIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.color = global::KyAApp.Droid.Resource.Attribute.color;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorAccent = global::KyAApp.Droid.Resource.Attribute.colorAccent;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorBackgroundFloating = global::KyAApp.Droid.Resource.Attribute.colorBackgroundFloating;
@@ -3024,8 +3024,8 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerVertical = global::KyAApp.Droid.Resource.Attribute.dividerVertical;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableSize = global::KyAApp.Droid.Resource.Attribute.drawableSize;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawerArrowStyle = global::KyAApp.Droid.Resource.Attribute.drawerArrowStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropDownListViewStyle = global::KyAApp.Droid.Resource.Attribute.dropDownListViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::KyAApp.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropDownListViewStyle = global::KyAApp.Droid.Resource.Attribute.dropDownListViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextBackground = global::KyAApp.Droid.Resource.Attribute.editTextBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextColor = global::KyAApp.Droid.Resource.Attribute.editTextColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextStyle = global::KyAApp.Droid.Resource.Attribute.editTextStyle;
@@ -3087,12 +3087,12 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.icon = global::KyAApp.Droid.Resource.Attribute.icon;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconEndPadding = global::KyAApp.Droid.Resource.Attribute.iconEndPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconGravity = global::KyAApp.Droid.Resource.Attribute.iconGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconifiedByDefault = global::KyAApp.Droid.Resource.Attribute.iconifiedByDefault;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconPadding = global::KyAApp.Droid.Resource.Attribute.iconPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconSize = global::KyAApp.Droid.Resource.Attribute.iconSize;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconStartPadding = global::KyAApp.Droid.Resource.Attribute.iconStartPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconTint = global::KyAApp.Droid.Resource.Attribute.iconTint;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconTintMode = global::KyAApp.Droid.Resource.Attribute.iconTintMode;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconifiedByDefault = global::KyAApp.Droid.Resource.Attribute.iconifiedByDefault;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.imageButtonStyle = global::KyAApp.Droid.Resource.Attribute.imageButtonStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.indeterminateProgressStyle = global::KyAApp.Droid.Resource.Attribute.indeterminateProgressStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.initialActivityCount = global::KyAApp.Droid.Resource.Attribute.initialActivityCount;
@@ -3296,9 +3296,9 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMargin = global::KyAApp.Droid.Resource.Attribute.titleMargin;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginBottom = global::KyAApp.Droid.Resource.Attribute.titleMarginBottom;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginEnd = global::KyAApp.Droid.Resource.Attribute.titleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMargins = global::KyAApp.Droid.Resource.Attribute.titleMargins;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginStart = global::KyAApp.Droid.Resource.Attribute.titleMarginStart;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginTop = global::KyAApp.Droid.Resource.Attribute.titleMarginTop;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMargins = global::KyAApp.Droid.Resource.Attribute.titleMargins;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextAppearance = global::KyAApp.Droid.Resource.Attribute.titleTextAppearance;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextColor = global::KyAApp.Droid.Resource.Attribute.titleTextColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextStyle = global::KyAApp.Droid.Resource.Attribute.titleTextStyle;
@@ -3427,11 +3427,11 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::KyAApp.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::KyAApp.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_tabs_ripple_color = global::KyAApp.Droid.Resource.Color.mtrl_tabs_ripple_color;
-			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_text_btn_text_color_selector = global::KyAApp.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_textinput_default_box_stroke_color = global::KyAApp.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_textinput_disabled_color = global::KyAApp.Droid.Resource.Color.mtrl_textinput_disabled_color;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::KyAApp.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::KyAApp.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.mtrl_text_btn_text_color_selector = global::KyAApp.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_action_color_filter = global::KyAApp.Droid.Resource.Color.notification_action_color_filter;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_icon_bg_color = global::KyAApp.Droid.Resource.Color.notification_icon_bg_color;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_material_background_media_default_color = global::KyAApp.Droid.Resource.Color.notification_material_background_media_default_color;
@@ -3747,6 +3747,11 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::KyAApp.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_tab_indicator_material = global::KyAApp.Droid.Resource.Drawable.abc_tab_indicator_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::KyAApp.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::KyAApp.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::KyAApp.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::KyAApp.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::KyAApp.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_material = global::KyAApp.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_cursor_material = global::KyAApp.Droid.Resource.Drawable.abc_text_cursor_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::KyAApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::KyAApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
@@ -3754,11 +3759,6 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::KyAApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::KyAApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::KyAApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::KyAApp.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::KyAApp.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::KyAApp.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::KyAApp.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_material = global::KyAApp.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_vector_test = global::KyAApp.Droid.Resource.Drawable.abc_vector_test;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password = global::KyAApp.Droid.Resource.Drawable.avd_hide_password;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password = global::KyAApp.Droid.Resource.Drawable.avd_show_password;
@@ -3788,13 +3788,8 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::KyAApp.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_dark = global::KyAApp.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_light = global::KyAApp.Droid.Resource.Drawable.tooltip_frame_light;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.ALT = global::KyAApp.Droid.Resource.Id.ALT;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.CTRL = global::KyAApp.Droid.Resource.Id.CTRL;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.FUNCTION = global::KyAApp.Droid.Resource.Id.FUNCTION;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.META = global::KyAApp.Droid.Resource.Id.META;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.SHIFT = global::KyAApp.Droid.Resource.Id.SHIFT;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.SYM = global::KyAApp.Droid.Resource.Id.SYM;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action0 = global::KyAApp.Droid.Resource.Id.action0;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.actions = global::KyAApp.Droid.Resource.Id.actions;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar = global::KyAApp.Droid.Resource.Id.action_bar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_activity_content = global::KyAApp.Droid.Resource.Id.action_bar_activity_content;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_container = global::KyAApp.Droid.Resource.Id.action_bar_container;
@@ -3812,11 +3807,11 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_bar_stub = global::KyAApp.Droid.Resource.Id.action_mode_bar_stub;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_close_button = global::KyAApp.Droid.Resource.Id.action_mode_close_button;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action_text = global::KyAApp.Droid.Resource.Id.action_text;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.actions = global::KyAApp.Droid.Resource.Id.actions;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.activity_chooser_view_content = global::KyAApp.Droid.Resource.Id.activity_chooser_view_content;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.add = global::KyAApp.Droid.Resource.Id.add;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.alertTitle = global::KyAApp.Droid.Resource.Id.alertTitle;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.all = global::KyAApp.Droid.Resource.Id.all;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ALT = global::KyAApp.Droid.Resource.Id.ALT;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.always = global::KyAApp.Droid.Resource.Id.always;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.async = global::KyAApp.Droid.Resource.Id.async;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.auto = global::KyAApp.Droid.Resource.Id.auto;
@@ -3839,6 +3834,7 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.content = global::KyAApp.Droid.Resource.Id.content;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.contentPanel = global::KyAApp.Droid.Resource.Id.contentPanel;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.coordinator = global::KyAApp.Droid.Resource.Id.coordinator;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.CTRL = global::KyAApp.Droid.Resource.Id.CTRL;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.custom = global::KyAApp.Droid.Resource.Id.custom;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.customPanel = global::KyAApp.Droid.Resource.Id.customPanel;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.decor_content_parent = global::KyAApp.Droid.Resource.Id.decor_content_parent;
@@ -3855,16 +3851,17 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.enterAlways = global::KyAApp.Droid.Resource.Id.enterAlways;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.enterAlwaysCollapsed = global::KyAApp.Droid.Resource.Id.enterAlwaysCollapsed;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.exitUntilCollapsed = global::KyAApp.Droid.Resource.Id.exitUntilCollapsed;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.expand_activities_button = global::KyAApp.Droid.Resource.Id.expand_activities_button;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.expanded_menu = global::KyAApp.Droid.Resource.Id.expanded_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.expand_activities_button = global::KyAApp.Droid.Resource.Id.expand_activities_button;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.fill = global::KyAApp.Droid.Resource.Id.fill;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.filled = global::KyAApp.Droid.Resource.Id.filled;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_horizontal = global::KyAApp.Droid.Resource.Id.fill_horizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_vertical = global::KyAApp.Droid.Resource.Id.fill_vertical;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.filled = global::KyAApp.Droid.Resource.Id.filled;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.@fixed = global::KyAApp.Droid.Resource.Id.@fixed;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_appbar = global::KyAApp.Droid.Resource.Id.flyoutcontent_appbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_recycler = global::KyAApp.Droid.Resource.Id.flyoutcontent_recycler;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.forever = global::KyAApp.Droid.Resource.Id.forever;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.FUNCTION = global::KyAApp.Droid.Resource.Id.FUNCTION;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view = global::KyAApp.Droid.Resource.Id.ghost_view;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.group_divider = global::KyAApp.Droid.Resource.Id.group_divider;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.home = global::KyAApp.Droid.Resource.Id.home;
@@ -3890,6 +3887,7 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.masked = global::KyAApp.Droid.Resource.Id.masked;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.media_actions = global::KyAApp.Droid.Resource.Id.media_actions;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.message = global::KyAApp.Droid.Resource.Id.message;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.META = global::KyAApp.Droid.Resource.Id.META;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.middle = global::KyAApp.Droid.Resource.Id.middle;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.mini = global::KyAApp.Droid.Resource.Id.mini;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.mtrl_child_content_container = global::KyAApp.Droid.Resource.Id.mtrl_child_content_container;
@@ -3918,10 +3916,10 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.save_scale_type = global::KyAApp.Droid.Resource.Id.save_scale_type;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.screen = global::KyAApp.Droid.Resource.Id.screen;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.scroll = global::KyAApp.Droid.Resource.Id.scroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollable = global::KyAApp.Droid.Resource.Id.scrollable;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollIndicatorDown = global::KyAApp.Droid.Resource.Id.scrollIndicatorDown;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollIndicatorUp = global::KyAApp.Droid.Resource.Id.scrollIndicatorUp;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollView = global::KyAApp.Droid.Resource.Id.scrollView;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollable = global::KyAApp.Droid.Resource.Id.scrollable;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.search_badge = global::KyAApp.Droid.Resource.Id.search_badge;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.search_bar = global::KyAApp.Droid.Resource.Id.search_bar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.search_button = global::KyAApp.Droid.Resource.Id.search_button;
@@ -3932,10 +3930,11 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.search_plate = global::KyAApp.Droid.Resource.Id.search_plate;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.search_src_text = global::KyAApp.Droid.Resource.Id.search_src_text;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.search_voice_btn = global::KyAApp.Droid.Resource.Id.search_voice_btn;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.select_dialog_listview = global::KyAApp.Droid.Resource.Id.select_dialog_listview;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.selected = global::KyAApp.Droid.Resource.Id.selected;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.select_dialog_listview = global::KyAApp.Droid.Resource.Id.select_dialog_listview;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_appbar = global::KyAApp.Droid.Resource.Id.shellcontent_appbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_toolbar = global::KyAApp.Droid.Resource.Id.shellcontent_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.SHIFT = global::KyAApp.Droid.Resource.Id.SHIFT;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.shortcut = global::KyAApp.Droid.Resource.Id.shortcut;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showCustom = global::KyAApp.Droid.Resource.Id.showCustom;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showHome = global::KyAApp.Droid.Resource.Id.showHome;
@@ -3955,19 +3954,20 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.stretch = global::KyAApp.Droid.Resource.Id.stretch;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.submenuarrow = global::KyAApp.Droid.Resource.Id.submenuarrow;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.submit_area = global::KyAApp.Droid.Resource.Id.submit_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.SYM = global::KyAApp.Droid.Resource.Id.SYM;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tabMode = global::KyAApp.Droid.Resource.Id.tabMode;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_transition_group = global::KyAApp.Droid.Resource.Id.tag_transition_group;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_unhandled_key_event_manager = global::KyAApp.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_unhandled_key_listeners = global::KyAApp.Droid.Resource.Id.tag_unhandled_key_listeners;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.text = global::KyAApp.Droid.Resource.Id.text;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.text2 = global::KyAApp.Droid.Resource.Id.text2;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_counter = global::KyAApp.Droid.Resource.Id.textinput_counter;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_error = global::KyAApp.Droid.Resource.Id.textinput_error;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_helper_text = global::KyAApp.Droid.Resource.Id.textinput_helper_text;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoButtons = global::KyAApp.Droid.Resource.Id.textSpacerNoButtons;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoTitle = global::KyAApp.Droid.Resource.Id.textSpacerNoTitle;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.textStart = global::KyAApp.Droid.Resource.Id.textStart;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.text_input_password_toggle = global::KyAApp.Droid.Resource.Id.text_input_password_toggle;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_counter = global::KyAApp.Droid.Resource.Id.textinput_counter;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_error = global::KyAApp.Droid.Resource.Id.textinput_error;
-			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_helper_text = global::KyAApp.Droid.Resource.Id.textinput_helper_text;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.time = global::KyAApp.Droid.Resource.Id.time;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.title = global::KyAApp.Droid.Resource.Id.title;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.titleDividerNoCustom = global::KyAApp.Droid.Resource.Id.titleDividerNoCustom;
@@ -4078,8 +4078,8 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::KyAApp.Droid.Resource.String.abc_action_bar_up_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_menu_overflow_description = global::KyAApp.Droid.Resource.String.abc_action_menu_overflow_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_mode_done = global::KyAApp.Droid.Resource.String.abc_action_mode_done;
-			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activity_chooser_view_see_all = global::KyAApp.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activitychooserview_choose_application = global::KyAApp.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activity_chooser_view_see_all = global::KyAApp.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_off = global::KyAApp.Droid.Resource.String.abc_capital_off;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_on = global::KyAApp.Droid.Resource.String.abc_capital_on;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_body_1_material = global::KyAApp.Droid.Resource.String.abc_font_family_body_1_material;
@@ -4104,12 +4104,12 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_menu_space_shortcut_label = global::KyAApp.Droid.Resource.String.abc_menu_space_shortcut_label;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_menu_sym_shortcut_label = global::KyAApp.Droid.Resource.String.abc_menu_sym_shortcut_label;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_prepend_shortcut_label = global::KyAApp.Droid.Resource.String.abc_prepend_shortcut_label;
-			global::Xamarin.Forms.Platform.Android.Resource.String.abc_search_hint = global::KyAApp.Droid.Resource.String.abc_search_hint;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_clear = global::KyAApp.Droid.Resource.String.abc_searchview_description_clear;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_query = global::KyAApp.Droid.Resource.String.abc_searchview_description_query;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_search = global::KyAApp.Droid.Resource.String.abc_searchview_description_search;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_submit = global::KyAApp.Droid.Resource.String.abc_searchview_description_submit;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_voice = global::KyAApp.Droid.Resource.String.abc_searchview_description_voice;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_search_hint = global::KyAApp.Droid.Resource.String.abc_search_hint;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with = global::KyAApp.Droid.Resource.String.abc_shareactionprovider_share_with;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with_application = global::KyAApp.Droid.Resource.String.abc_shareactionprovider_share_with_application;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_toolbar_collapse_description = global::KyAApp.Droid.Resource.String.abc_toolbar_collapse_description;
@@ -4140,8 +4140,8 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::KyAApp.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_Tooltip = global::KyAApp.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_CardView = global::KyAApp.Droid.Resource.Style.Base_CardView;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::KyAApp.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::KyAApp.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::KyAApp.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat = global::KyAApp.Droid.Resource.Style.Base_TextAppearance_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::KyAApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::KyAApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
@@ -4190,37 +4190,6 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::KyAApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::KyAApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::KyAApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::KyAApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::KyAApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::KyAApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
@@ -4230,6 +4199,39 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::KyAApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::KyAApp.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::KyAApp.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_Theme_MaterialComponents = global::KyAApp.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::KyAApp.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::KyAApp.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
@@ -4237,13 +4239,11 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::KyAApp.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::KyAApp.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::KyAApp.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::KyAApp.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::KyAApp.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat = global::KyAApp.Droid.Resource.Style.Base_V21_Theme_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::KyAApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::KyAApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::KyAApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::KyAApp.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V22_Theme_AppCompat = global::KyAApp.Droid.Resource.Style.Base_V22_Theme_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::KyAApp.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V23_Theme_AppCompat = global::KyAApp.Droid.Resource.Style.Base_V23_Theme_AppCompat;
@@ -4253,11 +4253,11 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::KyAApp.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V28_Theme_AppCompat = global::KyAApp.Droid.Resource.Style.Base_V28_Theme_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V28_Theme_AppCompat_Light = global::KyAApp.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::KyAApp.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat = global::KyAApp.Droid.Resource.Style.Base_V7_Theme_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::KyAApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::KyAApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::KyAApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::KyAApp.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::KyAApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::KyAApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::KyAApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
@@ -4273,13 +4273,13 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::KyAApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
@@ -4325,6 +4325,8 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView = global::KyAApp.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Dark = global::KyAApp.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Light = global::KyAApp.Droid.Resource.Style.CardView_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewStyle = global::KyAApp.Droid.Resource.Style.collectionViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.NestedScrollBarStyle = global::KyAApp.Droid.Resource.Style.NestedScrollBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat = global::KyAApp.Droid.Resource.Style.Platform_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat_Light = global::KyAApp.Droid.Resource.Style.Platform_AppCompat_Light;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_MaterialComponents = global::KyAApp.Droid.Resource.Style.Platform_MaterialComponents;
@@ -4348,12 +4350,12 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::KyAApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::KyAApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::KyAApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::KyAApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::KyAApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::KyAApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::KyAApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::KyAApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::KyAApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::KyAApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::KyAApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::KyAApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat = global::KyAApp.Droid.Resource.Style.TextAppearance_AppCompat;
@@ -4440,54 +4442,6 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::KyAApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::KyAApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::KyAApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat = global::KyAApp.Droid.Resource.Style.Theme_AppCompat;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design = global::KyAApp.Droid.Resource.Style.Theme_Design;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::KyAApp.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light = global::KyAApp.Droid.Resource.Style.Theme_Design_Light;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::KyAApp.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_Design_NoActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Bridge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_CompactMenu = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Dialog = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat = global::KyAApp.Droid.Resource.Style.ThemeOverlay_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::KyAApp.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::KyAApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
@@ -4507,6 +4461,54 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::KyAApp.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::KyAApp.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::KyAApp.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat = global::KyAApp.Droid.Resource.Style.Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design = global::KyAApp.Droid.Resource.Style.Theme_Design;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::KyAApp.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light = global::KyAApp.Droid.Resource.Style.Theme_Design_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::KyAApp.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Bridge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_CompactMenu = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Dialog = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_NoActionBar = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::KyAApp.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
@@ -4519,13 +4521,13 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Small = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::KyAApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
@@ -4607,11 +4609,11 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_CardView = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_ChipGroup = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_Chip_Action = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_ChipGroup = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_NavigationView = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_Snackbar = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
@@ -4628,8 +4630,9 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_MaterialComponents_Toolbar = global::KyAApp.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Support_CoordinatorLayout = global::KyAApp.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewStyle = global::KyAApp.Droid.Resource.Style.collectionViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar = global::KyAApp.Droid.Resource.Styleable.ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout = global::KyAApp.Droid.Resource.Styleable.ActionBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::KyAApp.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_background = global::KyAApp.Droid.Resource.Styleable.ActionBar_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundSplit = global::KyAApp.Droid.Resource.Styleable.ActionBar_backgroundSplit;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundStacked = global::KyAApp.Droid.Resource.Styleable.ActionBar_backgroundStacked;
@@ -4659,8 +4662,6 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::KyAApp.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_title = global::KyAApp.Droid.Resource.Styleable.ActionBar_title;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_titleTextStyle = global::KyAApp.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout = global::KyAApp.Droid.Resource.Styleable.ActionBarLayout;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::KyAApp.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuItemView = global::KyAApp.Droid.Resource.Styleable.ActionMenuItemView;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::KyAApp.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuView = global::KyAApp.Droid.Resource.Styleable.ActionMenuView;
@@ -4699,20 +4700,20 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::KyAApp.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::KyAApp.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout = global::KyAApp.Droid.Resource.Styleable.AppBarLayout;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_background = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_elevation = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_expanded = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_liftOnScroll = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates = global::KyAApp.Droid.Resource.Styleable.AppBarLayoutStates;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::KyAApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::KyAApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_liftable = global::KyAApp.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_lifted = global::KyAApp.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_background = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_elevation = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_expanded = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_expanded;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_Layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_liftOnScroll = global::KyAApp.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView = global::KyAApp.Droid.Resource.Styleable.AppCompatImageView;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_android_src = global::KyAApp.Droid.Resource.Styleable.AppCompatImageView_android_src;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::KyAApp.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
@@ -4808,8 +4809,8 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::KyAApp.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::KyAApp.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::KyAApp.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::KyAApp.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::KyAApp.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::KyAApp.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::KyAApp.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::KyAApp.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::KyAApp.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
@@ -4905,6 +4906,13 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingRight = global::KyAApp.Droid.Resource.Styleable.CardView_contentPaddingRight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingTop = global::KyAApp.Droid.Resource.Styleable.CardView_contentPaddingTop;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Chip = global::KyAApp.Droid.Resource.Styleable.Chip;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup = global::KyAApp.Droid.Resource.Styleable.ChipGroup;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_checkedChip = global::KyAApp.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_chipSpacing = global::KyAApp.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::KyAApp.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_chipSpacingVertical = global::KyAApp.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_singleLine = global::KyAApp.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_singleSelection = global::KyAApp.Droid.Resource.Styleable.ChipGroup_singleSelection;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Chip_android_checkable = global::KyAApp.Droid.Resource.Styleable.Chip_android_checkable;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Chip_android_ellipsize = global::KyAApp.Droid.Resource.Styleable.Chip_android_ellipsize;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Chip_android_maxWidth = global::KyAApp.Droid.Resource.Styleable.Chip_android_maxWidth;
@@ -4939,13 +4947,6 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Chip_showMotionSpec = global::KyAApp.Droid.Resource.Styleable.Chip_showMotionSpec;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Chip_textEndPadding = global::KyAApp.Droid.Resource.Styleable.Chip_textEndPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Chip_textStartPadding = global::KyAApp.Droid.Resource.Styleable.Chip_textStartPadding;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup = global::KyAApp.Droid.Resource.Styleable.ChipGroup;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_checkedChip = global::KyAApp.Droid.Resource.Styleable.ChipGroup_checkedChip;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_chipSpacing = global::KyAApp.Droid.Resource.Styleable.ChipGroup_chipSpacing;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::KyAApp.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_chipSpacingVertical = global::KyAApp.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_singleLine = global::KyAApp.Droid.Resource.Styleable.ChipGroup_singleLine;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ChipGroup_singleSelection = global::KyAApp.Droid.Resource.Styleable.ChipGroup_singleSelection;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
@@ -4957,15 +4958,15 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::KyAApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem = global::KyAApp.Droid.Resource.Styleable.ColorStateListItem;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_alpha = global::KyAApp.Droid.Resource.Styleable.ColorStateListItem_alpha;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::KyAApp.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
@@ -4976,7 +4977,6 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::KyAApp.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout = global::KyAApp.Droid.Resource.Styleable.CoordinatorLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_keylines = global::KyAApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::KyAApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout = global::KyAApp.Droid.Resource.Styleable.CoordinatorLayout_Layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::KyAApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::KyAApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
@@ -4985,6 +4985,7 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::KyAApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::KyAApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::KyAApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::KyAApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme = global::KyAApp.Droid.Resource.Styleable.DesignTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::KyAApp.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::KyAApp.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
@@ -5000,6 +5001,8 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_elevation = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_elevation;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_fabCustomSize = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
@@ -5011,18 +5014,10 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_showMotionSpec = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::KyAApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FlowLayout = global::KyAApp.Droid.Resource.Styleable.FlowLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FlowLayout_itemSpacing = global::KyAApp.Droid.Resource.Styleable.FlowLayout_itemSpacing;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FlowLayout_lineSpacing = global::KyAApp.Droid.Resource.Styleable.FlowLayout_lineSpacing;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily = global::KyAApp.Droid.Resource.Styleable.FontFamily;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont = global::KyAApp.Droid.Resource.Styleable.FontFamilyFont;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_font = global::KyAApp.Droid.Resource.Styleable.FontFamilyFont_android_font;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::KyAApp.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
@@ -5034,11 +5029,20 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::KyAApp.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::KyAApp.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_ttcIndex = global::KyAApp.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::KyAApp.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout = global::KyAApp.Droid.Resource.Styleable.ForegroundLinearLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::KyAApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::KyAApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::KyAApp.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColor = global::KyAApp.Droid.Resource.Styleable.GradientColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColorItem = global::KyAApp.Droid.Resource.Styleable.GradientColorItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColorItem_android_color = global::KyAApp.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColorItem_android_offset = global::KyAApp.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColor_android_centerColor = global::KyAApp.Droid.Resource.Styleable.GradientColor_android_centerColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColor_android_centerX = global::KyAApp.Droid.Resource.Styleable.GradientColor_android_centerX;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColor_android_centerY = global::KyAApp.Droid.Resource.Styleable.GradientColor_android_centerY;
@@ -5051,9 +5055,6 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColor_android_startY = global::KyAApp.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColor_android_tileMode = global::KyAApp.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColor_android_type = global::KyAApp.Droid.Resource.Styleable.GradientColor_android_type;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColorItem = global::KyAApp.Droid.Resource.Styleable.GradientColorItem;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColorItem_android_color = global::KyAApp.Droid.Resource.Styleable.GradientColorItem_android_color;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.GradientColorItem_android_offset = global::KyAApp.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
@@ -5062,13 +5063,13 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_divider = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_divider;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::KyAApp.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow = global::KyAApp.Droid.Resource.Styleable.ListPopupWindow;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::KyAApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::KyAApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
@@ -5180,11 +5181,11 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemTextColor = global::KyAApp.Droid.Resource.Styleable.NavigationView_itemTextColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_menu = global::KyAApp.Droid.Resource.Styleable.NavigationView_menu;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow = global::KyAApp.Droid.Resource.Styleable.PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState = global::KyAApp.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::KyAApp.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::KyAApp.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::KyAApp.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::KyAApp.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState = global::KyAApp.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::KyAApp.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView = global::KyAApp.Droid.Resource.Styleable.RecycleListView;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::KyAApp.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::KyAApp.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
@@ -5223,12 +5224,12 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::KyAApp.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_voiceIcon = global::KyAApp.Droid.Resource.Styleable.SearchView_voiceIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Snackbar = global::KyAApp.Droid.Resource.Styleable.Snackbar;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Snackbar_snackbarButtonStyle = global::KyAApp.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Snackbar_snackbarStyle = global::KyAApp.Droid.Resource.Styleable.Snackbar_snackbarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout = global::KyAApp.Droid.Resource.Styleable.SnackbarLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::KyAApp.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_elevation = global::KyAApp.Droid.Resource.Styleable.SnackbarLayout_elevation;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::KyAApp.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Snackbar_snackbarButtonStyle = global::KyAApp.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Snackbar_snackbarStyle = global::KyAApp.Droid.Resource.Styleable.Snackbar_snackbarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner = global::KyAApp.Droid.Resource.Styleable.Spinner;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::KyAApp.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_entries = global::KyAApp.Droid.Resource.Styleable.Spinner_android_entries;
@@ -5236,14 +5237,14 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_prompt = global::KyAApp.Droid.Resource.Styleable.Spinner_android_prompt;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_popupTheme = global::KyAApp.Droid.Resource.Styleable.Spinner_popupTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.StateListDrawable = global::KyAApp.Droid.Resource.Styleable.StateListDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.StateListDrawableItem = global::KyAApp.Droid.Resource.Styleable.StateListDrawableItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.StateListDrawableItem_android_drawable = global::KyAApp.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.StateListDrawable_android_constantSize = global::KyAApp.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.StateListDrawable_android_dither = global::KyAApp.Droid.Resource.Styleable.StateListDrawable_android_dither;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::KyAApp.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::KyAApp.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.StateListDrawable_android_variablePadding = global::KyAApp.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.StateListDrawable_android_visible = global::KyAApp.Droid.Resource.Styleable.StateListDrawable_android_visible;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.StateListDrawableItem = global::KyAApp.Droid.Resource.Styleable.StateListDrawableItem;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.StateListDrawableItem_android_drawable = global::KyAApp.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat = global::KyAApp.Droid.Resource.Styleable.SwitchCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_textOff = global::KyAApp.Droid.Resource.Styleable.SwitchCompat_android_textOff;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_textOn = global::KyAApp.Droid.Resource.Styleable.SwitchCompat_android_textOn;
@@ -5361,17 +5362,12 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMargin = global::KyAApp.Droid.Resource.Styleable.Toolbar_titleMargin;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::KyAApp.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::KyAApp.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMargins = global::KyAApp.Droid.Resource.Styleable.Toolbar_titleMargins;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginStart = global::KyAApp.Droid.Resource.Styleable.Toolbar_titleMarginStart;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginTop = global::KyAApp.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMargins = global::KyAApp.Droid.Resource.Styleable.Toolbar_titleMargins;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::KyAApp.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleTextColor = global::KyAApp.Droid.Resource.Styleable.Toolbar_titleTextColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View = global::KyAApp.Droid.Resource.Styleable.View;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_focusable = global::KyAApp.Droid.Resource.Styleable.View_android_focusable;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_theme = global::KyAApp.Droid.Resource.Styleable.View_android_theme;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingEnd = global::KyAApp.Droid.Resource.Styleable.View_paddingEnd;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingStart = global::KyAApp.Droid.Resource.Styleable.View_paddingStart;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_theme = global::KyAApp.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper = global::KyAApp.Droid.Resource.Styleable.ViewBackgroundHelper;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::KyAApp.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::KyAApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
@@ -5380,6 +5376,11 @@ namespace KyAApp.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_id = global::KyAApp.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::KyAApp.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_layout = global::KyAApp.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_focusable = global::KyAApp.Droid.Resource.Styleable.View_android_focusable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_theme = global::KyAApp.Droid.Resource.Styleable.View_android_theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingEnd = global::KyAApp.Droid.Resource.Styleable.View_paddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingStart = global::KyAApp.Droid.Resource.Styleable.View_paddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_theme = global::KyAApp.Droid.Resource.Styleable.View_theme;
 		}
 		
 		public partial class Animation
@@ -8515,7 +8516,7 @@ namespace KyAApp.Droid
 			public const int abc_vector_test = 2131165273;
 			
 			// aapt resource value: 0x7F07005A
-			public const int americanexpresslogo = 2131165274;
+			public const int assignmentroom = 2131165274;
 			
 			// aapt resource value: 0x7F07005B
 			public const int avd_hide_password = 2131165275;
@@ -8602,25 +8603,25 @@ namespace KyAApp.Droid
 			public const int dmax_spots_spot = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int googleg_disabled_color_18 = 2131165303;
+			public const int documents = 2131165303;
 			
 			// aapt resource value: 0x7F070078
-			public const int googleg_standard_color_18 = 2131165304;
-			
-			// aapt resource value: 0x7F0700A3
-			public const int icon = 2131165347;
+			public const int file = 2131165304;
 			
 			// aapt resource value: 0x7F070079
-			public const int ic_add = 2131165305;
+			public const int googleg_disabled_color_18 = 2131165305;
 			
 			// aapt resource value: 0x7F07007A
-			public const int ic_amex = 2131165306;
+			public const int googleg_standard_color_18 = 2131165306;
+			
+			// aapt resource value: 0x7F070098
+			public const int icon = 2131165336;
 			
 			// aapt resource value: 0x7F07007B
-			public const int ic_amex_blue = 2131165307;
+			public const int ic_add = 2131165307;
 			
 			// aapt resource value: 0x7F07007C
-			public const int ic_amex_light = 2131165308;
+			public const int ic_arrow_botom = 2131165308;
 			
 			// aapt resource value: 0x7F07007D
 			public const int ic_arrow_left = 2131165309;
@@ -8629,181 +8630,169 @@ namespace KyAApp.Droid
 			public const int ic_assigmentroom = 2131165310;
 			
 			// aapt resource value: 0x7F07007F
-			public const int ic_chip = 2131165311;
+			public const int ic_close = 2131165311;
 			
 			// aapt resource value: 0x7F070080
-			public const int ic_close = 2131165312;
+			public const int ic_delete = 2131165312;
 			
 			// aapt resource value: 0x7F070081
-			public const int ic_cvv = 2131165313;
+			public const int ic_done = 2131165313;
 			
 			// aapt resource value: 0x7F070082
-			public const int ic_date = 2131165314;
+			public const int ic_email = 2131165314;
 			
 			// aapt resource value: 0x7F070083
-			public const int ic_delete = 2131165315;
+			public const int ic_error = 2131165315;
 			
 			// aapt resource value: 0x7F070084
-			public const int ic_dinersclub = 2131165316;
+			public const int ic_image = 2131165316;
 			
 			// aapt resource value: 0x7F070085
-			public const int ic_dinersclub_white = 2131165317;
+			public const int ic_menu = 2131165317;
 			
 			// aapt resource value: 0x7F070086
-			public const int ic_discover = 2131165318;
+			public const int ic_message = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int ic_discover_light = 2131165319;
+			public const int ic_message_black = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int ic_done = 2131165320;
+			public const int ic_mic = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int ic_email = 2131165321;
+			public const int ic_mtrl_chip_checked_black = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int ic_error = 2131165322;
+			public const int ic_mtrl_chip_checked_circle = 2131165322;
 			
 			// aapt resource value: 0x7F07008B
-			public const int ic_image = 2131165323;
+			public const int ic_mtrl_chip_close_circle = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int ic_jcb = 2131165324;
+			public const int ic_os_notification_fallback_white_24dp = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int ic_mastercard = 2131165325;
+			public const int ic_password = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int ic_mastercard_white = 2131165326;
+			public const int ic_payment = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int ic_message = 2131165327;
+			public const int ic_phone = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int ic_message_black = 2131165328;
+			public const int ic_record = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int ic_mic = 2131165329;
+			public const int ic_room = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int ic_mtrl_chip_checked_black = 2131165330;
+			public const int ic_send = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int ic_mtrl_chip_checked_circle = 2131165331;
+			public const int ic_service = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int ic_mtrl_chip_close_circle = 2131165332;
+			public const int ic_surcharges = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int ic_os_notification_fallback_white_24dp = 2131165333;
+			public const int ic_update = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int ic_password = 2131165334;
+			public const int ic_user = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int ic_payment = 2131165335;
-			
-			// aapt resource value: 0x7F070098
-			public const int ic_phone = 2131165336;
+			public const int ic_user_add = 2131165335;
 			
 			// aapt resource value: 0x7F070099
-			public const int ic_record = 2131165337;
+			public const int logosplash = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int ic_room = 2131165338;
+			public const int message = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int ic_send = 2131165339;
+			public const int mtrl_snackbar_background = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int ic_service = 2131165340;
+			public const int mtrl_tabs_default_indicator = 2131165340;
 			
 			// aapt resource value: 0x7F07009D
-			public const int ic_surcharges = 2131165341;
+			public const int navigation_empty_icon = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int ic_update = 2131165342;
+			public const int notification_action_background = 2131165342;
 			
 			// aapt resource value: 0x7F07009F
-			public const int ic_user = 2131165343;
+			public const int notification_bg = 2131165343;
 			
 			// aapt resource value: 0x7F0700A0
-			public const int ic_user_add = 2131165344;
+			public const int notification_bg_low = 2131165344;
 			
 			// aapt resource value: 0x7F0700A1
-			public const int ic_visa = 2131165345;
+			public const int notification_bg_low_normal = 2131165345;
 			
 			// aapt resource value: 0x7F0700A2
-			public const int ic_visa_white = 2131165346;
+			public const int notification_bg_low_pressed = 2131165346;
+			
+			// aapt resource value: 0x7F0700A3
+			public const int notification_bg_normal = 2131165347;
 			
 			// aapt resource value: 0x7F0700A4
-			public const int logosplash = 2131165348;
+			public const int notification_bg_normal_pressed = 2131165348;
 			
 			// aapt resource value: 0x7F0700A5
-			public const int mtrl_snackbar_background = 2131165349;
+			public const int notification_icon_background = 2131165349;
 			
 			// aapt resource value: 0x7F0700A6
-			public const int mtrl_tabs_default_indicator = 2131165350;
+			public const int notification_template_icon_bg = 2131165350;
 			
 			// aapt resource value: 0x7F0700A7
-			public const int navigation_empty_icon = 2131165351;
+			public const int notification_template_icon_low_bg = 2131165351;
 			
 			// aapt resource value: 0x7F0700A8
-			public const int nocards = 2131165352;
+			public const int notification_tile_bg = 2131165352;
 			
 			// aapt resource value: 0x7F0700A9
-			public const int notification_action_background = 2131165353;
+			public const int notify_panel_notification_icon_bg = 2131165353;
 			
 			// aapt resource value: 0x7F0700AA
-			public const int notification_bg = 2131165354;
+			public const int owner = 2131165354;
 			
 			// aapt resource value: 0x7F0700AB
-			public const int notification_bg_low = 2131165355;
+			public const int pdf = 2131165355;
 			
 			// aapt resource value: 0x7F0700AC
-			public const int notification_bg_low_normal = 2131165356;
+			public const int room = 2131165356;
 			
 			// aapt resource value: 0x7F0700AD
-			public const int notification_bg_low_pressed = 2131165357;
+			public const int service = 2131165357;
 			
 			// aapt resource value: 0x7F0700AE
-			public const int notification_bg_normal = 2131165358;
+			public const int snackBackground = 2131165358;
 			
 			// aapt resource value: 0x7F0700AF
-			public const int notification_bg_normal_pressed = 2131165359;
+			public const int snackBarError = 2131165359;
 			
 			// aapt resource value: 0x7F0700B0
-			public const int notification_icon_background = 2131165360;
+			public const int splash_screen = 2131165360;
 			
 			// aapt resource value: 0x7F0700B1
-			public const int notification_template_icon_bg = 2131165361;
+			public const int tooltip_frame_dark = 2131165361;
 			
 			// aapt resource value: 0x7F0700B2
-			public const int notification_template_icon_low_bg = 2131165362;
+			public const int tooltip_frame_light = 2131165362;
 			
 			// aapt resource value: 0x7F0700B3
-			public const int notification_tile_bg = 2131165363;
+			public const int user = 2131165363;
 			
 			// aapt resource value: 0x7F0700B4
-			public const int notify_panel_notification_icon_bg = 2131165364;
+			public const int usermenu = 2131165364;
 			
 			// aapt resource value: 0x7F0700B5
-			public const int snackBackground = 2131165365;
+			public const int visibility_off = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int snackBarError = 2131165366;
-			
-			// aapt resource value: 0x7F0700B7
-			public const int splash_screen = 2131165367;
-			
-			// aapt resource value: 0x7F0700B8
-			public const int tooltip_frame_dark = 2131165368;
-			
-			// aapt resource value: 0x7F0700B9
-			public const int tooltip_frame_light = 2131165369;
-			
-			// aapt resource value: 0x7F0700BA
-			public const int user = 2131165370;
+			public const int visibility_on = 2131165366;
 			
 			static Drawable()
 			{
@@ -10718,8 +10707,8 @@ namespace KyAApp.Droid
 			// aapt resource value: 0x7F0F00C5
 			public const int CardView_Light = 2131689669;
 			
-			// aapt resource value: 0x7F0F01FC
-			public const int collectionViewStyle = 2131689980;
+			// aapt resource value: 0x7F0F01FD
+			public const int collectionViewStyle = 2131689981;
 			
 			// aapt resource value: 0x7F0F00C6
 			public const int DrawerArrowStyle = 2131689670;
@@ -10740,916 +10729,919 @@ namespace KyAApp.Droid
 			public const int MyTheme_Splash = 2131689675;
 			
 			// aapt resource value: 0x7F0F00CC
-			public const int Platform_AppCompat = 2131689676;
+			public const int NestedScrollBarStyle = 2131689676;
 			
 			// aapt resource value: 0x7F0F00CD
-			public const int Platform_AppCompat_Light = 2131689677;
+			public const int Platform_AppCompat = 2131689677;
 			
 			// aapt resource value: 0x7F0F00CE
-			public const int Platform_MaterialComponents = 2131689678;
+			public const int Platform_AppCompat_Light = 2131689678;
 			
 			// aapt resource value: 0x7F0F00CF
-			public const int Platform_MaterialComponents_Dialog = 2131689679;
+			public const int Platform_MaterialComponents = 2131689679;
 			
 			// aapt resource value: 0x7F0F00D0
-			public const int Platform_MaterialComponents_Light = 2131689680;
+			public const int Platform_MaterialComponents_Dialog = 2131689680;
 			
 			// aapt resource value: 0x7F0F00D1
-			public const int Platform_MaterialComponents_Light_Dialog = 2131689681;
+			public const int Platform_MaterialComponents_Light = 2131689681;
 			
 			// aapt resource value: 0x7F0F00D2
-			public const int Platform_ThemeOverlay_AppCompat = 2131689682;
+			public const int Platform_MaterialComponents_Light_Dialog = 2131689682;
 			
 			// aapt resource value: 0x7F0F00D3
-			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131689683;
+			public const int Platform_ThemeOverlay_AppCompat = 2131689683;
 			
 			// aapt resource value: 0x7F0F00D4
-			public const int Platform_ThemeOverlay_AppCompat_Light = 2131689684;
+			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131689684;
 			
 			// aapt resource value: 0x7F0F00D5
-			public const int Platform_V21_AppCompat = 2131689685;
+			public const int Platform_ThemeOverlay_AppCompat_Light = 2131689685;
 			
 			// aapt resource value: 0x7F0F00D6
-			public const int Platform_V21_AppCompat_Light = 2131689686;
+			public const int Platform_V21_AppCompat = 2131689686;
 			
 			// aapt resource value: 0x7F0F00D7
-			public const int Platform_V25_AppCompat = 2131689687;
+			public const int Platform_V21_AppCompat_Light = 2131689687;
 			
 			// aapt resource value: 0x7F0F00D8
-			public const int Platform_V25_AppCompat_Light = 2131689688;
+			public const int Platform_V25_AppCompat = 2131689688;
 			
 			// aapt resource value: 0x7F0F00D9
-			public const int Platform_Widget_AppCompat_Spinner = 2131689689;
+			public const int Platform_V25_AppCompat_Light = 2131689689;
 			
 			// aapt resource value: 0x7F0F00DA
-			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131689690;
+			public const int Platform_Widget_AppCompat_Spinner = 2131689690;
 			
 			// aapt resource value: 0x7F0F00DB
-			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131689691;
+			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131689691;
 			
 			// aapt resource value: 0x7F0F00DC
-			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131689692;
+			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131689692;
 			
 			// aapt resource value: 0x7F0F00DD
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131689693;
+			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131689693;
 			
 			// aapt resource value: 0x7F0F00DE
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131689694;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131689694;
 			
 			// aapt resource value: 0x7F0F00DF
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = 2131689695;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131689695;
 			
 			// aapt resource value: 0x7F0F00E0
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = 2131689696;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = 2131689696;
 			
 			// aapt resource value: 0x7F0F00E1
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131689697;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = 2131689697;
 			
 			// aapt resource value: 0x7F0F00E2
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 2131689698;
-			
-			// aapt resource value: 0x7F0F00E8
-			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131689704;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131689698;
 			
 			// aapt resource value: 0x7F0F00E3
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131689699;
-			
-			// aapt resource value: 0x7F0F00E4
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131689700;
-			
-			// aapt resource value: 0x7F0F00E5
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131689701;
-			
-			// aapt resource value: 0x7F0F00E6
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131689702;
-			
-			// aapt resource value: 0x7F0F00E7
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131689703;
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 2131689699;
 			
 			// aapt resource value: 0x7F0F00E9
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131689705;
+			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131689705;
+			
+			// aapt resource value: 0x7F0F00E4
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131689700;
+			
+			// aapt resource value: 0x7F0F00E5
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131689701;
+			
+			// aapt resource value: 0x7F0F00E6
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131689702;
+			
+			// aapt resource value: 0x7F0F00E7
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131689703;
+			
+			// aapt resource value: 0x7F0F00E8
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131689704;
 			
 			// aapt resource value: 0x7F0F00EA
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131689706;
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131689706;
 			
 			// aapt resource value: 0x7F0F00EB
-			public const int SpotsDialogDefault = 2131689707;
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131689707;
 			
 			// aapt resource value: 0x7F0F00EC
-			public const int TextAppearance_AppCompat = 2131689708;
+			public const int SpotsDialogDefault = 2131689708;
 			
 			// aapt resource value: 0x7F0F00ED
-			public const int TextAppearance_AppCompat_Body1 = 2131689709;
+			public const int TextAppearance_AppCompat = 2131689709;
 			
 			// aapt resource value: 0x7F0F00EE
-			public const int TextAppearance_AppCompat_Body2 = 2131689710;
+			public const int TextAppearance_AppCompat_Body1 = 2131689710;
 			
 			// aapt resource value: 0x7F0F00EF
-			public const int TextAppearance_AppCompat_Button = 2131689711;
+			public const int TextAppearance_AppCompat_Body2 = 2131689711;
 			
 			// aapt resource value: 0x7F0F00F0
-			public const int TextAppearance_AppCompat_Caption = 2131689712;
+			public const int TextAppearance_AppCompat_Button = 2131689712;
 			
 			// aapt resource value: 0x7F0F00F1
-			public const int TextAppearance_AppCompat_Display1 = 2131689713;
+			public const int TextAppearance_AppCompat_Caption = 2131689713;
 			
 			// aapt resource value: 0x7F0F00F2
-			public const int TextAppearance_AppCompat_Display2 = 2131689714;
+			public const int TextAppearance_AppCompat_Display1 = 2131689714;
 			
 			// aapt resource value: 0x7F0F00F3
-			public const int TextAppearance_AppCompat_Display3 = 2131689715;
+			public const int TextAppearance_AppCompat_Display2 = 2131689715;
 			
 			// aapt resource value: 0x7F0F00F4
-			public const int TextAppearance_AppCompat_Display4 = 2131689716;
+			public const int TextAppearance_AppCompat_Display3 = 2131689716;
 			
 			// aapt resource value: 0x7F0F00F5
-			public const int TextAppearance_AppCompat_Headline = 2131689717;
+			public const int TextAppearance_AppCompat_Display4 = 2131689717;
 			
 			// aapt resource value: 0x7F0F00F6
-			public const int TextAppearance_AppCompat_Inverse = 2131689718;
+			public const int TextAppearance_AppCompat_Headline = 2131689718;
 			
 			// aapt resource value: 0x7F0F00F7
-			public const int TextAppearance_AppCompat_Large = 2131689719;
+			public const int TextAppearance_AppCompat_Inverse = 2131689719;
 			
 			// aapt resource value: 0x7F0F00F8
-			public const int TextAppearance_AppCompat_Large_Inverse = 2131689720;
+			public const int TextAppearance_AppCompat_Large = 2131689720;
 			
 			// aapt resource value: 0x7F0F00F9
-			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131689721;
+			public const int TextAppearance_AppCompat_Large_Inverse = 2131689721;
 			
 			// aapt resource value: 0x7F0F00FA
-			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131689722;
+			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131689722;
 			
 			// aapt resource value: 0x7F0F00FB
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131689723;
+			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131689723;
 			
 			// aapt resource value: 0x7F0F00FC
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131689724;
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131689724;
 			
 			// aapt resource value: 0x7F0F00FD
-			public const int TextAppearance_AppCompat_Medium = 2131689725;
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131689725;
 			
 			// aapt resource value: 0x7F0F00FE
-			public const int TextAppearance_AppCompat_Medium_Inverse = 2131689726;
+			public const int TextAppearance_AppCompat_Medium = 2131689726;
 			
 			// aapt resource value: 0x7F0F00FF
-			public const int TextAppearance_AppCompat_Menu = 2131689727;
+			public const int TextAppearance_AppCompat_Medium_Inverse = 2131689727;
 			
 			// aapt resource value: 0x7F0F0100
-			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131689728;
+			public const int TextAppearance_AppCompat_Menu = 2131689728;
 			
 			// aapt resource value: 0x7F0F0101
-			public const int TextAppearance_AppCompat_SearchResult_Title = 2131689729;
+			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131689729;
 			
 			// aapt resource value: 0x7F0F0102
-			public const int TextAppearance_AppCompat_Small = 2131689730;
+			public const int TextAppearance_AppCompat_SearchResult_Title = 2131689730;
 			
 			// aapt resource value: 0x7F0F0103
-			public const int TextAppearance_AppCompat_Small_Inverse = 2131689731;
+			public const int TextAppearance_AppCompat_Small = 2131689731;
 			
 			// aapt resource value: 0x7F0F0104
-			public const int TextAppearance_AppCompat_Subhead = 2131689732;
+			public const int TextAppearance_AppCompat_Small_Inverse = 2131689732;
 			
 			// aapt resource value: 0x7F0F0105
-			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131689733;
+			public const int TextAppearance_AppCompat_Subhead = 2131689733;
 			
 			// aapt resource value: 0x7F0F0106
-			public const int TextAppearance_AppCompat_Title = 2131689734;
+			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131689734;
 			
 			// aapt resource value: 0x7F0F0107
-			public const int TextAppearance_AppCompat_Title_Inverse = 2131689735;
+			public const int TextAppearance_AppCompat_Title = 2131689735;
 			
 			// aapt resource value: 0x7F0F0108
-			public const int TextAppearance_AppCompat_Tooltip = 2131689736;
+			public const int TextAppearance_AppCompat_Title_Inverse = 2131689736;
 			
 			// aapt resource value: 0x7F0F0109
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131689737;
+			public const int TextAppearance_AppCompat_Tooltip = 2131689737;
 			
 			// aapt resource value: 0x7F0F010A
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131689738;
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131689738;
 			
 			// aapt resource value: 0x7F0F010B
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131689739;
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131689739;
 			
 			// aapt resource value: 0x7F0F010C
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131689740;
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131689740;
 			
 			// aapt resource value: 0x7F0F010D
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131689741;
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131689741;
 			
 			// aapt resource value: 0x7F0F010E
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131689742;
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131689742;
 			
 			// aapt resource value: 0x7F0F010F
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131689743;
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131689743;
 			
 			// aapt resource value: 0x7F0F0110
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131689744;
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131689744;
 			
 			// aapt resource value: 0x7F0F0111
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131689745;
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131689745;
 			
 			// aapt resource value: 0x7F0F0112
-			public const int TextAppearance_AppCompat_Widget_Button = 2131689746;
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131689746;
 			
 			// aapt resource value: 0x7F0F0113
-			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131689747;
+			public const int TextAppearance_AppCompat_Widget_Button = 2131689747;
 			
 			// aapt resource value: 0x7F0F0114
-			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131689748;
+			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131689748;
 			
 			// aapt resource value: 0x7F0F0115
-			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131689749;
+			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131689749;
 			
 			// aapt resource value: 0x7F0F0116
-			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131689750;
+			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131689750;
 			
 			// aapt resource value: 0x7F0F0117
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131689751;
+			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131689751;
 			
 			// aapt resource value: 0x7F0F0118
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131689752;
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131689752;
 			
 			// aapt resource value: 0x7F0F0119
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131689753;
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131689753;
 			
 			// aapt resource value: 0x7F0F011A
-			public const int TextAppearance_AppCompat_Widget_Switch = 2131689754;
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131689754;
 			
 			// aapt resource value: 0x7F0F011B
-			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131689755;
+			public const int TextAppearance_AppCompat_Widget_Switch = 2131689755;
 			
 			// aapt resource value: 0x7F0F011C
-			public const int TextAppearance_Compat_Notification = 2131689756;
+			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131689756;
 			
 			// aapt resource value: 0x7F0F011D
-			public const int TextAppearance_Compat_Notification_Info = 2131689757;
+			public const int TextAppearance_Compat_Notification = 2131689757;
 			
 			// aapt resource value: 0x7F0F011E
-			public const int TextAppearance_Compat_Notification_Info_Media = 2131689758;
+			public const int TextAppearance_Compat_Notification_Info = 2131689758;
 			
 			// aapt resource value: 0x7F0F011F
-			public const int TextAppearance_Compat_Notification_Line2 = 2131689759;
+			public const int TextAppearance_Compat_Notification_Info_Media = 2131689759;
 			
 			// aapt resource value: 0x7F0F0120
-			public const int TextAppearance_Compat_Notification_Line2_Media = 2131689760;
+			public const int TextAppearance_Compat_Notification_Line2 = 2131689760;
 			
 			// aapt resource value: 0x7F0F0121
-			public const int TextAppearance_Compat_Notification_Media = 2131689761;
+			public const int TextAppearance_Compat_Notification_Line2_Media = 2131689761;
 			
 			// aapt resource value: 0x7F0F0122
-			public const int TextAppearance_Compat_Notification_Time = 2131689762;
+			public const int TextAppearance_Compat_Notification_Media = 2131689762;
 			
 			// aapt resource value: 0x7F0F0123
-			public const int TextAppearance_Compat_Notification_Time_Media = 2131689763;
+			public const int TextAppearance_Compat_Notification_Time = 2131689763;
 			
 			// aapt resource value: 0x7F0F0124
-			public const int TextAppearance_Compat_Notification_Title = 2131689764;
+			public const int TextAppearance_Compat_Notification_Time_Media = 2131689764;
 			
 			// aapt resource value: 0x7F0F0125
-			public const int TextAppearance_Compat_Notification_Title_Media = 2131689765;
+			public const int TextAppearance_Compat_Notification_Title = 2131689765;
 			
 			// aapt resource value: 0x7F0F0126
-			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131689766;
+			public const int TextAppearance_Compat_Notification_Title_Media = 2131689766;
 			
 			// aapt resource value: 0x7F0F0127
-			public const int TextAppearance_Design_Counter = 2131689767;
+			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131689767;
 			
 			// aapt resource value: 0x7F0F0128
-			public const int TextAppearance_Design_Counter_Overflow = 2131689768;
+			public const int TextAppearance_Design_Counter = 2131689768;
 			
 			// aapt resource value: 0x7F0F0129
-			public const int TextAppearance_Design_Error = 2131689769;
+			public const int TextAppearance_Design_Counter_Overflow = 2131689769;
 			
 			// aapt resource value: 0x7F0F012A
-			public const int TextAppearance_Design_HelperText = 2131689770;
+			public const int TextAppearance_Design_Error = 2131689770;
 			
 			// aapt resource value: 0x7F0F012B
-			public const int TextAppearance_Design_Hint = 2131689771;
+			public const int TextAppearance_Design_HelperText = 2131689771;
 			
 			// aapt resource value: 0x7F0F012C
-			public const int TextAppearance_Design_Snackbar_Message = 2131689772;
+			public const int TextAppearance_Design_Hint = 2131689772;
 			
 			// aapt resource value: 0x7F0F012D
-			public const int TextAppearance_Design_Tab = 2131689773;
+			public const int TextAppearance_Design_Snackbar_Message = 2131689773;
 			
 			// aapt resource value: 0x7F0F012E
-			public const int TextAppearance_MaterialComponents_Body1 = 2131689774;
+			public const int TextAppearance_Design_Tab = 2131689774;
 			
 			// aapt resource value: 0x7F0F012F
-			public const int TextAppearance_MaterialComponents_Body2 = 2131689775;
+			public const int TextAppearance_MaterialComponents_Body1 = 2131689775;
 			
 			// aapt resource value: 0x7F0F0130
-			public const int TextAppearance_MaterialComponents_Button = 2131689776;
+			public const int TextAppearance_MaterialComponents_Body2 = 2131689776;
 			
 			// aapt resource value: 0x7F0F0131
-			public const int TextAppearance_MaterialComponents_Caption = 2131689777;
+			public const int TextAppearance_MaterialComponents_Button = 2131689777;
 			
 			// aapt resource value: 0x7F0F0132
-			public const int TextAppearance_MaterialComponents_Chip = 2131689778;
+			public const int TextAppearance_MaterialComponents_Caption = 2131689778;
 			
 			// aapt resource value: 0x7F0F0133
-			public const int TextAppearance_MaterialComponents_Headline1 = 2131689779;
+			public const int TextAppearance_MaterialComponents_Chip = 2131689779;
 			
 			// aapt resource value: 0x7F0F0134
-			public const int TextAppearance_MaterialComponents_Headline2 = 2131689780;
+			public const int TextAppearance_MaterialComponents_Headline1 = 2131689780;
 			
 			// aapt resource value: 0x7F0F0135
-			public const int TextAppearance_MaterialComponents_Headline3 = 2131689781;
+			public const int TextAppearance_MaterialComponents_Headline2 = 2131689781;
 			
 			// aapt resource value: 0x7F0F0136
-			public const int TextAppearance_MaterialComponents_Headline4 = 2131689782;
+			public const int TextAppearance_MaterialComponents_Headline3 = 2131689782;
 			
 			// aapt resource value: 0x7F0F0137
-			public const int TextAppearance_MaterialComponents_Headline5 = 2131689783;
+			public const int TextAppearance_MaterialComponents_Headline4 = 2131689783;
 			
 			// aapt resource value: 0x7F0F0138
-			public const int TextAppearance_MaterialComponents_Headline6 = 2131689784;
+			public const int TextAppearance_MaterialComponents_Headline5 = 2131689784;
 			
 			// aapt resource value: 0x7F0F0139
-			public const int TextAppearance_MaterialComponents_Overline = 2131689785;
+			public const int TextAppearance_MaterialComponents_Headline6 = 2131689785;
 			
 			// aapt resource value: 0x7F0F013A
-			public const int TextAppearance_MaterialComponents_Subtitle1 = 2131689786;
+			public const int TextAppearance_MaterialComponents_Overline = 2131689786;
 			
 			// aapt resource value: 0x7F0F013B
-			public const int TextAppearance_MaterialComponents_Subtitle2 = 2131689787;
+			public const int TextAppearance_MaterialComponents_Subtitle1 = 2131689787;
 			
 			// aapt resource value: 0x7F0F013C
-			public const int TextAppearance_MaterialComponents_Tab = 2131689788;
+			public const int TextAppearance_MaterialComponents_Subtitle2 = 2131689788;
 			
 			// aapt resource value: 0x7F0F013D
-			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131689789;
+			public const int TextAppearance_MaterialComponents_Tab = 2131689789;
 			
 			// aapt resource value: 0x7F0F013E
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131689790;
+			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131689790;
 			
 			// aapt resource value: 0x7F0F013F
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131689791;
-			
-			// aapt resource value: 0x7F0F0170
-			public const int ThemeOverlay_AppCompat = 2131689840;
-			
-			// aapt resource value: 0x7F0F0171
-			public const int ThemeOverlay_AppCompat_ActionBar = 2131689841;
-			
-			// aapt resource value: 0x7F0F0172
-			public const int ThemeOverlay_AppCompat_Dark = 2131689842;
-			
-			// aapt resource value: 0x7F0F0173
-			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131689843;
-			
-			// aapt resource value: 0x7F0F0174
-			public const int ThemeOverlay_AppCompat_Dialog = 2131689844;
-			
-			// aapt resource value: 0x7F0F0175
-			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131689845;
-			
-			// aapt resource value: 0x7F0F0176
-			public const int ThemeOverlay_AppCompat_Light = 2131689846;
-			
-			// aapt resource value: 0x7F0F0177
-			public const int ThemeOverlay_MaterialComponents = 2131689847;
-			
-			// aapt resource value: 0x7F0F0178
-			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131689848;
-			
-			// aapt resource value: 0x7F0F0179
-			public const int ThemeOverlay_MaterialComponents_Dark = 2131689849;
-			
-			// aapt resource value: 0x7F0F017A
-			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131689850;
-			
-			// aapt resource value: 0x7F0F017B
-			public const int ThemeOverlay_MaterialComponents_Dialog = 2131689851;
-			
-			// aapt resource value: 0x7F0F017C
-			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131689852;
-			
-			// aapt resource value: 0x7F0F017D
-			public const int ThemeOverlay_MaterialComponents_Light = 2131689853;
-			
-			// aapt resource value: 0x7F0F017E
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131689854;
-			
-			// aapt resource value: 0x7F0F017F
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131689855;
-			
-			// aapt resource value: 0x7F0F0180
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131689856;
-			
-			// aapt resource value: 0x7F0F0181
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131689857;
-			
-			// aapt resource value: 0x7F0F0182
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131689858;
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131689791;
 			
 			// aapt resource value: 0x7F0F0140
-			public const int Theme_AppCompat = 2131689792;
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131689792;
 			
-			// aapt resource value: 0x7F0F0141
-			public const int Theme_AppCompat_CompactMenu = 2131689793;
+			// aapt resource value: 0x7F0F0171
+			public const int ThemeOverlay_AppCompat = 2131689841;
 			
-			// aapt resource value: 0x7F0F0142
-			public const int Theme_AppCompat_DayNight = 2131689794;
+			// aapt resource value: 0x7F0F0172
+			public const int ThemeOverlay_AppCompat_ActionBar = 2131689842;
 			
-			// aapt resource value: 0x7F0F0143
-			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131689795;
+			// aapt resource value: 0x7F0F0173
+			public const int ThemeOverlay_AppCompat_Dark = 2131689843;
 			
-			// aapt resource value: 0x7F0F0144
-			public const int Theme_AppCompat_DayNight_Dialog = 2131689796;
+			// aapt resource value: 0x7F0F0174
+			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131689844;
 			
-			// aapt resource value: 0x7F0F0147
-			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131689799;
+			// aapt resource value: 0x7F0F0175
+			public const int ThemeOverlay_AppCompat_Dialog = 2131689845;
 			
-			// aapt resource value: 0x7F0F0145
-			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131689797;
+			// aapt resource value: 0x7F0F0176
+			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131689846;
 			
-			// aapt resource value: 0x7F0F0146
-			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131689798;
+			// aapt resource value: 0x7F0F0177
+			public const int ThemeOverlay_AppCompat_Light = 2131689847;
 			
-			// aapt resource value: 0x7F0F0148
-			public const int Theme_AppCompat_DayNight_NoActionBar = 2131689800;
+			// aapt resource value: 0x7F0F0178
+			public const int ThemeOverlay_MaterialComponents = 2131689848;
 			
-			// aapt resource value: 0x7F0F0149
-			public const int Theme_AppCompat_Dialog = 2131689801;
+			// aapt resource value: 0x7F0F0179
+			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131689849;
 			
-			// aapt resource value: 0x7F0F014C
-			public const int Theme_AppCompat_DialogWhenLarge = 2131689804;
+			// aapt resource value: 0x7F0F017A
+			public const int ThemeOverlay_MaterialComponents_Dark = 2131689850;
 			
-			// aapt resource value: 0x7F0F014A
-			public const int Theme_AppCompat_Dialog_Alert = 2131689802;
+			// aapt resource value: 0x7F0F017B
+			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131689851;
 			
-			// aapt resource value: 0x7F0F014B
-			public const int Theme_AppCompat_Dialog_MinWidth = 2131689803;
+			// aapt resource value: 0x7F0F017C
+			public const int ThemeOverlay_MaterialComponents_Dialog = 2131689852;
 			
-			// aapt resource value: 0x7F0F014D
-			public const int Theme_AppCompat_Light = 2131689805;
+			// aapt resource value: 0x7F0F017D
+			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131689853;
 			
-			// aapt resource value: 0x7F0F014E
-			public const int Theme_AppCompat_Light_DarkActionBar = 2131689806;
+			// aapt resource value: 0x7F0F017E
+			public const int ThemeOverlay_MaterialComponents_Light = 2131689854;
 			
-			// aapt resource value: 0x7F0F014F
-			public const int Theme_AppCompat_Light_Dialog = 2131689807;
+			// aapt resource value: 0x7F0F017F
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131689855;
 			
-			// aapt resource value: 0x7F0F0152
-			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131689810;
+			// aapt resource value: 0x7F0F0180
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131689856;
 			
-			// aapt resource value: 0x7F0F0150
-			public const int Theme_AppCompat_Light_Dialog_Alert = 2131689808;
+			// aapt resource value: 0x7F0F0181
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131689857;
 			
-			// aapt resource value: 0x7F0F0151
-			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131689809;
-			
-			// aapt resource value: 0x7F0F0153
-			public const int Theme_AppCompat_Light_NoActionBar = 2131689811;
-			
-			// aapt resource value: 0x7F0F0154
-			public const int Theme_AppCompat_NoActionBar = 2131689812;
-			
-			// aapt resource value: 0x7F0F0155
-			public const int Theme_Design = 2131689813;
-			
-			// aapt resource value: 0x7F0F0156
-			public const int Theme_Design_BottomSheetDialog = 2131689814;
-			
-			// aapt resource value: 0x7F0F0157
-			public const int Theme_Design_Light = 2131689815;
-			
-			// aapt resource value: 0x7F0F0158
-			public const int Theme_Design_Light_BottomSheetDialog = 2131689816;
-			
-			// aapt resource value: 0x7F0F0159
-			public const int Theme_Design_Light_NoActionBar = 2131689817;
-			
-			// aapt resource value: 0x7F0F015A
-			public const int Theme_Design_NoActionBar = 2131689818;
-			
-			// aapt resource value: 0x7F0F015B
-			public const int Theme_MaterialComponents = 2131689819;
-			
-			// aapt resource value: 0x7F0F015C
-			public const int Theme_MaterialComponents_BottomSheetDialog = 2131689820;
-			
-			// aapt resource value: 0x7F0F015D
-			public const int Theme_MaterialComponents_Bridge = 2131689821;
-			
-			// aapt resource value: 0x7F0F015E
-			public const int Theme_MaterialComponents_CompactMenu = 2131689822;
-			
-			// aapt resource value: 0x7F0F015F
-			public const int Theme_MaterialComponents_Dialog = 2131689823;
-			
-			// aapt resource value: 0x7F0F0162
-			public const int Theme_MaterialComponents_DialogWhenLarge = 2131689826;
-			
-			// aapt resource value: 0x7F0F0160
-			public const int Theme_MaterialComponents_Dialog_Alert = 2131689824;
-			
-			// aapt resource value: 0x7F0F0161
-			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131689825;
-			
-			// aapt resource value: 0x7F0F0163
-			public const int Theme_MaterialComponents_Light = 2131689827;
-			
-			// aapt resource value: 0x7F0F0164
-			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131689828;
-			
-			// aapt resource value: 0x7F0F0165
-			public const int Theme_MaterialComponents_Light_Bridge = 2131689829;
-			
-			// aapt resource value: 0x7F0F0166
-			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131689830;
-			
-			// aapt resource value: 0x7F0F0167
-			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131689831;
-			
-			// aapt resource value: 0x7F0F0168
-			public const int Theme_MaterialComponents_Light_Dialog = 2131689832;
-			
-			// aapt resource value: 0x7F0F016B
-			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131689835;
-			
-			// aapt resource value: 0x7F0F0169
-			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131689833;
-			
-			// aapt resource value: 0x7F0F016A
-			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131689834;
-			
-			// aapt resource value: 0x7F0F016C
-			public const int Theme_MaterialComponents_Light_NoActionBar = 2131689836;
-			
-			// aapt resource value: 0x7F0F016D
-			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131689837;
-			
-			// aapt resource value: 0x7F0F016E
-			public const int Theme_MaterialComponents_NoActionBar = 2131689838;
-			
-			// aapt resource value: 0x7F0F016F
-			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131689839;
+			// aapt resource value: 0x7F0F0182
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131689858;
 			
 			// aapt resource value: 0x7F0F0183
-			public const int Widget_AppCompat_ActionBar = 2131689859;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131689859;
+			
+			// aapt resource value: 0x7F0F0141
+			public const int Theme_AppCompat = 2131689793;
+			
+			// aapt resource value: 0x7F0F0142
+			public const int Theme_AppCompat_CompactMenu = 2131689794;
+			
+			// aapt resource value: 0x7F0F0143
+			public const int Theme_AppCompat_DayNight = 2131689795;
+			
+			// aapt resource value: 0x7F0F0144
+			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131689796;
+			
+			// aapt resource value: 0x7F0F0145
+			public const int Theme_AppCompat_DayNight_Dialog = 2131689797;
+			
+			// aapt resource value: 0x7F0F0148
+			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131689800;
+			
+			// aapt resource value: 0x7F0F0146
+			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131689798;
+			
+			// aapt resource value: 0x7F0F0147
+			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131689799;
+			
+			// aapt resource value: 0x7F0F0149
+			public const int Theme_AppCompat_DayNight_NoActionBar = 2131689801;
+			
+			// aapt resource value: 0x7F0F014A
+			public const int Theme_AppCompat_Dialog = 2131689802;
+			
+			// aapt resource value: 0x7F0F014D
+			public const int Theme_AppCompat_DialogWhenLarge = 2131689805;
+			
+			// aapt resource value: 0x7F0F014B
+			public const int Theme_AppCompat_Dialog_Alert = 2131689803;
+			
+			// aapt resource value: 0x7F0F014C
+			public const int Theme_AppCompat_Dialog_MinWidth = 2131689804;
+			
+			// aapt resource value: 0x7F0F014E
+			public const int Theme_AppCompat_Light = 2131689806;
+			
+			// aapt resource value: 0x7F0F014F
+			public const int Theme_AppCompat_Light_DarkActionBar = 2131689807;
+			
+			// aapt resource value: 0x7F0F0150
+			public const int Theme_AppCompat_Light_Dialog = 2131689808;
+			
+			// aapt resource value: 0x7F0F0153
+			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131689811;
+			
+			// aapt resource value: 0x7F0F0151
+			public const int Theme_AppCompat_Light_Dialog_Alert = 2131689809;
+			
+			// aapt resource value: 0x7F0F0152
+			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131689810;
+			
+			// aapt resource value: 0x7F0F0154
+			public const int Theme_AppCompat_Light_NoActionBar = 2131689812;
+			
+			// aapt resource value: 0x7F0F0155
+			public const int Theme_AppCompat_NoActionBar = 2131689813;
+			
+			// aapt resource value: 0x7F0F0156
+			public const int Theme_Design = 2131689814;
+			
+			// aapt resource value: 0x7F0F0157
+			public const int Theme_Design_BottomSheetDialog = 2131689815;
+			
+			// aapt resource value: 0x7F0F0158
+			public const int Theme_Design_Light = 2131689816;
+			
+			// aapt resource value: 0x7F0F0159
+			public const int Theme_Design_Light_BottomSheetDialog = 2131689817;
+			
+			// aapt resource value: 0x7F0F015A
+			public const int Theme_Design_Light_NoActionBar = 2131689818;
+			
+			// aapt resource value: 0x7F0F015B
+			public const int Theme_Design_NoActionBar = 2131689819;
+			
+			// aapt resource value: 0x7F0F015C
+			public const int Theme_MaterialComponents = 2131689820;
+			
+			// aapt resource value: 0x7F0F015D
+			public const int Theme_MaterialComponents_BottomSheetDialog = 2131689821;
+			
+			// aapt resource value: 0x7F0F015E
+			public const int Theme_MaterialComponents_Bridge = 2131689822;
+			
+			// aapt resource value: 0x7F0F015F
+			public const int Theme_MaterialComponents_CompactMenu = 2131689823;
+			
+			// aapt resource value: 0x7F0F0160
+			public const int Theme_MaterialComponents_Dialog = 2131689824;
+			
+			// aapt resource value: 0x7F0F0163
+			public const int Theme_MaterialComponents_DialogWhenLarge = 2131689827;
+			
+			// aapt resource value: 0x7F0F0161
+			public const int Theme_MaterialComponents_Dialog_Alert = 2131689825;
+			
+			// aapt resource value: 0x7F0F0162
+			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131689826;
+			
+			// aapt resource value: 0x7F0F0164
+			public const int Theme_MaterialComponents_Light = 2131689828;
+			
+			// aapt resource value: 0x7F0F0165
+			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131689829;
+			
+			// aapt resource value: 0x7F0F0166
+			public const int Theme_MaterialComponents_Light_Bridge = 2131689830;
+			
+			// aapt resource value: 0x7F0F0167
+			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131689831;
+			
+			// aapt resource value: 0x7F0F0168
+			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131689832;
+			
+			// aapt resource value: 0x7F0F0169
+			public const int Theme_MaterialComponents_Light_Dialog = 2131689833;
+			
+			// aapt resource value: 0x7F0F016C
+			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131689836;
+			
+			// aapt resource value: 0x7F0F016A
+			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131689834;
+			
+			// aapt resource value: 0x7F0F016B
+			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131689835;
+			
+			// aapt resource value: 0x7F0F016D
+			public const int Theme_MaterialComponents_Light_NoActionBar = 2131689837;
+			
+			// aapt resource value: 0x7F0F016E
+			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131689838;
+			
+			// aapt resource value: 0x7F0F016F
+			public const int Theme_MaterialComponents_NoActionBar = 2131689839;
+			
+			// aapt resource value: 0x7F0F0170
+			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131689840;
 			
 			// aapt resource value: 0x7F0F0184
-			public const int Widget_AppCompat_ActionBar_Solid = 2131689860;
+			public const int Widget_AppCompat_ActionBar = 2131689860;
 			
 			// aapt resource value: 0x7F0F0185
-			public const int Widget_AppCompat_ActionBar_TabBar = 2131689861;
+			public const int Widget_AppCompat_ActionBar_Solid = 2131689861;
 			
 			// aapt resource value: 0x7F0F0186
-			public const int Widget_AppCompat_ActionBar_TabText = 2131689862;
+			public const int Widget_AppCompat_ActionBar_TabBar = 2131689862;
 			
 			// aapt resource value: 0x7F0F0187
-			public const int Widget_AppCompat_ActionBar_TabView = 2131689863;
+			public const int Widget_AppCompat_ActionBar_TabText = 2131689863;
 			
 			// aapt resource value: 0x7F0F0188
-			public const int Widget_AppCompat_ActionButton = 2131689864;
+			public const int Widget_AppCompat_ActionBar_TabView = 2131689864;
 			
 			// aapt resource value: 0x7F0F0189
-			public const int Widget_AppCompat_ActionButton_CloseMode = 2131689865;
+			public const int Widget_AppCompat_ActionButton = 2131689865;
 			
 			// aapt resource value: 0x7F0F018A
-			public const int Widget_AppCompat_ActionButton_Overflow = 2131689866;
+			public const int Widget_AppCompat_ActionButton_CloseMode = 2131689866;
 			
 			// aapt resource value: 0x7F0F018B
-			public const int Widget_AppCompat_ActionMode = 2131689867;
+			public const int Widget_AppCompat_ActionButton_Overflow = 2131689867;
 			
 			// aapt resource value: 0x7F0F018C
-			public const int Widget_AppCompat_ActivityChooserView = 2131689868;
+			public const int Widget_AppCompat_ActionMode = 2131689868;
 			
 			// aapt resource value: 0x7F0F018D
-			public const int Widget_AppCompat_AutoCompleteTextView = 2131689869;
+			public const int Widget_AppCompat_ActivityChooserView = 2131689869;
 			
 			// aapt resource value: 0x7F0F018E
-			public const int Widget_AppCompat_Button = 2131689870;
-			
-			// aapt resource value: 0x7F0F0194
-			public const int Widget_AppCompat_ButtonBar = 2131689876;
-			
-			// aapt resource value: 0x7F0F0195
-			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131689877;
+			public const int Widget_AppCompat_AutoCompleteTextView = 2131689870;
 			
 			// aapt resource value: 0x7F0F018F
-			public const int Widget_AppCompat_Button_Borderless = 2131689871;
+			public const int Widget_AppCompat_Button = 2131689871;
 			
-			// aapt resource value: 0x7F0F0190
-			public const int Widget_AppCompat_Button_Borderless_Colored = 2131689872;
-			
-			// aapt resource value: 0x7F0F0191
-			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131689873;
-			
-			// aapt resource value: 0x7F0F0192
-			public const int Widget_AppCompat_Button_Colored = 2131689874;
-			
-			// aapt resource value: 0x7F0F0193
-			public const int Widget_AppCompat_Button_Small = 2131689875;
+			// aapt resource value: 0x7F0F0195
+			public const int Widget_AppCompat_ButtonBar = 2131689877;
 			
 			// aapt resource value: 0x7F0F0196
-			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131689878;
+			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131689878;
+			
+			// aapt resource value: 0x7F0F0190
+			public const int Widget_AppCompat_Button_Borderless = 2131689872;
+			
+			// aapt resource value: 0x7F0F0191
+			public const int Widget_AppCompat_Button_Borderless_Colored = 2131689873;
+			
+			// aapt resource value: 0x7F0F0192
+			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131689874;
+			
+			// aapt resource value: 0x7F0F0193
+			public const int Widget_AppCompat_Button_Colored = 2131689875;
+			
+			// aapt resource value: 0x7F0F0194
+			public const int Widget_AppCompat_Button_Small = 2131689876;
 			
 			// aapt resource value: 0x7F0F0197
-			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131689879;
+			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131689879;
 			
 			// aapt resource value: 0x7F0F0198
-			public const int Widget_AppCompat_CompoundButton_Switch = 2131689880;
+			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131689880;
 			
 			// aapt resource value: 0x7F0F0199
-			public const int Widget_AppCompat_DrawerArrowToggle = 2131689881;
+			public const int Widget_AppCompat_CompoundButton_Switch = 2131689881;
 			
 			// aapt resource value: 0x7F0F019A
-			public const int Widget_AppCompat_DropDownItem_Spinner = 2131689882;
+			public const int Widget_AppCompat_DrawerArrowToggle = 2131689882;
 			
 			// aapt resource value: 0x7F0F019B
-			public const int Widget_AppCompat_EditText = 2131689883;
+			public const int Widget_AppCompat_DropDownItem_Spinner = 2131689883;
 			
 			// aapt resource value: 0x7F0F019C
-			public const int Widget_AppCompat_ImageButton = 2131689884;
+			public const int Widget_AppCompat_EditText = 2131689884;
 			
 			// aapt resource value: 0x7F0F019D
-			public const int Widget_AppCompat_Light_ActionBar = 2131689885;
+			public const int Widget_AppCompat_ImageButton = 2131689885;
 			
 			// aapt resource value: 0x7F0F019E
-			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131689886;
+			public const int Widget_AppCompat_Light_ActionBar = 2131689886;
 			
 			// aapt resource value: 0x7F0F019F
-			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131689887;
+			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131689887;
 			
 			// aapt resource value: 0x7F0F01A0
-			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131689888;
+			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131689888;
 			
 			// aapt resource value: 0x7F0F01A1
-			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131689889;
+			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131689889;
 			
 			// aapt resource value: 0x7F0F01A2
-			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131689890;
+			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131689890;
 			
 			// aapt resource value: 0x7F0F01A3
-			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131689891;
+			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131689891;
 			
 			// aapt resource value: 0x7F0F01A4
-			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131689892;
+			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131689892;
 			
 			// aapt resource value: 0x7F0F01A5
-			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131689893;
+			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131689893;
 			
 			// aapt resource value: 0x7F0F01A6
-			public const int Widget_AppCompat_Light_ActionButton = 2131689894;
+			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131689894;
 			
 			// aapt resource value: 0x7F0F01A7
-			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131689895;
+			public const int Widget_AppCompat_Light_ActionButton = 2131689895;
 			
 			// aapt resource value: 0x7F0F01A8
-			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131689896;
+			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131689896;
 			
 			// aapt resource value: 0x7F0F01A9
-			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131689897;
+			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131689897;
 			
 			// aapt resource value: 0x7F0F01AA
-			public const int Widget_AppCompat_Light_ActivityChooserView = 2131689898;
+			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131689898;
 			
 			// aapt resource value: 0x7F0F01AB
-			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131689899;
+			public const int Widget_AppCompat_Light_ActivityChooserView = 2131689899;
 			
 			// aapt resource value: 0x7F0F01AC
-			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131689900;
+			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131689900;
 			
 			// aapt resource value: 0x7F0F01AD
-			public const int Widget_AppCompat_Light_ListPopupWindow = 2131689901;
+			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131689901;
 			
 			// aapt resource value: 0x7F0F01AE
-			public const int Widget_AppCompat_Light_ListView_DropDown = 2131689902;
+			public const int Widget_AppCompat_Light_ListPopupWindow = 2131689902;
 			
 			// aapt resource value: 0x7F0F01AF
-			public const int Widget_AppCompat_Light_PopupMenu = 2131689903;
+			public const int Widget_AppCompat_Light_ListView_DropDown = 2131689903;
 			
 			// aapt resource value: 0x7F0F01B0
-			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131689904;
+			public const int Widget_AppCompat_Light_PopupMenu = 2131689904;
 			
 			// aapt resource value: 0x7F0F01B1
-			public const int Widget_AppCompat_Light_SearchView = 2131689905;
+			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131689905;
 			
 			// aapt resource value: 0x7F0F01B2
-			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131689906;
+			public const int Widget_AppCompat_Light_SearchView = 2131689906;
 			
 			// aapt resource value: 0x7F0F01B3
-			public const int Widget_AppCompat_ListMenuView = 2131689907;
+			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131689907;
 			
 			// aapt resource value: 0x7F0F01B4
-			public const int Widget_AppCompat_ListPopupWindow = 2131689908;
+			public const int Widget_AppCompat_ListMenuView = 2131689908;
 			
 			// aapt resource value: 0x7F0F01B5
-			public const int Widget_AppCompat_ListView = 2131689909;
+			public const int Widget_AppCompat_ListPopupWindow = 2131689909;
 			
 			// aapt resource value: 0x7F0F01B6
-			public const int Widget_AppCompat_ListView_DropDown = 2131689910;
+			public const int Widget_AppCompat_ListView = 2131689910;
 			
 			// aapt resource value: 0x7F0F01B7
-			public const int Widget_AppCompat_ListView_Menu = 2131689911;
+			public const int Widget_AppCompat_ListView_DropDown = 2131689911;
 			
 			// aapt resource value: 0x7F0F01B8
-			public const int Widget_AppCompat_PopupMenu = 2131689912;
+			public const int Widget_AppCompat_ListView_Menu = 2131689912;
 			
 			// aapt resource value: 0x7F0F01B9
-			public const int Widget_AppCompat_PopupMenu_Overflow = 2131689913;
+			public const int Widget_AppCompat_PopupMenu = 2131689913;
 			
 			// aapt resource value: 0x7F0F01BA
-			public const int Widget_AppCompat_PopupWindow = 2131689914;
+			public const int Widget_AppCompat_PopupMenu_Overflow = 2131689914;
 			
 			// aapt resource value: 0x7F0F01BB
-			public const int Widget_AppCompat_ProgressBar = 2131689915;
+			public const int Widget_AppCompat_PopupWindow = 2131689915;
 			
 			// aapt resource value: 0x7F0F01BC
-			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131689916;
+			public const int Widget_AppCompat_ProgressBar = 2131689916;
 			
 			// aapt resource value: 0x7F0F01BD
-			public const int Widget_AppCompat_RatingBar = 2131689917;
+			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131689917;
 			
 			// aapt resource value: 0x7F0F01BE
-			public const int Widget_AppCompat_RatingBar_Indicator = 2131689918;
+			public const int Widget_AppCompat_RatingBar = 2131689918;
 			
 			// aapt resource value: 0x7F0F01BF
-			public const int Widget_AppCompat_RatingBar_Small = 2131689919;
+			public const int Widget_AppCompat_RatingBar_Indicator = 2131689919;
 			
 			// aapt resource value: 0x7F0F01C0
-			public const int Widget_AppCompat_SearchView = 2131689920;
+			public const int Widget_AppCompat_RatingBar_Small = 2131689920;
 			
 			// aapt resource value: 0x7F0F01C1
-			public const int Widget_AppCompat_SearchView_ActionBar = 2131689921;
+			public const int Widget_AppCompat_SearchView = 2131689921;
 			
 			// aapt resource value: 0x7F0F01C2
-			public const int Widget_AppCompat_SeekBar = 2131689922;
+			public const int Widget_AppCompat_SearchView_ActionBar = 2131689922;
 			
 			// aapt resource value: 0x7F0F01C3
-			public const int Widget_AppCompat_SeekBar_Discrete = 2131689923;
+			public const int Widget_AppCompat_SeekBar = 2131689923;
 			
 			// aapt resource value: 0x7F0F01C4
-			public const int Widget_AppCompat_Spinner = 2131689924;
+			public const int Widget_AppCompat_SeekBar_Discrete = 2131689924;
 			
 			// aapt resource value: 0x7F0F01C5
-			public const int Widget_AppCompat_Spinner_DropDown = 2131689925;
+			public const int Widget_AppCompat_Spinner = 2131689925;
 			
 			// aapt resource value: 0x7F0F01C6
-			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131689926;
+			public const int Widget_AppCompat_Spinner_DropDown = 2131689926;
 			
 			// aapt resource value: 0x7F0F01C7
-			public const int Widget_AppCompat_Spinner_Underlined = 2131689927;
+			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131689927;
 			
 			// aapt resource value: 0x7F0F01C8
-			public const int Widget_AppCompat_TextView_SpinnerItem = 2131689928;
+			public const int Widget_AppCompat_Spinner_Underlined = 2131689928;
 			
 			// aapt resource value: 0x7F0F01C9
-			public const int Widget_AppCompat_Toolbar = 2131689929;
+			public const int Widget_AppCompat_TextView_SpinnerItem = 2131689929;
 			
 			// aapt resource value: 0x7F0F01CA
-			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131689930;
+			public const int Widget_AppCompat_Toolbar = 2131689930;
 			
 			// aapt resource value: 0x7F0F01CB
-			public const int Widget_Compat_NotificationActionContainer = 2131689931;
+			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131689931;
 			
 			// aapt resource value: 0x7F0F01CC
-			public const int Widget_Compat_NotificationActionText = 2131689932;
+			public const int Widget_Compat_NotificationActionContainer = 2131689932;
 			
 			// aapt resource value: 0x7F0F01CD
-			public const int Widget_Design_AppBarLayout = 2131689933;
+			public const int Widget_Compat_NotificationActionText = 2131689933;
 			
 			// aapt resource value: 0x7F0F01CE
-			public const int Widget_Design_BottomNavigationView = 2131689934;
+			public const int Widget_Design_AppBarLayout = 2131689934;
 			
 			// aapt resource value: 0x7F0F01CF
-			public const int Widget_Design_BottomSheet_Modal = 2131689935;
+			public const int Widget_Design_BottomNavigationView = 2131689935;
 			
 			// aapt resource value: 0x7F0F01D0
-			public const int Widget_Design_CollapsingToolbar = 2131689936;
+			public const int Widget_Design_BottomSheet_Modal = 2131689936;
 			
 			// aapt resource value: 0x7F0F01D1
-			public const int Widget_Design_FloatingActionButton = 2131689937;
+			public const int Widget_Design_CollapsingToolbar = 2131689937;
 			
 			// aapt resource value: 0x7F0F01D2
-			public const int Widget_Design_NavigationView = 2131689938;
+			public const int Widget_Design_FloatingActionButton = 2131689938;
 			
 			// aapt resource value: 0x7F0F01D3
-			public const int Widget_Design_ScrimInsetsFrameLayout = 2131689939;
+			public const int Widget_Design_NavigationView = 2131689939;
 			
 			// aapt resource value: 0x7F0F01D4
-			public const int Widget_Design_Snackbar = 2131689940;
+			public const int Widget_Design_ScrimInsetsFrameLayout = 2131689940;
 			
 			// aapt resource value: 0x7F0F01D5
-			public const int Widget_Design_TabLayout = 2131689941;
+			public const int Widget_Design_Snackbar = 2131689941;
 			
 			// aapt resource value: 0x7F0F01D6
-			public const int Widget_Design_TextInputLayout = 2131689942;
+			public const int Widget_Design_TabLayout = 2131689942;
 			
 			// aapt resource value: 0x7F0F01D7
-			public const int Widget_MaterialComponents_BottomAppBar = 2131689943;
+			public const int Widget_Design_TextInputLayout = 2131689943;
 			
 			// aapt resource value: 0x7F0F01D8
-			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131689944;
+			public const int Widget_MaterialComponents_BottomAppBar = 2131689944;
 			
 			// aapt resource value: 0x7F0F01D9
-			public const int Widget_MaterialComponents_BottomNavigationView = 2131689945;
+			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131689945;
 			
 			// aapt resource value: 0x7F0F01DA
-			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131689946;
+			public const int Widget_MaterialComponents_BottomNavigationView = 2131689946;
 			
 			// aapt resource value: 0x7F0F01DB
-			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131689947;
+			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131689947;
 			
 			// aapt resource value: 0x7F0F01DC
-			public const int Widget_MaterialComponents_Button = 2131689948;
+			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131689948;
 			
 			// aapt resource value: 0x7F0F01DD
-			public const int Widget_MaterialComponents_Button_Icon = 2131689949;
+			public const int Widget_MaterialComponents_Button = 2131689949;
 			
 			// aapt resource value: 0x7F0F01DE
-			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131689950;
+			public const int Widget_MaterialComponents_Button_Icon = 2131689950;
 			
 			// aapt resource value: 0x7F0F01DF
-			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131689951;
+			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131689951;
 			
 			// aapt resource value: 0x7F0F01E0
-			public const int Widget_MaterialComponents_Button_TextButton = 2131689952;
+			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131689952;
 			
 			// aapt resource value: 0x7F0F01E1
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131689953;
+			public const int Widget_MaterialComponents_Button_TextButton = 2131689953;
 			
 			// aapt resource value: 0x7F0F01E2
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131689954;
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131689954;
 			
 			// aapt resource value: 0x7F0F01E3
-			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131689955;
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131689955;
 			
 			// aapt resource value: 0x7F0F01E4
-			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131689956;
+			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131689956;
 			
 			// aapt resource value: 0x7F0F01E5
-			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131689957;
+			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131689957;
 			
 			// aapt resource value: 0x7F0F01E6
-			public const int Widget_MaterialComponents_CardView = 2131689958;
-			
-			// aapt resource value: 0x7F0F01EB
-			public const int Widget_MaterialComponents_ChipGroup = 2131689963;
+			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131689958;
 			
 			// aapt resource value: 0x7F0F01E7
-			public const int Widget_MaterialComponents_Chip_Action = 2131689959;
-			
-			// aapt resource value: 0x7F0F01E8
-			public const int Widget_MaterialComponents_Chip_Choice = 2131689960;
-			
-			// aapt resource value: 0x7F0F01E9
-			public const int Widget_MaterialComponents_Chip_Entry = 2131689961;
-			
-			// aapt resource value: 0x7F0F01EA
-			public const int Widget_MaterialComponents_Chip_Filter = 2131689962;
+			public const int Widget_MaterialComponents_CardView = 2131689959;
 			
 			// aapt resource value: 0x7F0F01EC
-			public const int Widget_MaterialComponents_FloatingActionButton = 2131689964;
+			public const int Widget_MaterialComponents_ChipGroup = 2131689964;
+			
+			// aapt resource value: 0x7F0F01E8
+			public const int Widget_MaterialComponents_Chip_Action = 2131689960;
+			
+			// aapt resource value: 0x7F0F01E9
+			public const int Widget_MaterialComponents_Chip_Choice = 2131689961;
+			
+			// aapt resource value: 0x7F0F01EA
+			public const int Widget_MaterialComponents_Chip_Entry = 2131689962;
+			
+			// aapt resource value: 0x7F0F01EB
+			public const int Widget_MaterialComponents_Chip_Filter = 2131689963;
 			
 			// aapt resource value: 0x7F0F01ED
-			public const int Widget_MaterialComponents_NavigationView = 2131689965;
+			public const int Widget_MaterialComponents_FloatingActionButton = 2131689965;
 			
 			// aapt resource value: 0x7F0F01EE
-			public const int Widget_MaterialComponents_Snackbar = 2131689966;
+			public const int Widget_MaterialComponents_NavigationView = 2131689966;
 			
 			// aapt resource value: 0x7F0F01EF
-			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131689967;
+			public const int Widget_MaterialComponents_Snackbar = 2131689967;
 			
 			// aapt resource value: 0x7F0F01F0
-			public const int Widget_MaterialComponents_TabLayout = 2131689968;
+			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131689968;
 			
 			// aapt resource value: 0x7F0F01F1
-			public const int Widget_MaterialComponents_TabLayout_Colored = 2131689969;
+			public const int Widget_MaterialComponents_TabLayout = 2131689969;
 			
 			// aapt resource value: 0x7F0F01F2
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131689970;
+			public const int Widget_MaterialComponents_TabLayout_Colored = 2131689970;
 			
 			// aapt resource value: 0x7F0F01F3
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131689971;
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131689971;
 			
 			// aapt resource value: 0x7F0F01F4
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131689972;
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131689972;
 			
 			// aapt resource value: 0x7F0F01F5
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131689973;
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131689973;
 			
 			// aapt resource value: 0x7F0F01F6
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131689974;
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131689974;
 			
 			// aapt resource value: 0x7F0F01F7
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131689975;
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131689975;
 			
 			// aapt resource value: 0x7F0F01F8
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131689976;
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131689976;
 			
 			// aapt resource value: 0x7F0F01F9
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131689977;
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131689977;
 			
 			// aapt resource value: 0x7F0F01FA
-			public const int Widget_MaterialComponents_Toolbar = 2131689978;
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131689978;
 			
 			// aapt resource value: 0x7F0F01FB
-			public const int Widget_Support_CoordinatorLayout = 2131689979;
+			public const int Widget_MaterialComponents_Toolbar = 2131689979;
+			
+			// aapt resource value: 0x7F0F01FC
+			public const int Widget_Support_CoordinatorLayout = 2131689980;
 			
 			static Style()
 			{

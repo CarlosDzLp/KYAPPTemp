@@ -35,7 +35,7 @@ public final class R {
 		public static final int dmax_spots_dialog = 0x7f0b002d;
 	}
 	public static final class style {
-		public static final int SpotsDialogDefault = 0x7f0f00eb;
+		public static final int SpotsDialogDefault = 0x7f0f00ec;
 	}
 	public static final class styleable {
 		public static final int[] Dialog = new int[] { 0x7f030000, 0x7f030001, 0x7f030002, 0x7f030003 };

@@ -32,7 +32,6 @@ namespace KyAApp.Droid.Controls
             if (e.NewElement != null)
             {
                 var view = (CustomDatePicker)Element;
-                var editText = this.Control;
                 if (view.IsCurvedCornersEnabled)
                 {
                     // creating gradient drawable for the curved background  
@@ -48,7 +47,7 @@ namespace KyAApp.Droid.Controls
                         DpToPixels(this.Context, Convert.ToSingle(view.CornerRadius)));
 
                     // set the background of the 
-                    Control.SetPadding(20, 25, 0, 25);
+                    Control.SetPadding(20, 15, 0, 15);
                     //editText.SetCompoundDrawablesWithIntrinsicBounds(null, null, GetDrawable(element.Image), null);
                     Control.SetCompoundDrawablesRelativeWithIntrinsicBounds(null, null, GetDrawable(view.Image), null);
                     Control.CompoundDrawablePadding = 15;

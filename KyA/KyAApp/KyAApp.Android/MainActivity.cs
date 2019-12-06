@@ -10,6 +10,7 @@ using Android.Support.V4.Content;
 using Android.Views;
 using Com.OneSignal;
 using FormsToolkit;
+using ImageCircle.Forms.Plugin.Droid;
 using KyAApp.Helpers;
 using Lottie.Forms.Droid;
 using Plugin.CurrentActivity;
@@ -40,6 +41,7 @@ namespace KyAApp.Droid
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental", "FastRenderers_Experimental");
             Forms.Init(this, savedInstanceState);
             AnimationViewRenderer.Init();
+            ImageCircleRenderer.Init();
             OneSignal.Current.StartInit("c2df8f3d-8733-47b2-87b3-9787310cecc3")
                   .EndInit();
             GetPermissions();          
@@ -52,7 +54,7 @@ namespace KyAApp.Droid
                 }
                 else
                 {
-                    ClearLightStatusBar(this, Android.Graphics.Color.Red);
+                    ClearLightStatusBar(this, Android.Graphics.Color.ParseColor("#0CB392"));
                 }
             });
         }

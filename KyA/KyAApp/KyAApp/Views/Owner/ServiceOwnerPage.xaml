@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:KyAApp.Controls" xmlns:behavior="clr-namespace:KyAApp.Behaviors"
+    x:Class="KyAApp.Views.Owner.ServiceOwnerPage"
+    BackgroundColor="White"
+    Title="Servicios">
+    <ContentPage.Content>
+        <controls:CustomListView
+            x:Name="listservice"
+            VerticalScrollBarVisibility="Never"
+            HasUnevenRows="True"
+            SeparatorVisibility="None"
+            ItemsSource="{Binding ListService}">
+            <controls:CustomListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame
+                            BackgroundColor="White"
+                            Margin="10,5"
+                            Padding="10,5"
+                            CornerRadius="8">
+                            <StackLayout>
+                                <controls:CanvasView BorderColor="#EDEDED" BorderThickness="1"
+                                    BackgroundColor="#EDEDED"
+                                    CornerRadius="8">
+                                    <Grid
+                            HeightRequest="100"
+                            WidthRequest="150">
+                            <Image Aspect="AspectFill" Source="{Binding IconString}" />
+                            <Frame
+                                Margin="5"
+                                Padding="10,5"
+                                BackgroundColor="#0CB392"
+                                CornerRadius="15"
+                                HasShadow="False"
+                                HorizontalOptions="End"
+                                VerticalOptions="End">
+                                <Label TextColor="White" Text="{Binding Name}" />
+                            </Frame>
+                        </Grid>
+                                </controls:CanvasView>
+                                <Grid                                    
+                                    ColumnSpacing="0"
+                                    RowSpacing="0"
+                                    Margin="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                 <StackLayout
+                                     Grid.Row="0"
+                                     Spacing="0"
+                                     Grid.Column="0"
+                                                  Orientation="Vertical">
+                                                  <Label
+                                           TextColor="Black"
+                                                      FontAttributes="Bold"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="Precio:"/>
+                                       <Label
+                                           TextColor="Black"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center">
+                                           <Label.Behaviors>
+                                                <behavior:FloatingAmountBehavior Text="{Binding Price}"/>
+                                            </Label.Behaviors>
+                                        </Label>
+                                </StackLayout>      
+
+                                <StackLayout
+                                     Grid.Row="0"
+                                     Spacing="0"
+                                     Grid.Column="1"
+                                                  Orientation="Vertical">
+                                                  <Label
+                                           TextColor="Black"
+                                                      FontAttributes="Bold"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="Fecha:"/>
+                                       <Label
+                                           FontSize="12"
+                                           TextColor="Black"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="{Binding DateCreated,StringFormat='{0:dd/MM/yyyy}'}"/>
+                                 </StackLayout>
+                            </Grid>
+                            </StackLayout>                           
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </controls:CustomListView.ItemTemplate>
+        </controls:CustomListView>
+    </ContentPage.Content>
+</ContentPage>

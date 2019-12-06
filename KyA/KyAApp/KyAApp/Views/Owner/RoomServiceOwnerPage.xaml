@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:KyAApp.Controls" xmlns:behavior="clr-namespace:KyAApp.Behaviors"
+    x:Class="KyAApp.Views.Owner.RoomServiceOwnerPage"
+    BackgroundColor="White"
+    Title="Servicios del cuarto">
+    <ContentPage.Content>
+        <controls:CustomListView
+            x:Name="listroomservice"
+            VerticalScrollBarVisibility="Never"
+            HasUnevenRows="True"
+            SeparatorVisibility="None"
+            SelectedItemCommand="{Binding SelectedRoom}"
+            ItemsSource="{Binding ListRoomService}">
+            <controls:CustomListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame
+                            Margin="10,5"
+                            Padding="15,5"
+                            CornerRadius="8">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <StackLayout
+                                    Spacing="0"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Orientation="Vertical">
+                                    <Label
+                                            TextColor="Black"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                        FontAttributes="Bold"
+                                            Text="Cuarto:"/>
+                                    <Label
+                                            TextColor="Black"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="{Binding NameRoom}"/>
+                                </StackLayout>
+                                 <StackLayout
+                                     Grid.Row="0"
+                                     Spacing="0"
+                                     Grid.Column="1"
+                                                  Orientation="Vertical">
+                                                  <Label
+                                           TextColor="Black"
+                                                      FontAttributes="Bold"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="Servicio:"/>
+                                       <Label
+                                           TextColor="Black"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                           Text="{Binding NameService}">
+                                        </Label>
+                                </StackLayout>      
+
+                                 <StackLayout
+                                     Grid.Row="1"
+                                     Spacing="0"
+                                     Grid.Column="0"
+                                                  Orientation="Vertical">
+                                                  <Label
+                                           TextColor="Black"
+                                                      FontAttributes="Bold"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="Precio:"/>
+                                       <Label
+                                           TextColor="Black"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center">
+                                           <Label.Behaviors>
+                                                <behavior:FloatingAmountBehavior Text="{Binding PriceService}"/>
+                                            </Label.Behaviors>
+                                       </Label>
+                                 </StackLayout>
+                                <StackLayout
+                                     Grid.Row="1"
+                                     Spacing="0"
+                                     Grid.Column="1"
+                                                  Orientation="Vertical">
+                                                  <Label
+                                           TextColor="Black"
+                                                      FontAttributes="Bold"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="Fecha:"/>
+                                       <Label
+                                           FontSize="12"
+                                           TextColor="Black"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="{Binding DateCreated,StringFormat='{0:dd/MM/yyyy}'}"/>
+                                 </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </controls:CustomListView.ItemTemplate>
+        </controls:CustomListView>
+    </ContentPage.Content>
+</ContentPage>

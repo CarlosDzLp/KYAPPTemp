@@ -55,12 +55,18 @@
                         <Entry
                             Text="{Binding Password}"
                             Placeholder="Usuario"
+                            IsPassword="{Binding IsPassword}"
                             PlaceholderColor="Gray"
                             TextColor="Black"
                             Grid.Column="1"/>
                         <Image
+                            HeightRequest="27"
                             Grid.Column="2"
-                            Source="ic_password"/>
+                            Source="{Binding Icon}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding ImagePasswordCommand}"/>
+                            </Image.GestureRecognizers>
+                        </Image>
                     </Grid>
                 </Frame>
                 <controls:CustomPicker
@@ -75,7 +81,7 @@
                     ItemDisplayBinding="{Binding Type}"
                     SelectedItem="{Binding SelectedTypeUser}"
                     Title="Seleccione un usuario"
-                    Image="ic_arrow_left">
+                    Image="ic_arrow_botom">
                 </controls:CustomPicker>
                 <Button
                     Margin="30,0"

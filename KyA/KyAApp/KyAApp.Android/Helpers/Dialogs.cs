@@ -85,7 +85,7 @@ namespace KyAApp.Droid.Helpers
                 CookieBar.Build(MainActivity.Current)
                     .SetIcon(Resource.Drawable.ic_done)
                 .SetTitle(title)
-                //.SetIconAnimation(Resource.Animator.iconspin)
+                .SetIconAnimation(Resource.Animator.iconspin)
                 .SetBackgroundColor(Resource.Color.backgroundcoockiesuccess)
                 .SetTitleColor(Resource.Color.cookiebartitle)
                 .SetMessageColor(Resource.Color.cookiebartitle)

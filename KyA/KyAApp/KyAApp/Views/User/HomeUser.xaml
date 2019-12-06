@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:KyAApp.Controls"
+    xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView" xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    x:Class="KyAApp.Views.User.HomeUser">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Column="0"
+                Text="Home"
+                FontSize="20"
+                FontAttributes="Bold"
+                VerticalTextAlignment="Center"
+                TextColor="Black"/>
+            <abstractions:CircleImage
+                Grid.Column="1"
+                Margin="0,0,10,0"
+                HeightRequest="40"
+                WidthRequest="40"
+                Source="{Binding ImageConvert, Converter={StaticResource imageconvert}}">
+                <abstractions:CircleImage.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding AccountCommand}"/>
+                </abstractions:CircleImage.GestureRecognizers>
+            </abstractions:CircleImage>
+        </Grid>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <controls:EmptyView
+                LoadingCommand="{Binding RefreshCommand}"
+                TextButton="No hay documentos"
+                IsVisible="{Binding IsVisibleEmpty}"/>
+            <flv:FlowListView
+                x:Name="CollectionView"
+                IsVisible="{Binding IsVisibleList}"
+                VerticalScrollBarVisibility="Never"
+                                 FlowItemsSource="{Binding ListDocument}"
+                                 BackgroundColor="Transparent"
+                                 FlowColumnCount="2" 
+                                FlowItemTappedCommand="{Binding SelectedDocumentCommand}"
+                                 FlowColumnExpand="None"
+                                 SeparatorVisibility="None"
+                                 HasUnevenRows="True">
+                                 <flv:FlowListView.FlowColumnTemplate>
+                                      <DataTemplate>
+                                          <Frame
+                                              BackgroundColor="White"
+                                              Margin="10"
+                                              HasShadow="True"
+                                              HeightRequest="120"
+                                              CornerRadius="10"
+                                              Padding="0">
+                                              <Grid
+                                                  RowSpacing="0"
+                                                Margin="10">
+                                                  <Grid.RowDefinitions>
+                                                      <RowDefinition Height="*"/>
+                                                      <RowDefinition Height="Auto"/>
+                                                      <RowDefinition Height="Auto"/>
+                                                  </Grid.RowDefinitions>
+                                                    <Image
+                                                        HeightRequest="120"
+                                                        Grid.Row="0"
+                                                        Source="pdf"/>
+                                                    <Label
+                                                        Grid.Row="1"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="15"
+                                                        FontAttributes="Bold"
+                                                        VerticalOptions="Center"
+                                                        TextColor="Black"
+                                                    Margin="0,0"
+                                                        Text="{Binding Name}"/>
+                                            </Grid>
+                                          </Frame>
+                                            
+                                      </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>                               
+            </flv:FlowListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

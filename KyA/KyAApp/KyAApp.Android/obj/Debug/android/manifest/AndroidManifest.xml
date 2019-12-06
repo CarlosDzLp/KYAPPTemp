@@ -39,6 +39,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:configChanges="orientation|screenSize" android:name="md54fe4aef201482be7d95d72c0c9bf0b33.FilePickerActivity" />
     <activity android:configChanges="orientation|screenSize" android:name="md54cd65ac53ae710bff80022afc423e0f3.MediaPickerActivity" />
     <service android:name="md5dcb6eccdc824e0677ffae8ccdde42930.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="md5d630c3d3bfb5f5558520331566132d97.BatteryBroadcastReceiver" />
@@ -65,6 +66,8 @@
         <action android:name="com.google.firebase.MESSAGING_EVENT" />
       </intent-filter>
     </service>
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:authorities="com.ecocadiz.kyaapp.firebaseinitprovider" android:exported="false" android:initOrder="100" />
     <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
       <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar" />
     </service>
@@ -82,16 +85,7 @@
         <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
       </intent-filter>
     </service>
-    <meta-data android:name="onesignal_app_id" android:value="${onesignal_app_id}" />
-    <!-- Deprecated - Pulled from OneSignal dashboard. -->
-    <meta-data android:name="onesignal_google_project_number" android:value="str:${onesignal_google_project_number}" />
-    <receiver android:name="com.onesignal.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
-      <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
-      <intent-filter android:priority="999">
-        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-        <category android:name="com.ecocadiz.kyaapp" />
-      </intent-filter>
-    </receiver>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
     <service android:name="com.onesignal.GcmIntentService" />
     <service android:name="com.onesignal.GcmIntentJobService" android:permission="android.permission.BIND_JOB_SERVICE" />
@@ -112,13 +106,9 @@
         <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
       </intent-filter>
     </receiver>
-    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-    <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:authorities="com.ecocadiz.kyaapp.firebaseinitprovider" android:exported="false" android:initOrder="100" />
-    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
   </application>
   <uses-permission android:name="android.permission.WAKE_LOCK" />
   <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-  <uses-permission android:name="com.ecocadiz.kyaapp.permission.C2D_MESSAGE" />
   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
   <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
   <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />

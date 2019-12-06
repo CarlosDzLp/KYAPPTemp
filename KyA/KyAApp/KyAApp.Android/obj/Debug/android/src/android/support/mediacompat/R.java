@@ -59,18 +59,18 @@ public final class R {
 		public static final int subtitle_shadow_radius = 0x7f0600d9;
 	}
 	public static final class drawable {
-		public static final int notification_action_background = 0x7f0700a9;
-		public static final int notification_bg = 0x7f0700aa;
-		public static final int notification_bg_low = 0x7f0700ab;
-		public static final int notification_bg_low_normal = 0x7f0700ac;
-		public static final int notification_bg_low_pressed = 0x7f0700ad;
-		public static final int notification_bg_normal = 0x7f0700ae;
-		public static final int notification_bg_normal_pressed = 0x7f0700af;
-		public static final int notification_icon_background = 0x7f0700b0;
-		public static final int notification_template_icon_bg = 0x7f0700b1;
-		public static final int notification_template_icon_low_bg = 0x7f0700b2;
-		public static final int notification_tile_bg = 0x7f0700b3;
-		public static final int notify_panel_notification_icon_bg = 0x7f0700b4;
+		public static final int notification_action_background = 0x7f07009e;
+		public static final int notification_bg = 0x7f07009f;
+		public static final int notification_bg_low = 0x7f0700a0;
+		public static final int notification_bg_low_normal = 0x7f0700a1;
+		public static final int notification_bg_low_pressed = 0x7f0700a2;
+		public static final int notification_bg_normal = 0x7f0700a3;
+		public static final int notification_bg_normal_pressed = 0x7f0700a4;
+		public static final int notification_icon_background = 0x7f0700a5;
+		public static final int notification_template_icon_bg = 0x7f0700a6;
+		public static final int notification_template_icon_low_bg = 0x7f0700a7;
+		public static final int notification_tile_bg = 0x7f0700a8;
+		public static final int notify_panel_notification_icon_bg = 0x7f0700a9;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f080006;
@@ -132,18 +132,18 @@ public final class R {
 		public static final int status_bar_notification_info_overflow = 0x7f0e004a;
 	}
 	public static final class style {
-		public static final int TextAppearance_Compat_Notification = 0x7f0f011c;
-		public static final int TextAppearance_Compat_Notification_Info = 0x7f0f011d;
-		public static final int TextAppearance_Compat_Notification_Info_Media = 0x7f0f011e;
-		public static final int TextAppearance_Compat_Notification_Line2 = 0x7f0f011f;
-		public static final int TextAppearance_Compat_Notification_Line2_Media = 0x7f0f0120;
-		public static final int TextAppearance_Compat_Notification_Media = 0x7f0f0121;
-		public static final int TextAppearance_Compat_Notification_Time = 0x7f0f0122;
-		public static final int TextAppearance_Compat_Notification_Time_Media = 0x7f0f0123;
-		public static final int TextAppearance_Compat_Notification_Title = 0x7f0f0124;
-		public static final int TextAppearance_Compat_Notification_Title_Media = 0x7f0f0125;
-		public static final int Widget_Compat_NotificationActionContainer = 0x7f0f01cb;
-		public static final int Widget_Compat_NotificationActionText = 0x7f0f01cc;
+		public static final int TextAppearance_Compat_Notification = 0x7f0f011d;
+		public static final int TextAppearance_Compat_Notification_Info = 0x7f0f011e;
+		public static final int TextAppearance_Compat_Notification_Info_Media = 0x7f0f011f;
+		public static final int TextAppearance_Compat_Notification_Line2 = 0x7f0f0120;
+		public static final int TextAppearance_Compat_Notification_Line2_Media = 0x7f0f0121;
+		public static final int TextAppearance_Compat_Notification_Media = 0x7f0f0122;
+		public static final int TextAppearance_Compat_Notification_Time = 0x7f0f0123;
+		public static final int TextAppearance_Compat_Notification_Time_Media = 0x7f0f0124;
+		public static final int TextAppearance_Compat_Notification_Title = 0x7f0f0125;
+		public static final int TextAppearance_Compat_Notification_Title_Media = 0x7f0f0126;
+		public static final int Widget_Compat_NotificationActionContainer = 0x7f0f01cc;
+		public static final int Widget_Compat_NotificationActionText = 0x7f0f01cd;
 	}
 	public static final class styleable {
 		public static final int[] ColorStateListItem = new int[] { 0x010101a5, 0x0101031f, 0x7f03002b };

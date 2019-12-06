@@ -1,5 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
+using SQLite;
 
 namespace KyAApp.Models.Administrator
 {
@@ -23,7 +24,7 @@ namespace KyAApp.Models.Administrator
         [JsonProperty("Icon")]
         public byte[] Icon { get; set; }
 
-        [JsonProperty("IdAdmin")]
+        [JsonProperty("IdAdmin"),PrimaryKey]
         public Guid IdAdmin { get; set; }
 
         [JsonProperty("Name")]

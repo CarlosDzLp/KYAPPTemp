@@ -2,10 +2,12 @@ Com.OneSignal
 CookieBar2
 FormsToolkit.Android
 FormsViewGroup
+ImageCircle.Forms.Plugin
 Lottie.Android
 Lottie.Forms
 OneSignal.Android.Binding
 Plugin.CurrentActivity
+Plugin.FilePicker
 Plugin.Media
 Plugin.Permissions
 Rg.Plugins.Popup.Droid

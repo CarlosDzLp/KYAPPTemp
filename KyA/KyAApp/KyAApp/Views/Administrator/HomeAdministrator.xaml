@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+    xmlns:controls="clr-namespace:KyAApp.Controls"
+    x:Class="KyAApp.Views.Administrator.HomeAdministrator"
+    BackgroundColor="White"
+    Title="Home">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Button
+                    Margin="0,10,10,0"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    Command="{Binding AddDocumentCommand}"
+                    BorderWidth="2"
+                    CornerRadius="6"
+                    BorderColor="Black"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    ImageSource="ic_add"/>
+            </StackLayout>
+            <Frame
+                IsVisible="{Binding IsVisible}"
+                HasShadow="True"
+                Padding="10"
+                CornerRadius="10"
+              Margin="20,0,20,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <controls:CustomPicker
+                        Margin="0,10"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        BorderWidth="4"
+                        TextColor="Black"
+                        CornerRadius="6"
+                        IsCurvedCornersEnabled="True"
+                        BorderColor="Black"
+                        TitleColor="Gray"
+                        ItemsSource="{Binding ListOwner}"
+                        ItemDisplayBinding="{Binding Name}"
+                        SelectedItem="{Binding SelectedOwner}"
+                        Title="Propietario"
+                        Image="ic_arrow_botom">
+                    </controls:CustomPicker>
+                    <Frame
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        HasShadow="True"
+                        CornerRadius="10"
+                        Padding="10,0">
+                        <Entry
+                            WidthRequest="200"
+                            Text="{Binding Name}"
+                            Placeholder="Nombre"
+                            PlaceholderColor="Gray"
+                            TextColor="Black"
+                            Grid.Column="1"/>
+                    </Frame>
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        CornerRadius="0"
+                        BorderWidth="2"
+                        BackgroundColor="#0CB392"
+                        BorderColor="#0CB392"
+                        TextColor="White"
+                        Command="{Binding SaveDocumentCommand}"
+                        Text="Guardar"/>
+                </Grid>                
+            </Frame>
+            <controls:EmptyView
+                LoadingCommand="{Binding RefreshCommand}"
+                TextButton="{Binding Empty}"
+                IsVisible="{Binding IsVisibleEmpty}"/>
+            <flv:FlowListView
+                x:Name="CollectionView"
+                IsVisible="{Binding IsVisibleList}"
+                VerticalScrollBarVisibility="Never"
+                                 FlowItemsSource="{Binding ListDocument}"
+                                 BackgroundColor="Transparent"
+                                 FlowColumnCount="2" 
+                                FlowItemTappedCommand="{Binding SelectedDocumentCommand}"
+                                 FlowColumnExpand="None"
+                                 SeparatorVisibility="None"
+                                 HasUnevenRows="True">
+                                 <flv:FlowListView.FlowColumnTemplate>
+                                      <DataTemplate>
+                                          <Frame
+                                              BackgroundColor="White"
+                                              Margin="10"
+                                              HasShadow="True"
+                                              HeightRequest="120"
+                                              CornerRadius="10"
+                                              Padding="0">
+                                              <Grid
+                                                  RowSpacing="0"
+                                                Margin="10">
+                                                  <Grid.RowDefinitions>
+                                                      <RowDefinition Height="*"/>
+                                                      <RowDefinition Height="Auto"/>
+                                                      <RowDefinition Height="Auto"/>
+                                                  </Grid.RowDefinitions>
+                                                    <Image
+                                                        HeightRequest="120"
+                                                        Grid.Row="0"
+                                                        Source="pdf"/>
+                                                    <Label
+                                                        Grid.Row="1"
+                                                    HorizontalTextAlignment="Start"
+                                                        FontSize="15"
+                                                        FontAttributes="Bold"
+                                                        VerticalOptions="Center"
+                                                        TextColor="Black"
+                                                    Margin="0,0"
+                                                        Text="{Binding Name}"/>
+                                                  <Label
+                                                        Grid.Row="2"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="10"
+                                                        VerticalOptions="Center"
+                                                        TextColor="Red"
+                                                    Margin="0,5,0,0"
+                                                        Text="{Binding TypeUser}"/>
+                                                  <Button
+                                                      Grid.Row="2"
+                                                        BackgroundColor="#0CB392"
+                                                    Command="{Binding BindingContext.DeleteDocumentCommand, Source={x:Reference CollectionView}}"
+                                                    CommandParameter="{Binding .}"
+                                                      HeightRequest="30"
+                                                    HorizontalOptions="EndAndExpand"
+                                                    ImageSource="ic_delete"
+                                                    VerticalOptions="CenterAndExpand"
+                                                    WidthRequest="40" />
+                                            </Grid>
+                                          </Frame>
+                                            
+                                      </DataTemplate>
+                </flv:FlowListView.FlowColumnTemplate>                               
+            </flv:FlowListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

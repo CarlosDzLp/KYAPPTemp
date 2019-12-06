@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView" xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    x:Class="KyAApp.Views.Administrator.ListUserPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid
+                BackgroundColor="#EDEDED"
+                Padding="10">
+
+                <Label
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    Text="{Binding Owner.Name}"/>
+                <Image
+                    Margin="0"
+                    HorizontalOptions="End"
+                    Source="ic_close">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Exit}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+            <flv:FlowListView
+                x:Name="CollectionView"
+                VerticalScrollBarVisibility="Never"
+                                 FlowItemsSource="{Binding ListUser}"
+                                 BackgroundColor="Transparent"
+                                 FlowColumnCount="2" 
+                                 FlowColumnExpand="None"
+                                 SeparatorVisibility="None"
+                                 HasUnevenRows="True">
+                                 <flv:FlowListView.FlowColumnTemplate>
+                                      <DataTemplate>
+                                              <Frame
+                                              BackgroundColor="White"
+                                              Margin="5"
+                                              HasShadow="True"
+                                              CornerRadius="10"
+                                              Padding="0">
+                                              <StackLayout
+                                                Margin="10">
+                                                    <abstractions:CircleImage
+                                                        HeightRequest="50"
+                                                        Grid.Row="0"
+                                                        Source="{Binding Icon,Converter={StaticResource imageconvert}}"/>
+                                                    <Label
+                                                        Grid.Row="0"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="15"
+                                                        FontAttributes="Bold"
+                                                        VerticalOptions="Center"
+                                                        TextColor="Black"
+                                                    Margin="10,0"
+                                                        Text="{Binding Name}"/>
+                                                  <Label
+                                                        Grid.Row="0"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="8"
+                                                        VerticalOptions="Center"
+                                                        TextColor="Black"
+                                                    Margin="10,0"
+                                                        Text="{Binding DateCreated,StringFormat='{0:dd/MM/yyyy HH:mm:ss}'}"/>    
+                                                  <StackLayout
+                                                      Orientation="Horizontal">
+                                                      <Button
+                                                        BackgroundColor="#0CB392"
+                                                    Command="{Binding BindingContext.DeleteUserCommand, Source={x:Reference CollectionView}}"
+                                                    CommandParameter="{Binding .}"
+                                                      HeightRequest="30"
+                                                    HorizontalOptions="EndAndExpand"
+                                                    ImageSource="ic_delete"
+                                                    VerticalOptions="CenterAndExpand"
+                                                    WidthRequest="40" />
+                                                  
+                                                  </StackLayout>
+                                              </StackLayout>
+                                          </Frame>
+                                      </DataTemplate>
+                                 </flv:FlowListView.FlowColumnTemplate>                               
+                            </flv:FlowListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

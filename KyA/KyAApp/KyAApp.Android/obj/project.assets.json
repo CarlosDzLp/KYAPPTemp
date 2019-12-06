@@ -34,7 +34,7 @@
           "lib/monoandroid90/Lottie.Forms.dll": {}
         }
       },
-      "Com.OneSignal/3.6.0": {
+      "Com.OneSignal/3.7.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.CustomTabs": "26.0.2",
@@ -52,6 +52,18 @@
           "lib/MonoAndroid10/Com.OneSignal.Abstractions.dll": {},
           "lib/MonoAndroid10/Com.OneSignal.dll": {},
           "lib/MonoAndroid10/OneSignal.Android.Binding.dll": {}
+        }
+      },
+      "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.0.0.6482"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll": {}
         }
       },
       "FormsToolkit/2.0.1": {
@@ -124,6 +136,17 @@
         },
         "runtime": {
           "lib/monoandroid71/Plugin.Permissions.dll": {}
+        }
+      },
+      "pt.Xamarin.Plugin.FilePicker/1.3.11": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.FilePicker.dll": {}
         }
       },
       "Rg.Plugins.Popup/1.2.0.223": {
@@ -230,6 +253,33 @@
         },
         "runtime": {
           "lib/monoandroid71/Plugin.Media.dll": {}
+        }
+      },
+      "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.0.0.446417"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid71/ImageCircle.Forms.Plugin.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid71/ImageCircle.Forms.Plugin.dll": {}
+        }
+      },
+      "Xamanimation/1.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.1.0.581479"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamanimation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamanimation.dll": {}
         }
       },
       "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -1105,7 +1155,7 @@
           "build/MonoAndroid90/Xamarin.Firebase.Messaging.targets": {}
         }
       },
-      "Xamarin.Forms/4.3.0.991211": {
+      "Xamarin.Forms/4.4.0.991220-pre3": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.CustomTabs": "28.0.0.3",
@@ -1247,14 +1297,18 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Com.Airbnb.Xamarin.Forms.Lottie": "3.0.3",
-          "Com.OneSignal": "3.6.0",
+          "Com.OneSignal": "3.7.0",
+          "DLToolkit.Forms.Controls.FlowListView": "2.0.11",
           "FormsToolkit": "2.0.1",
           "Newtonsoft.Json": "12.0.3",
           "Plugin.Permissions": "3.0.0.12",
           "Rg.Plugins.Popup": "1.2.0.223",
           "Xam.Plugin.Media": "4.0.1.5",
+          "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
+          "Xamanimation": "1.3.0",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.991211",
+          "Xamarin.Forms": "4.4.0.991220-pre3",
+          "pt.Xamarin.Plugin.FilePicker": "1.3.11",
           "sqlite-net-pcl": "1.6.292"
         },
         "compile": {
@@ -1317,14 +1371,14 @@
         "readme.txt"
       ]
     },
-    "Com.OneSignal/3.6.0": {
-      "sha512": "+MhepIjj08+XoBhFg+YVtiwCrAShC8X/zOFg2Khg7AOC6U/+mMNNdlANL9Qn8G2kiiup/GnU/e/S/ayyfHfPhQ==",
+    "Com.OneSignal/3.7.0": {
+      "sha512": "N8dZJ60ADKsHxXTeZKZSIt/cSjUUcDh7PEQaJ7zGJ6VcMOzjUY4jwSbZ4Ix3BcUc9LYOkOU/L9Rr2SnT1yHPoA==",
       "type": "package",
-      "path": "com.onesignal/3.6.0",
+      "path": "com.onesignal/3.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "com.onesignal.3.6.0.nupkg.sha512",
+        "com.onesignal.3.7.0.nupkg.sha512",
         "com.onesignal.nuspec",
         "lib/MonoAndroid10/Com.OneSignal.Abstractions.dll",
         "lib/MonoAndroid10/Com.OneSignal.Abstractions.pdb",
@@ -1342,6 +1396,19 @@
         "lib/netstandard1.0/Com.OneSignal.Abstractions.pdb",
         "lib/netstandard1.0/Com.OneSignal.dll",
         "lib/netstandard1.0/Com.OneSignal.pdb"
+      ]
+    },
+    "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
+      "sha512": "n/TIbW3a7q/h5wA5vt8VfkN3eecJN8nMlPVu3NS7hvFODg0YqFHXDgbX1O/a9agcuk5Km6DZqJqpxpcYRS9sOQ==",
+      "type": "package",
+      "path": "dltoolkit.forms.controls.flowlistview/2.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dltoolkit.forms.controls.flowlistview.2.0.11.nupkg.sha512",
+        "dltoolkit.forms.controls.flowlistview.nuspec",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.xml"
       ]
     },
     "FormsToolkit/2.0.1": {
@@ -1448,6 +1515,50 @@
         "plugin.permissions.3.0.0.12.nupkg.sha512",
         "plugin.permissions.nuspec",
         "readme.txt"
+      ]
+    },
+    "pt.Xamarin.Plugin.FilePicker/1.3.11": {
+      "sha512": "Mi9k2y/w8lplhx2wnD/VYP82EyRx8VeCKTPOPZTUY9AZ9IIhurxrKTVuZykVCCkNjrwKulGhP1foaY0rdl/SHQ==",
+      "type": "package",
+      "path": "pt.xamarin.plugin.filepicker/1.3.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/Plugin.FilePicker.Abstractions.dll",
+        "lib/MonoAndroid/Plugin.FilePicker.Abstractions.xml",
+        "lib/MonoAndroid/Plugin.FilePicker.XML",
+        "lib/MonoAndroid/Plugin.FilePicker.dll",
+        "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.FilePicker.XML",
+        "lib/MonoAndroid10/Plugin.FilePicker.dll",
+        "lib/MonoMac/Plugin.FilePicker.Abstractions.dll",
+        "lib/MonoMac/Plugin.FilePicker.Abstractions.xml",
+        "lib/MonoMac/Plugin.FilePicker.Mac.dll",
+        "lib/MonoMac/Plugin.FilePicker.dll",
+        "lib/MonoMac/Plugin.FilePicker.xml",
+        "lib/MonoTouch/Plugin.FilePicker.Abstractions.dll",
+        "lib/MonoTouch/Plugin.FilePicker.Abstractions.xml",
+        "lib/MonoTouch/Plugin.FilePicker.XML",
+        "lib/MonoTouch/Plugin.FilePicker.dll",
+        "lib/MonoTouch10/Plugin.FilePicker.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.FilePicker.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.FilePicker.XML",
+        "lib/MonoTouch10/Plugin.FilePicker.dll",
+        "lib/UAP10/Plugin.FilePicker.Abstractions.dll",
+        "lib/UAP10/Plugin.FilePicker.Abstractions.xml",
+        "lib/UAP10/Plugin.FilePicker.XML",
+        "lib/UAP10/Plugin.FilePicker.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.XML",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll",
+        "lib/uap10.0/Plugin.FilePicker.Abstractions.dll",
+        "lib/uap10.0/Plugin.FilePicker.Abstractions.xml",
+        "lib/uap10.0/Plugin.FilePicker.XML",
+        "lib/uap10.0/Plugin.FilePicker.dll",
+        "pt.xamarin.plugin.filepicker.1.3.11.nupkg.sha512",
+        "pt.xamarin.plugin.filepicker.nuspec"
       ]
     },
     "Rg.Plugins.Popup/1.2.0.223": {
@@ -1676,6 +1787,40 @@
         "readme.txt",
         "xam.plugin.media.4.0.1.5.nupkg.sha512",
         "xam.plugin.media.nuspec"
+      ]
+    },
+    "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
+      "sha512": "59HyuAaUzuloQmu/PVCDCJQMRuuhqmIpCQ+d5hH5Qp8AZsa/vDi5ulrXDKRMZSZt/xbXsyZV+aZ/W/SZaYt2Mg==",
+      "type": "package",
+      "path": "xam.plugins.forms.imagecircle/3.0.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid71/ImageCircle.Forms.Plugin.dll",
+        "lib/monoandroid71/ImageCircle.Forms.Plugin.xml",
+        "lib/netstandard1.0/ImageCircle.Forms.Plugin.dll",
+        "lib/netstandard1.0/ImageCircle.Forms.Plugin.xml",
+        "lib/netstandard2.0/ImageCircle.Forms.Plugin.dll",
+        "lib/netstandard2.0/ImageCircle.Forms.Plugin.xml",
+        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.dll",
+        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.pri",
+        "lib/uap10.0.16299/ImageCircle.Forms.Plugin.xml",
+        "lib/xamarinios10/ImageCircle.Forms.Plugin.dll",
+        "lib/xamarinios10/ImageCircle.Forms.Plugin.xml",
+        "xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
+        "xam.plugins.forms.imagecircle.nuspec"
+      ]
+    },
+    "Xamanimation/1.3.0": {
+      "sha512": "CXYLcQulqAL9qxRMecm5P5YXbOWiBGK0mgtV2buyHehLjbj6Hf+EdHs8cqVztrD47/zAiTAz2yDCURRXC8d33Q==",
+      "type": "package",
+      "path": "xamanimation/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Xamanimation.dll",
+        "xamanimation.1.3.0.nupkg.sha512",
+        "xamanimation.nuspec"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
@@ -2569,10 +2714,10 @@
         "xamarin.firebase.messaging.nuspec"
       ]
     },
-    "Xamarin.Forms/4.3.0.991211": {
-      "sha512": "cWbxRKy6oPbFvpw2K6Du3bSo34LDyVKYSR6jCDSbB3Ieyj6549bWQbBLUEptRGQQ8fhDTcJQ/ezqwGwxd+7bkg==",
+    "Xamarin.Forms/4.4.0.991220-pre3": {
+      "sha512": "lpLNkAhnoKk0cjvGxqzXNdUPPOeByG9xSIYn1Wp+8mzFxGRbZxLeDuOIgNAwymX17sX8pYIQ967XWOi+Lzp9rA==",
       "type": "package",
-      "path": "xamarin.forms/4.3.0.991211",
+      "path": "xamarin.forms/4.4.0.991220-pre3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2801,6 +2946,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PickerStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
@@ -2814,7 +2960,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.3.0.991211.nupkg.sha512",
+        "xamarin.forms.4.4.0.991220-pre3.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -2908,7 +3054,8 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
       "Com.Airbnb.Xamarin.Forms.Lottie >= 3.0.3",
-      "Com.OneSignal >= 3.6.0",
+      "Com.OneSignal >= 3.7.0",
+      "DLToolkit.Forms.Controls.FlowListView >= 2.0.11",
       "FormsToolkit >= 2.0.1",
       "Karamunting.Android.AviranAbady.CookieBar2 >= 1.1.3",
       "KyAApp >= 1.0.0",
@@ -2917,9 +3064,12 @@
       "Rg.Plugins.Popup >= 1.2.0.223",
       "SpotsDialog.Xamarin >= 1.1.0.2",
       "Xam.Plugin.Media >= 4.0.1.5",
+      "Xam.Plugins.Forms.ImageCircle >= 3.0.0.5",
+      "Xamanimation >= 1.3.0",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.3",
       "Xamarin.Essentials >= 1.3.1",
-      "Xamarin.Forms >= 4.3.0.991211",
+      "Xamarin.Forms >= 4.4.0.991220-pre3",
+      "pt.Xamarin.Plugin.FilePicker >= 1.3.11",
       "sqlite-net-pcl >= 1.6.292"
     ]
   },
@@ -2929,11 +3079,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj",
+      "projectUniqueName": "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj",
       "projectName": "KyAApp.Android",
-      "projectPath": "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj",
+      "projectPath": "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/KyAApp.Android.csproj",
       "packagesPath": "/Users/carlosdiaz/.nuget/packages/",
-      "outputPath": "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp.Android/obj/",
+      "outputPath": "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2948,8 +3098,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/KyAApp.csproj": {
-              "projectPath": "/Users/carlosdiaz/KyAApp/KyA/KyAApp/KyAApp/KyAApp.csproj"
+            "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/KyAApp.csproj": {
+              "projectPath": "/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/KyAApp.csproj"
             }
           }
         }
@@ -2964,7 +3114,11 @@
           },
           "Com.OneSignal": {
             "target": "Package",
-            "version": "[3.6.0, )"
+            "version": "[3.7.0, )"
+          },
+          "DLToolkit.Forms.Controls.FlowListView": {
+            "target": "Package",
+            "version": "[2.0.11, )"
           },
           "FormsToolkit": {
             "target": "Package",
@@ -2994,6 +3148,14 @@
             "target": "Package",
             "version": "[4.0.1.5, )"
           },
+          "Xam.Plugins.Forms.ImageCircle": {
+            "target": "Package",
+            "version": "[3.0.0.5, )"
+          },
+          "Xamanimation": {
+            "target": "Package",
+            "version": "[1.3.0, )"
+          },
           "Xamarin.Android.Support.Core.Utils": {
             "target": "Package",
             "version": "[28.0.0.3, )"
@@ -3004,7 +3166,11 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.3.0.991211, )"
+            "version": "[4.4.0.991220-pre3, )"
+          },
+          "pt.Xamarin.Plugin.FilePicker": {
+            "target": "Package",
+            "version": "[1.3.11, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage
+ xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="KyAApp.Views.Administrator.Popup.UpdateRoomAdminPopup">
+    <StackLayout
+        Margin="30,0"
+        VerticalOptions="Center">
+        <Frame Padding="10,5,10,20">
+            <StackLayout
+                Margin="0">
+                <Image
+                    Margin="0"
+                    HorizontalOptions="End"
+                    Source="ic_close">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="tappedImageclose"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label
+                    Margin="0,-6,0,0"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalTextAlignment="Center"
+                  x:Name="lblHeader"
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+                <Frame
+                    HasShadow="True"
+                    CornerRadius="10"
+                    Margin="0,0"
+                    Padding="10,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry
+                            x:Name="txtname"
+                            Placeholder="Cuarto"
+                            PlaceholderColor="Gray"
+                            TextColor="Black"
+                            Grid.Column="0"/>
+                    </Grid>
+                </Frame>
+                <Frame
+                    HasShadow="True"
+                    CornerRadius="10"
+                    Margin="0,0"
+                    Padding="10,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry
+                            Keyboard="Numeric"
+                            x:Name="txtprice"
+                            Placeholder="Precio"
+                            PlaceholderColor="Gray"
+                            TextColor="Black"
+                            Grid.Column="0"/>
+                    </Grid>
+                </Frame>
+                <Button
+                    CornerRadius="0"
+                    BorderWidth="2"
+                    BorderColor="Black"
+                    TextColor="Black"
+                    Text="Actualizar"
+                    x:Name="btnupdateroom"
+                    BackgroundColor="White"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</pages:PopupPage>

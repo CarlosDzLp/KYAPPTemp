@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage
+ xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    x:Class="KyAApp.Views.Administrator.Popup.AddOwnerPopupPage">
+    <StackLayout
+        Margin="30,0"
+        VerticalOptions="Center">
+        <Frame Padding="10,5,10,20">
+            <StackLayout
+                Margin="0">
+                <Image
+                    Margin="0"
+                    HorizontalOptions="End"
+                    Source="ic_close">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ExitCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label
+                    Margin="0,-6,0,0"
+                    FontAttributes="Bold"
+                    FontSize="20"
+                    HorizontalTextAlignment="Center"
+                    Text="Nuevo Propietario"
+                    TextColor="Black"
+                    VerticalTextAlignment="Center" />
+                <Frame
+                    HasShadow="True"
+                    CornerRadius="10"
+                    Margin="0,0"
+                    Padding="10,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry
+                            Text="{Binding Name}"
+                            Placeholder="Nombre"
+                            PlaceholderColor="Gray"
+                            TextColor="Black"
+                            Grid.Column="0"/>
+                    </Grid>
+                </Frame>
+                <Frame
+                    HasShadow="True"
+                    CornerRadius="10"
+                    Margin="0,0"
+                    Padding="10,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry
+                            Text="{Binding Address}"
+                            Placeholder="Direccion"
+                            PlaceholderColor="Gray"
+                            TextColor="Black"
+                            Grid.Column="0"/>
+                    </Grid>
+                </Frame>
+                <Frame
+                    HasShadow="True"
+                    CornerRadius="10"
+                    Margin="0,0"
+                    Padding="10,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry
+                            Text="{Binding User}"
+                            Placeholder="Usuario"
+                            PlaceholderColor="Gray"
+                            TextColor="Black"
+                            Grid.Column="0"/>
+                    </Grid>
+                </Frame>
+                <Frame
+                    HasShadow="True"
+                    CornerRadius="10"
+                    Margin="0,0"
+                    Padding="10,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Entry
+                            Text="{Binding Phone}"
+                            Placeholder="Telefono"
+                            PlaceholderColor="Gray"
+                            TextColor="Black"
+                            Grid.Column="0"/>
+                    </Grid>
+                </Frame>
+                <Button
+                    CornerRadius="0"
+                    BorderWidth="2"
+                    BorderColor="Black"
+                    TextColor="Black"
+                    Text="Guardar"
+                    Command="{Binding AddSaveOwnerCommand}"
+                    BackgroundColor="White"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</pages:PopupPage>

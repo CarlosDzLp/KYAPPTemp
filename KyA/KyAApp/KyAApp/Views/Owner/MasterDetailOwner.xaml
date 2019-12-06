@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:KyAApp.Views.Owner"
+    x:Class="KyAApp.Views.Owner.MasterDetailOwner">
+    <MasterDetailPage.Master>
+        <pages:MenuOwner x:Name="MasterPage" />
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage
+            BarBackgroundColor="White"
+            BarTextColor="Black">
+            <x:Arguments>
+                <pages:HomeOwner/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

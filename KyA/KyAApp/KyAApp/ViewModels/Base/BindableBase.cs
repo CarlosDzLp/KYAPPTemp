@@ -2,14 +2,25 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using KyAApp.DataBase;
 using KyAApp.Helpers;
+using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 
 namespace KyAApp.ViewModels.Base
 {
     public class BindableBase : INotifyPropertyChanged
     {
+        #region Properties
+        private byte[] _imageConvert;
+        public byte[]ImageConvert
+        {
+            get { return _imageConvert; }
+            set { SetProperty(ref _imageConvert, value); }
+        }
+        #endregion
+
         #region NotifyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -33,6 +44,11 @@ namespace KyAApp.ViewModels.Base
         public BindableBase()
         {
             dialogs = DependencyService.Get<IDialogs>();
+            ExitCommand = new Command(async (sender) =>
+            {
+                await PopupNavigation.Instance.PopAllAsync();
+            });
+            Exit = new Command(ExitCommanExecuted);
         }
         #endregion
 
@@ -81,5 +97,13 @@ namespace KyAApp.ViewModels.Base
         }
         #endregion
 
+        #region Command
+        public ICommand ExitCommand { get; set; }
+        public ICommand Exit { get; set; }
+        #endregion
+        protected virtual void ExitCommanExecuted()
+        {
+            
+        }
     }
 }
