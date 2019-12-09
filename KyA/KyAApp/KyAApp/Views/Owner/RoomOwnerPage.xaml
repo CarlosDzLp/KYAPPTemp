@@ -66,7 +66,8 @@
                                                 <behavior:FloatingAmountBehavior Text="{Binding Price}"/>
                                             </Label.Behaviors>
                                         </Label>
-                                </StackLayout>      
+                                </StackLayout>
+                                
                                 <StackLayout
                                      Grid.Row="1"
                                      Spacing="0"
@@ -84,6 +85,24 @@
                                             HorizontalOptions="Center"
                                             VerticalOptions="Center"
                                             Text="{Binding DateCreated,StringFormat='{0:dd/MM/yyyy}'}"/>
+                                 </StackLayout>
+                                <StackLayout
+                                     Grid.Row="1"
+                                     Spacing="0"
+                                     Grid.Column="1"
+                                                  Orientation="Vertical">
+                                                  <Label
+                                           TextColor="Black"
+                                                      FontAttributes="Bold"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="Estatus:"/>
+                                       <Label
+                                           FontSize="12"
+                                           TextColor="{Binding ColorRoom}"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="{Binding StatusRoom}"/>
                                  </StackLayout>
                             </Grid>
                         </Frame>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using Xamarin.Forms;
 
 namespace KyAApp.Models.Rooms
 {
@@ -38,6 +39,11 @@ namespace KyAApp.Models.Rooms
 
         [JsonIgnore]
         public Guid? Idroom { get; set; }
+
+        [JsonIgnore]
+        public Color ColorRoom { get; set; }
+        [JsonIgnore]
+        public string StatusRoom { get; set; }
 
     }
 

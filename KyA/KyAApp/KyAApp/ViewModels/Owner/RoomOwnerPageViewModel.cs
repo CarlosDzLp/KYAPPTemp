@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using Xamarin.Forms;
 using KyAApp.DataBase;
 using KyAApp.Models.Rooms;
 using KyAApp.Service;
@@ -39,6 +40,16 @@ namespace KyAApp.ViewModels.Owner
                 {
                     foreach(var item in response.Result)
                     {
+                        if(item.TypeStatusRoom == 0)
+                        {
+                            item.ColorRoom = Color.Black;
+                            item.StatusRoom = "Libre";
+                        }
+                        else if(item.TypeStatusRoom == 1)
+                        {
+                            item.ColorRoom = Color.Red;
+                            item.StatusRoom = "Ocupado";
+                        }
                         ListRoom.Add(item);
                     }
                 }

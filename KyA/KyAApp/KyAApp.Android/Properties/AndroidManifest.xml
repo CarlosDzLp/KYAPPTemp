@@ -19,6 +19,7 @@
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<permission android:name="com.ecocadiz.kyaapp.permission.C2D_MESSAGE" android:protectionLevel="signature" />
 	<uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+	<uses-permission android:name="com.ecocadiz.kyaapp.permission.C2D_MESSAGE" />
 	<application android:usesCleartextTraffic="true" tools:targetApi="28" android:label="KyAApp" android:icon="@drawable/icon">
 		<receiver android:name="com.onesignal.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
 			<intent-filter>

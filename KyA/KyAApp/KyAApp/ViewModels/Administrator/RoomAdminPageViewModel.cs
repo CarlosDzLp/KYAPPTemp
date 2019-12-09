@@ -62,6 +62,16 @@ namespace KyAApp.ViewModels.Administrator
                                     foreach(var itemRoom in responseRoom.Result)
                                     {
                                         itemRoom.NameOwner = item.Name;
+                                        if (itemRoom.TypeStatusRoom == 0)
+                                        {
+                                            itemRoom.ColorRoom = Color.Black;
+                                            itemRoom.StatusRoom = "Libre";
+                                        }
+                                        else if(itemRoom.TypeStatusRoom == 1)
+                                        {
+                                            itemRoom.ColorRoom = Color.Red;
+                                            itemRoom.StatusRoom = "Ocupado";
+                                        }
                                         ListRoom.Add(itemRoom);
                                     }
                                 }
@@ -97,27 +107,34 @@ namespace KyAApp.ViewModels.Administrator
         }
         private async void DeleteRoomCommandExecuted(RoomsModel obj)
         {
-            bool answer = await App.Current.MainPage.DisplayAlert("Eliminar", $"Desea eliminar el cuarto: {obj.Name}", "Si", "No");
-            if (answer)
+            if(obj.TypeStatusRoom == 0 || obj.TypeStatusRoom == 2)
             {
-                var db = DbContext.Instance.GetAdministrator();
-                var response = await client.Delete<ListResponse>($"room/delroom?IdRoom={obj.IdRoom}&IdOwner={obj.IdOwner}");
-                if (response != null)
+                bool answer = await App.Current.MainPage.DisplayAlert("Eliminar", $"Desea eliminar el cuarto: {obj.Name}", "Si", "No");
+                if (answer)
                 {
-                    if (response.Result && response.Count > 0)
+                    var db = DbContext.Instance.GetAdministrator();
+                    var response = await client.Delete<ListResponse>($"room/delroom?IdRoom={obj.IdRoom}&IdOwner={obj.IdOwner}");
+                    if (response != null)
                     {
-                        SnackSucces("Se elimino correctamente", "KYA", Helpers.TypeSnackBar.Top);
-                        LoadOwner();
+                        if (response.Result && response.Count > 0)
+                        {
+                            SnackSucces("Se elimino correctamente", "KYA", Helpers.TypeSnackBar.Top);
+                            LoadOwner();
+                        }
+                        else
+                        {
+                            SnackError(response.Message, "Error", Helpers.TypeSnackBar.Top);
+                        }
                     }
                     else
                     {
-                        SnackError(response.Message, "Error", Helpers.TypeSnackBar.Top);
+                        SnackError("Hubo un error intentelo mas tarde", "Error", Helpers.TypeSnackBar.Top);
                     }
                 }
-                else
-                {
-                    SnackError("Hubo un error intentelo mas tarde", "Error", Helpers.TypeSnackBar.Top);
-                }
+            }
+            else
+            {
+                SnackError("No puedes eliminar un cuarto que esta ocupado", "Error", Helpers.TypeSnackBar.Top);
             }
         }
         private async void SelectedRoomExecuted(RoomsModel obj)

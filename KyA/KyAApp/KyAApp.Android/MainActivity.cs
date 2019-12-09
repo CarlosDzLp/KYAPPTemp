@@ -1,12 +1,10 @@
 ﻿
-using System;
 using Android;
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.V4.App;
-using Android.Support.V4.Content;
 using Android.Views;
 using Com.OneSignal;
 using FormsToolkit;
@@ -42,8 +40,8 @@ namespace KyAApp.Droid
             Forms.Init(this, savedInstanceState);
             AnimationViewRenderer.Init();
             ImageCircleRenderer.Init();
-            OneSignal.Current.StartInit("c2df8f3d-8733-47b2-87b3-9787310cecc3")
-                  .EndInit();
+            //OneSignal.Current.StartInit("c2df8f3d-8733-47b2-87b3-9787310cecc3")
+                  //.EndInit();
             GetPermissions();          
             LoadApplication(new App());
             MessagingService.Current.Subscribe<bool>(MessageKeys.StatusBar, (args, sender) =>
@@ -109,5 +107,28 @@ namespace KyAApp.Droid
                 //Debug.WriteLine("Android back button: There are not any pages in the PopupStack");
             }
         }
+
+
+        //[BroadcastReceiver(Permission = "com.google.android.c2dm.permission.SEND",Name = "com.onesignal.GcmBroadcastReceiver")]
+        //[IntentFilter(new string[] { "com.google.android.c2dm.intent.RECEIVE" }, Categories = new string[] { "com.ecocadiz.kyaapp" })]
+        //[IntentFilter(new string[] { "com.google.android.c2dm.intent.REGISTRATION" }, Categories = new string[] { "com.ecocadiz.kyaapp" })]
+        //[IntentFilter(new string[] { "com.google.android.gcm.intent.RETRY" }, Categories = new string[] { "com.ecocadiz.kyaapp" })]
+
+        //public class GCMBroadcastReciever : BroadcastReceiver
+        //{
+            //public override void OnReceive(Context context, Intent intent)
+            //{
+                //if (!string.IsNullOrEmpty(intent.GetStringExtra("title")))
+                //{
+                    //NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
+                    //.SetContentTitle(intent.GetStringExtra("title"))
+                    //.SetContentText(intent.GetStringExtra("message"))
+                    //.SetSmallIcon(Android.Resource.Drawable.ic_launcher);
+
+                    //NotificationManager notificationManager = (NotificationManager)context.GetSystemService(Context.NotificationService);
+                    //notificationManager.Notify(1, builder.Build());
+                //}
+            //}
+        //}
     }
 }

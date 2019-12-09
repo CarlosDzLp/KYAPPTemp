@@ -115,7 +115,24 @@
                                      Grid.Row="0"
                                      Spacing="0"
                                      Grid.Column="2"
-                                    Grid.RowSpan="2"
+                                                  Orientation="Vertical">
+                                                  <Label
+                                           TextColor="Black"
+                                                      FontAttributes="Bold"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="Estatus:"/>
+                                       <Label
+                                           FontSize="12"
+                                           TextColor="{Binding ColorRoom}"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Text="{Binding StatusRoom}"/>
+                                </StackLayout>
+                                <StackLayout
+                                     Grid.Row="1"
+                                     Spacing="0"
+                                     Grid.Column="2"
                                     Margin="0"
                                     Padding="0"
                                     VerticalOptions="Center"

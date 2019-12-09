@@ -5,6 +5,7 @@ using Xamarin.Forms.Xaml;
 using KyAApp.DataBase;
 using Com.OneSignal;
 using DLToolkit.Forms.Controls;
+using Com.OneSignal.Abstractions;
 
 namespace KyAApp
 {
@@ -36,8 +37,19 @@ namespace KyAApp
                 MainPage = new Views.Session.LoginPage();
             }          
             OneSignal.Current.IdsAvailable(IdsAvailable);
+            OneSignal.Current.StartInit("c2df8f3d-8733-47b2-87b3-9787310cecc3")
+  .HandleNotificationReceived(HandleNotificationReceived)
+  .EndInit();
         }
+        private static void HandleNotificationReceived(OSNotification notification)
+        {
+            OSNotificationPayload payload = notification.payload;
+            string message = payload.body;
 
+            //print("GameControllerExample:HandleNotificationReceived: " + message);
+            //print("displayType: " + notification.displayType);
+            //extraMessage = "Notification received with text: " + message;
+        }
         public async void IdsAvailable(string playerId, string pushToken)
         {
             DbContext.Instance.InsertDeviceToken(playerId, pushToken);
