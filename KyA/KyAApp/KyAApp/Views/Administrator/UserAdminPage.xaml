@@ -83,7 +83,7 @@
                                                     <abstractions:CircleImage
                                                         HeightRequest="50"
                                                         Grid.Row="0"
-                                                        Source="{Binding Icon,Converter={StaticResource imageconvert}}"/>
+                                                        Source="{Binding IconString}"/>
                                                     <Label
                                                         Grid.Row="0"
                                                     HorizontalTextAlignment="Center"

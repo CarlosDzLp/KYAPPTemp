@@ -28,14 +28,15 @@ namespace KyAApp.Helpers
 
             if (file == null)
                 return null;
-
+            byte[] img = null;
             var stream = file.GetStream();
             file.Dispose();
             using (MemoryStream ms = new MemoryStream())
             {
                 stream.CopyTo(ms);
-                return ms.ToArray();
+                img = ms.ToArray();
             }
+            return img;
         }
 
         public static async Task<byte[]> PickPhoto()
@@ -52,14 +53,15 @@ namespace KyAApp.Helpers
             if (file == null)
                 return null;
 
-
+            byte[] img = null;
             var stream = file.GetStream();
             file.Dispose();
             using (MemoryStream ms = new MemoryStream())
             {
                 stream.CopyTo(ms);
-                return ms.ToArray();
+                img = ms.ToArray();
             }
+            return img;
         }
     }
 }

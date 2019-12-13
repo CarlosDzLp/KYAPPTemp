@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:KyAApp.Controls" xmlns:behavior="clr-namespace:KyAApp.Behaviors"
+    x:Class="KyAApp.Views.Administrator.SurchargesDetailPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid
+                BackgroundColor="#EDEDED"
+                Padding="10">
+                <Label
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="Center"
+                    VerticalTextAlignment="Center"
+                    VerticalOptions="Center"
+                    TextColor="Black"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    Text="{Binding Monthly.NameRoom}"/>
+                <Image
+                    Margin="0"
+                    HorizontalOptions="End"
+                    Source="ic_close">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Exit}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+            <controls:CustomListView
+                x:Name="CollectionView"
+                ItemsSource="{Binding ListSurchargeDetail}"
+                VerticalScrollBarVisibility="Never"
+                BackgroundColor="Transparent"
+                SeparatorVisibility="None"
+                HasUnevenRows="True">
+                <controls:CustomListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                BackgroundColor="White"
+                                Margin="5"
+                                HasShadow="True"
+                                CornerRadius="10"
+                                Padding="0">
+                                <Grid
+                                    Margin="10"
+                                    ColumnSpacing="0"
+                                    RowSpacing="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <StackLayout
+                                        Grid.Column="0"
+                                        Spacing="0"
+                                        Grid.Row="0">
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="10"
+                                            FontAttributes="Bold"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="Usuario"/> 
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="8"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="{Binding NameUser}"/> 
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Column="1"
+                                        Spacing="0"
+                                        Grid.Row="0">
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="10"
+                                            FontAttributes="Bold"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="Propietario"/> 
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="8"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="{Binding NameOwner}"/> 
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Column="0"
+                                        Spacing="0"
+                                        Grid.Row="1">
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="10"
+                                            FontAttributes="Bold"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="Precio"/> 
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="8"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0">
+                                            <Label.Behaviors>
+                                                <behavior:FloatingAmountBehavior Text="{Binding Price}"/>
+                                            </Label.Behaviors>
+                                        </Label> 
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Column="1"
+                                        Spacing="0"
+                                        Grid.Row="1">
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="10"
+                                            FontAttributes="Bold"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="Cuarto"/> 
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="8"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="{Binding NameRoom}"/> 
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Column="0"
+                                        Spacing="0"
+                                        Grid.Row="2">
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="10"
+                                            FontAttributes="Bold"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="Fecha"/> 
+                                        <Label
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="8"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="{Binding DateMonthlyPayment,StringFormat='{0:dd/MM/yyyy}'}"/>  
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Column="1"
+                                        Spacing="0"
+                                        Grid.Row="2">
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="10"
+                                            FontAttributes="Bold"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="Creacion"/> 
+                                        <Label
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="8"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="{Binding DateCreated,StringFormat='{0:dd/MM/yyyy}'}"/>  
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Column="0"
+                                        Spacing="0"
+                                        Grid.ColumnSpan="3"
+                                        Grid.Row="3">
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="10"
+                                            FontAttributes="Bold"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="Descripcion"/> 
+                                        <Label
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="8"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="{Binding Description}"/>  
+                                    </StackLayout> 
+                                    <StackLayout
+                                        Grid.Column="2"
+                                        Grid.Row="0"
+                                        Grid.RowSpan="3"
+                                        VerticalOptions="Center"
+                                        Orientation="Vertical">
+                                        <Button
+                                            BackgroundColor="#0CB392"
+                                            Command="{Binding BindingContext.DeleteSurchargeCommand, Source={x:Reference CollectionView}}"
+                                            CommandParameter="{Binding .}"
+                                            HeightRequest="30"
+                                            HorizontalOptions="EndAndExpand"
+                                            ImageSource="ic_delete"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest="40" />               
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </controls:CustomListView.ItemTemplate>                               
+            </controls:CustomListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

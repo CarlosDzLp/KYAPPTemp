@@ -50,7 +50,7 @@
                                                     <abstractions:CircleImage
                                                         HeightRequest="50"
                                                         Grid.Row="0"
-                                                        Source="{Binding Icon,Converter={StaticResource imageconvert}}"/>
+                                                        Source="{Binding IconString}"/>
                                                     <Label
                                                         Grid.Row="0"
                                                     HorizontalTextAlignment="Center"
@@ -59,7 +59,7 @@
                                                         VerticalOptions="Center"
                                                         TextColor="Black"
                                                     Margin="10,0"
-                                                        Text="{Binding Name}"/>
+                                                        Text="{Binding Name}"/> 
                                                   <Label
                                                         Grid.Row="0"
                                                     HorizontalTextAlignment="Center"
@@ -67,7 +67,15 @@
                                                         VerticalOptions="Center"
                                                         TextColor="Black"
                                                     Margin="10,0"
-                                                        Text="{Binding DateCreated,StringFormat='{0:dd/MM/yyyy HH:mm:ss}'}"/>    
+                                                        Text="{Binding DateCreated,StringFormat='{0:dd/MM/yyyy HH:mm:ss}'}"/>
+                                                  <Label
+                                                        Grid.Row="0"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="8"
+                                                        VerticalOptions="Center"
+                                                        TextColor="{ Binding ColorStatusAssign}"
+                                                    Margin="10,0"
+                                                        Text="{Binding StatusAssign}"/>    
                                                   <StackLayout
                                                       Orientation="Horizontal">
                                                       <Button

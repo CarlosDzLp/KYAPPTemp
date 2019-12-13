@@ -136,15 +136,6 @@
                                         HorizontalOptions="Center"
                                         VerticalOptions="Center"
                                         ImageSource="ic_delete"/>
-                                    <Button
-                                        Command="{Binding BindingContext.UpdateServiceCommand, Source={x:Reference listservice}}"
-                                        CommandParameter="{Binding .}"
-                                        HeightRequest="40"
-                                        WidthRequest="40"
-                                        BackgroundColor="#0CB392"
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center"
-                                        ImageSource="ic_update"/>
                                  </StackLayout> 
                             </Grid>
                             </StackLayout>                           

@@ -35,7 +35,7 @@
                                                         HeightRequest="80"
                                                         WidthRequest="80"
                                                         Grid.Row="0"
-                                                        Source="{Binding Icon,Converter={StaticResource imageconvert}}"/>
+                                                        Source="{Binding IconString}"/>
                                                     <Label
                                                         Grid.Row="0"
                                                     HorizontalTextAlignment="Center"
@@ -52,7 +52,16 @@
                                                         VerticalOptions="Center"
                                                         TextColor="Black"
                                                     Margin="10,0"
-                                                        Text="{Binding DateCreated,StringFormat='{0:dd/MM/yyyy HH:mm:ss}'}"/>    
+                                                        Text="{Binding DateCreated,StringFormat='{0:dd/MM/yyyy HH:mm:ss}'}"/>
+                                                  <Button
+                                        Command="{Binding BindingContext.MessageUserCommand, Source={x:Reference CollectionView}}"
+                                        CommandParameter="{Binding .}"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        BackgroundColor="#0CB392"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center"
+                                        ImageSource="ic_message"/>
                                               </StackLayout>
                                           </Frame>
                                       </DataTemplate>

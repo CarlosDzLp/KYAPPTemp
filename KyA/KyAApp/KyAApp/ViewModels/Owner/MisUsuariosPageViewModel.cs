@@ -27,13 +27,13 @@ namespace KyAApp.ViewModels.Owner
         {
             LoadUser();
             SelectedUserCommand = new Command<UserModel>(SelectedUserCommandExecuted);
+            MessageUserCommand = new Command<UserModel>(MessageUserCommandExecuted);
         }
-
-        
         #endregion
 
         #region Command
         public ICommand SelectedUserCommand { get; set; }
+        public ICommand MessageUserCommand { get; set; }
         #endregion
 
         #region Methods
@@ -74,6 +74,17 @@ namespace KyAApp.ViewModels.Owner
         {
             //mostrar datos solo de lectura
             await PopupNavigation.Instance.PushAsync(new Views.Owner.UserPagePopup(use));
+        }
+        private async void MessageUserCommandExecuted(UserModel obj)
+        {
+            try
+            {
+                await NavigationPushModalAsync(new Views.Owner.MessageOwnerUserPage(obj));
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
         #endregion
     }

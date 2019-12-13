@@ -3,6 +3,7 @@ using System.Windows.Input;
 using KyAApp.DataBase;
 using KyAApp.Helpers;
 using KyAApp.Models;
+using KyAApp.Models.Authenticate;
 using KyAApp.Models.Owner;
 using KyAApp.Models.User;
 using KyAApp.Service;
@@ -41,13 +42,19 @@ namespace KyAApp.ViewModels.Owner
         {
             IsPassword = true;
             Icon = "visibility_on";
-            Owner = DbContext.Instance.GetOwner();
-            Owner.Password = Encrypt.DeCrypt(Owner.Password);
-            Owner.User = Encrypt.DeCrypt(Owner.User);
-            ImageConvert = Owner.Icon;
+            LoadImage();
             UpdateOwnerCommand = new Command(UpdateOwnerCommandExecuted);
             ImageCommand = new Command(ImageCommandExecuted);
             ImagePasswordCommand = new Command(ImagePasswordCommandExecuted);
+        }
+        private void LoadImage()
+        {
+            Owner = DbContext.Instance.GetOwner();           
+            ImageConvert = "http://rentapp.carlosdiaz.com.elpumavp.arvixevps.com/Image/" + Owner.IconString;
+            var password = Encrypt.DeCrypt(Owner.Password);
+            var user = Encrypt.DeCrypt(Owner.User);
+            Owner.Password = password;
+            Owner.User = user;
         }
         #endregion
 
@@ -88,11 +95,14 @@ namespace KyAApp.ViewModels.Owner
                     {
                         if(ImageConvert != null)
                         {
-                            Owner.Icon = ImageConvert;
+                            if (!ImageConvert.Contains("http://rentapp.carlosdiaz.com.elpumavp.arvixevps.com/Image"))
+                            {
+                                Owner.Icon = Convert.FromBase64String(ImageConvert);
+                            }                          
                         }
                         Owner.User = Encrypt.Crypt(Owner.User);
                         Owner.Password = Encrypt.Crypt(Owner.Password);
-                        Show("actualizando datos...");
+                        Show("Actualizando datos...");
                         var response = await client.Put<ListResponse, OwnerModel>(Owner, "owner/updateowner");
                         Hide();
                         if (response != null)
@@ -100,7 +110,23 @@ namespace KyAApp.ViewModels.Owner
                             if(response.Result && response.Count > 0)
                             {
                                 SnackSucces("Datos actualizados", "KYA", Helpers.TypeSnackBar.Top);
-                                DbContext.Instance.InsertOwner(Owner);
+                                var device = DbContext.Instance.GetDeviceToken();
+                                var auth = new AuthenticateModel();
+                                auth.User = Owner.User;
+                                auth.Password = Owner.Password;
+                                auth.PlayerId = device.PlayerId;
+                                auth.PushToken = device.PushToken;
+                                var responseOwner = await client.Post<Models.Owner.Owner, AuthenticateModel>(auth, "owner/selowner");
+                                if(responseOwner != null)
+                                {
+                                    if(responseOwner.Result != null && responseOwner.Count > 0)
+                                    {
+                                        DbContext.Instance.InsertOwner(responseOwner.Result);
+                                        LoadImage();
+                                        MessagingCenter.Send<App>((App)Xamarin.Forms.Application.Current, "owner");
+                                    }
+                                }
+                                
                             }
                         }
                         else
@@ -134,11 +160,13 @@ namespace KyAApp.ViewModels.Owner
                     string action = await App.Current.MainPage.DisplayActionSheet("", "Cancelar", null, "Galeria", "Camara");
                     if(action == "Camara")
                     {
-                        ImageConvert = await PhotoCamera.TakePhoto();
+                        var img = await PhotoCamera.TakePhoto();
+                        ImageConvert = Convert.ToBase64String(img);
                     }
                     else if(action == "Galeria")
                     {
-                        ImageConvert = await PhotoCamera.PickPhoto();
+                        var img = await PhotoCamera.PickPhoto();
+                        ImageConvert = Convert.ToBase64String(img);
                     }
                     else
                     {

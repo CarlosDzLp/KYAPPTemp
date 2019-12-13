@@ -48,6 +48,11 @@
     <Folder Include="Models\Rooms\" />
     <Folder Include="Behaviors\" />
     <Folder Include="Models\Service\" />
+    <Folder Include="Models\AssignRoomUser\" />
+    <Folder Include="Models\MonthlyPayment\" />
+    <Folder Include="Models\Surcharges\" />
+    <Folder Include="Controls\Templates\" />
+    <Folder Include="Models\Message\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="KyAApp.Views.Administrator.Message"
+    xmlns:pages="clr-namespace:KyAApp.Views.Administrator"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:controls="clr-namespace:KyAApp.Controls"
+    xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    BarBackgroundColor="White"
+    BarTextColor="Black"
+    Title="Mensajes"
+    BackgroundColor="White"
+    android:TabbedPage.BarItemColor="Black"
+    android:TabbedPage.BarSelectedItemColor="#0CB392">
+    <TabbedPage.Children>
+        <ContentPage
+            IconImageSource="owner"
+            Title="Propietarios">
+            <controls:CustomListView
+                x:Name="CollectionView"
+                ItemsSource="{Binding ListOwner}"
+                SelectedItemCommand="{Binding SelectedOwner}"
+                VerticalScrollBarVisibility="Never"
+                BackgroundColor="Transparent"
+                SeparatorVisibility="None"
+                HasUnevenRows="True">
+                <controls:CustomListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                BackgroundColor="White"
+                                Margin="5"
+                                HasShadow="True"
+                                CornerRadius="10"
+                                Padding="0">
+                                <Grid
+                                    Margin="10"
+                                    ColumnSpacing="0"
+                                    RowSpacing="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout
+                                        Grid.Column="0"
+                                        Spacing="0">
+                                        <abstractions:CircleImage
+                                            HeightRequest="50"
+                                            WidthRequest="50"
+                                            Source="{Binding IconString}"/> 
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Column="1"
+                                        Spacing="0"
+                                        VerticalOptions="Center"
+                                        Grid.Row="0">
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="18"
+                                            FontAttributes="Bold"
+                                            VerticalTextAlignment="Center"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="{Binding Name}"/> 
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Column="2"
+                                        Spacing="0"
+                                        VerticalOptions="Center"
+                                        Grid.Row="0">
+                                        <Image
+                                            Source="ic_arrow_left"/> 
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </controls:CustomListView.ItemTemplate>                               
+            </controls:CustomListView>
+        </ContentPage>
+        <ContentPage
+            IconImageSource="ic_user"
+            Title="Usuarios">
+            <controls:CustomListView
+                ItemsSource="{Binding ListUser}"
+                VerticalScrollBarVisibility="Never"
+                SelectedItemCommand="{Binding SelectedUser}"
+                BackgroundColor="Transparent"
+                SeparatorVisibility="None"
+                HasUnevenRows="True">
+                <controls:CustomListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                BackgroundColor="White"
+                                Margin="5"
+                                HasShadow="True"
+                                CornerRadius="10"
+                                Padding="0">
+                                <Grid
+                                    Margin="10"
+                                    ColumnSpacing="0"
+                                    RowSpacing="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout
+                                        Grid.Column="0"
+                                        Spacing="0">
+                                        <abstractions:CircleImage
+                                            HeightRequest="50"
+                                            WidthRequest="50"
+                                            Source="{Binding IconString}"/> 
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Column="1"
+                                        Spacing="0"
+                                        VerticalOptions="Center"
+                                        Grid.Row="0">
+                                        <Label                                       
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="18"
+                                            FontAttributes="Bold"
+                                            VerticalTextAlignment="Center"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Margin="0,0"
+                                            Text="{Binding Name}"/> 
+                                    </StackLayout>
+                                    <StackLayout
+                                        Grid.Column="2"
+                                        Spacing="0"
+                                        VerticalOptions="Center"
+                                        Grid.Row="0">
+                                        <Image
+                                            Source="ic_arrow_left"/> 
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </controls:CustomListView.ItemTemplate>                               
+            </controls:CustomListView>
+        </ContentPage>
+    </TabbedPage.Children>   
+</TabbedPage>

@@ -45,6 +45,9 @@ namespace KyAApp.Models.Rooms
         [JsonIgnore]
         public string StatusRoom { get; set; }
 
+        [JsonIgnore]
+        public string DescriptionRoomService { get; set; }
+
     }
 
     public class ListRoomsModel

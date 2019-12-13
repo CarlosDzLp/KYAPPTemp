@@ -1,12 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using Newtonsoft.Json;
 using SQLite;
+using Xamarin.Forms;
 
 namespace KyAApp.Models.User
 {
-    public class UserModel
+    public class UserModel : INotifyPropertyChanged
     {
+        [JsonIgnore]
+        private string _user;
+        [JsonIgnore]
+        private string _password;
         [JsonProperty("IdOwner")]
         public Guid? IdOwner { get; set; }
 
@@ -23,10 +30,11 @@ namespace KyAApp.Models.User
         public string Phone { get; set; }
 
         [JsonProperty("User")]
-        public string User { get; set; }
+        public string User
+        { get { return _user; } set { SetProperty(ref _user, value); } }
 
         [JsonProperty("Password")]
-        public string Password { get; set; }
+        public string Password { get { return _password; } set { SetProperty(ref _password, value); } }
 
         [JsonProperty("Icon")]
         public byte[] Icon { get; set; }
@@ -46,6 +54,31 @@ namespace KyAApp.Models.User
         [JsonProperty("UserId"),PrimaryKey]
         public Guid? UserId { get; set; }
 
+        [JsonProperty("StatusAssignUser")]
+        public int StatusAssignUser { get; set; }
+
+        [JsonIgnore]
+        public string StatusAssign { get; set; }
+
+        [JsonIgnore,Ignore]
+        public Color ColorStatusAssign { get; set; }
+
+        #region NotifyChanged
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        protected virtual bool SetProperty<T>(ref T field, T value, [CallerMemberName] string propertyName = null)
+        {
+            if (object.Equals(field, value)) { return false; }
+
+            field = value;
+            this.OnPropertyChanged(propertyName);
+            return true;
+        }
+        #endregion
     }
 
     public class ListUserModel

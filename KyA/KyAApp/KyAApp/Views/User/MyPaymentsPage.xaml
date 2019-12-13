@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+    xmlns:behavior="clr-namespace:KyAApp.Behaviors"
+    x:Class="KyAApp.Views.User.MyPaymentsPage"
+    BackgroundColor="White"
+    Title="Mis Pagos">
+    <ContentPage.Content>
+        <flv:FlowListView
+                Grid.Row="1"
+                x:Name="CollectionView"
+                VerticalScrollBarVisibility="Never"
+                                 FlowItemsSource="{Binding ListMonthly}"
+                                 BackgroundColor="Transparent"
+                                 FlowColumnCount="1"
+                FlowItemTappedCommand="{Binding SelectedMonthlyCommand}"
+                                 FlowColumnExpand="None"
+                                 SeparatorVisibility="None"
+                                 HasUnevenRows="True">
+                                 <flv:FlowListView.FlowColumnTemplate>
+                                      <DataTemplate>
+                                              <Frame
+                                              BackgroundColor="White"
+                                              Margin="5"
+                                              HasShadow="True"
+                                              CornerRadius="10"
+                                              Padding="0">
+                                              <StackLayout
+                                                Margin="10">
+                                                  <Grid
+                                                      ColumnSpacing="0"
+                                                      RowSpacing="0">
+                                                      <Grid.ColumnDefinitions>
+                                                          <ColumnDefinition Width="*"/>
+                                                          <ColumnDefinition Width="*"/>
+                                                      </Grid.ColumnDefinitions>
+                                                      <Grid.RowDefinitions>
+                                                          <RowDefinition Height="Auto"/>
+                                                          <RowDefinition Height="Auto"/>
+                                                          <RowDefinition Height="Auto"/>
+                                                          <RowDefinition Height="Auto"/>
+                                                      </Grid.RowDefinitions>
+                                                      <StackLayout
+                                                          Grid.Column="0"
+                                                          Grid.ColumnSpan="2"
+                                                          Grid.Row="0"
+                                                          Orientation="Vertical"
+                                                          Spacing="0">
+                                                      <Label
+                                                        Grid.Row="0"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="12"
+                                                        FontAttributes="Bold"
+                                                        VerticalOptions="Center"
+                                                        TextColor="Black"
+                                                    Margin="10,0"
+                                                        Text="Habitacion"/>
+                                                    <Label
+                                                        Grid.Row="0"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="10"
+                                                        VerticalOptions="Center"
+                                                        TextColor="Black"
+                                                    Margin="10,0"
+                                                        Text="{Binding NameRoom}"/> 
+                                                  </StackLayout>
+                                                      <StackLayout Grid.Column="0" Grid.Row="1" Spacing="0">
+                                                      <Label
+                                                        Grid.Row="0"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="10"
+                                                          FontAttributes="Bold"
+                                                        VerticalOptions="Center"
+                                                        TextColor="Black"
+                                                        Text="Mensualidad"/>
+                                                      <Label
+                                                        Grid.Row="0"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="10"
+                                                        VerticalOptions="Center"
+                                                        TextColor="Black"
+                                                        Text="{Binding DateMonthlyPayment,StringFormat='{0:dd/MM/yyyy}'}"/>
+                                                  </StackLayout>
+                                                      <StackLayout Grid.Column="1" Spacing="0"
+                                                                   Grid.Row="1">
+                                                      <Label
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="10"
+                                                          TextColor="Black"
+                                                          FontAttributes="Bold"
+                                                        VerticalOptions="Center"
+                                                        Text="Usuario"/>
+                                                      <Label
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="10"
+                                                          TextColor="Black"
+                                                        VerticalOptions="Center"
+                                                        Text="{Binding NameUser}"/>
+                                                  </StackLayout>
+                                                      <StackLayout Grid.Column="0" Grid.Row="2" Spacing="0">
+                                                      <Label
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="10"
+                                                          FontAttributes="Bold"
+                                                        TextColor="Black"
+                                                          VerticalOptions="Center"
+                                                        Text="Propietario"/>
+                                                      <Label
+                                                          TextColor="Black"
+                                                    HorizontalTextAlignment="Center"
+                                                        FontSize="10"
+                                                        VerticalOptions="Center"
+                                                        Text="{Binding NameOwner}"/>
+                                                  </StackLayout>
+                                                      <StackLayout Grid.Column="1" Grid.Row="2" Spacing="0">
+                                                      <Label
+                                           TextColor="Black"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                                          FontSize="10"
+                                                          FontAttributes="Bold"
+                                                          Text="Price"/>
+                                                      <Label
+                                           TextColor="Black"
+                                                          FontSize="10"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center">
+                                           <Label.Behaviors>
+                                                <behavior:FloatingAmountBehavior Text="{Binding Price}"/>
+                                            </Label.Behaviors>
+                                        </Label>
+                                                      
+                                                  </StackLayout>
+                                                      <StackLayout
+                                                          Spacing="0"
+                                                          Margin="0,5,0,0"
+                                                          Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3"
+                                                      HorizontalOptions="Center">
+                                                          <StackLayout>
+                                                                  <Label
+                                                                      HorizontalTextAlignment="Center"
+                                                                      FontSize="10"
+                                                                      TextColor="Red"
+                                                                      Text="{Binding StringStatus}"/>
+                                                              <Label
+                                                                      HorizontalTextAlignment="Center"
+                                                                      FontSize="12"
+                                                                  FontAttributes="Bold"
+                                                                      TextColor="Black"
+                                                                      Text="Recargos"/>
+                                                              <Label
+                                                                      HorizontalTextAlignment="Center"
+                                                                      FontSize="10"
+                                                                      TextColor="Black"
+                                                                      Text="{Binding Surcharges}"/>
+                                                              </StackLayout>
+                                                  </StackLayout>
+                                                  </Grid>
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                                  
+                                              </StackLayout>
+                                          </Frame>
+                                      </DataTemplate>
+                                 </flv:FlowListView.FlowColumnTemplate>                               
+                            </flv:FlowListView>
+    </ContentPage.Content>
+</ContentPage>

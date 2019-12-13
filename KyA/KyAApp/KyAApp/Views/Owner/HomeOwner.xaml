@@ -30,7 +30,18 @@
         </Grid>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <StackLayout>           
+        <StackLayout>
+            <Button
+                Padding="10,0"
+                Margin="0,10,10,0"
+                HorizontalOptions="End"
+                Text="Chat administrador"
+                BorderWidth="2"
+                CornerRadius="0"
+                BackgroundColor="White"
+                BorderColor="Black"
+                Command="{Binding ChatAdminCommand}"
+                TextColor="Black"/>
             <controls:EmptyView
                 LoadingCommand="{Binding RefreshCommand}"
                 TextButton="No hay documentos"

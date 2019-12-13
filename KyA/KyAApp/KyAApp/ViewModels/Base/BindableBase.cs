@@ -13,8 +13,8 @@ namespace KyAApp.ViewModels.Base
     public class BindableBase : INotifyPropertyChanged
     {
         #region Properties
-        private byte[] _imageConvert;
-        public byte[]ImageConvert
+        private string _imageConvert;
+        public string ImageConvert
         {
             get { return _imageConvert; }
             set { SetProperty(ref _imageConvert, value); }

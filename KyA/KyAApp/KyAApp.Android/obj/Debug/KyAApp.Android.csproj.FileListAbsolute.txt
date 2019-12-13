@@ -2561,3 +2561,15 @@
 /Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
 /Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/KyAApp.Android.csprojAssemblyReference.cache
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable-xxxhdpi/ic_arrow_down_white.png
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable-xxxhdpi/ic_list.png
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable-xxhdpi/ic_arrow_down_white.png
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable-xxhdpi/ic_list.png
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable-xhdpi/ic_arrow_down_white.png
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable-xhdpi/ic_list.png
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable-hdpi/ic_arrow_down_white.png
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable-hdpi/ic_list.png
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable/ic_arrow_down_white.xml
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable/ic_list.xml
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable/monthly.png
+/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/res/drawable/serviceas.png

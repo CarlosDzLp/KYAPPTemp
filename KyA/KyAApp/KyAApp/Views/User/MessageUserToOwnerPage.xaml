@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:KyAApp.Controls"
+    x:Class="KyAApp.Views.User.MessageUserToOwnerPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <controls:DataTemplateUserToOwner x:Key="MessageTemplateSelector"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <controls:CustomListView Grid.Row="0" 
+                 ItemTemplate="{StaticResource MessageTemplateSelector}" 
+                 ItemsSource="{Binding ListMessage}" 
+                 Margin="0"
+                 Rotation="180"
+                                     VerticalScrollBarVisibility="Never"
+                 FlowDirection="RightToLeft"
+                 HasUnevenRows="True"
+                 x:Name="ChatList"
+                 VerticalOptions="FillAndExpand" 
+                 SeparatorColor="Transparent">
+            </controls:CustomListView>
+            <Frame
+                Grid.Row="1"
+                Margin="10,0,10,10"
+                Padding="0"
+                CornerRadius="15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout
+                        Padding="10,0,0,0"
+                        Grid.Column="0">
+                        <Entry
+                            Text="{Binding Message}"
+                            HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>                   
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Padding="8"
+                        Grid.Column="1">
+                        <Image                    
+                            Source="ic_image"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ImageCommand}"/>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Padding="8"
+                        Grid.Column="2">
+                        <Image
+                            Source="ic_send"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SendCommand}"/>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>                   
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

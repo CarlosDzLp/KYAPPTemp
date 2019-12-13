@@ -11,9 +11,7 @@ namespace KyAApp.Views.Owner
         public UserPagePopup(Models.User.UserModel use)
         {
             InitializeComponent();
-            var result = ImageSource.FromStream(
-                () => new MemoryStream(use.Icon));
-            img.Source = (result==null)?"user":result;
+            img.Source = (string.IsNullOrEmpty(use.IconString)) ? "user" : "http://rentapp.carlosdiaz.com.elpumavp.arvixevps.com/Image/" + use.IconString;
             name.Text = use.Name;
             address.Text = use.Address;
             phone.Text = use.Phone;

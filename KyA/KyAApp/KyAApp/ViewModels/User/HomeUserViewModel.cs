@@ -6,6 +6,7 @@ using KyAApp.Helpers;
 using KyAApp.Models.Documents;
 using System.Collections.ObjectModel;
 using KyAApp.Service;
+using KyAApp.DataBase;
 
 namespace KyAApp.ViewModels.User
 {
@@ -43,6 +44,14 @@ namespace KyAApp.ViewModels.User
             LoadDocument();
             AccountCommand = new Command(AccountCommandExecuted);
             SelectedDocumentCommand = new Command<DocumentsModel>(SelectedDocumentCommandExecuted);
+            ChatAdminCommand = new Command(ChatAdminCommandExecuted);
+            var user = DbContext.Instance.GetUser();
+            ImageConvert = "http://rentapp.carlosdiaz.com.elpumavp.arvixevps.com/Image/" + user.IconString;
+            MessagingCenter.Subscribe<App>((App)Xamarin.Forms.Application.Current, "user", (s) =>
+            {
+                var users = DbContext.Instance.GetUser();
+                ImageConvert = "http://rentapp.carlosdiaz.com.elpumavp.arvixevps.com/Image/" + users.IconString;
+            });
         }
         #endregion
 
@@ -79,7 +88,7 @@ namespace KyAApp.ViewModels.User
                 {
                     IsVisibleEmpty = true;
                     IsVisibleList = false;
-                    SnackError("hubo un error intentelo mas tarde", "Error", TypeSnackBar.Top);
+                    SnackError("Hubo un error intentelo mas tarde", "Error", TypeSnackBar.Top);
                 }
             }
             catch (Exception ex)
@@ -92,6 +101,7 @@ namespace KyAApp.ViewModels.User
         #region Command
         public ICommand AccountCommand { get; set; }
         public ICommand SelectedDocumentCommand { get; set; }
+        public ICommand ChatAdminCommand { get; set; }
         #endregion
 
         #region CommandExecuted
@@ -99,6 +109,11 @@ namespace KyAApp.ViewModels.User
         {
             //abre un poup para modificar sus datos personnales
             await NavigationPushModalAsync(new Views.User.AccountUserPage());
+        }
+        private async void ChatAdminCommandExecuted()
+        {
+            var user = DbContext.Instance.GetUser();
+            await NavigationPushModalAsync(new Views.User.MessageUserPage());
         }
         #endregion
 

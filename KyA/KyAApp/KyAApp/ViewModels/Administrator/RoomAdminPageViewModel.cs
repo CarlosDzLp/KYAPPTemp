@@ -105,6 +105,7 @@ namespace KyAApp.ViewModels.Administrator
 
             }
         }
+
         private async void DeleteRoomCommandExecuted(RoomsModel obj)
         {
             if(obj.TypeStatusRoom == 0 || obj.TypeStatusRoom == 2)
@@ -112,7 +113,6 @@ namespace KyAApp.ViewModels.Administrator
                 bool answer = await App.Current.MainPage.DisplayAlert("Eliminar", $"Desea eliminar el cuarto: {obj.Name}", "Si", "No");
                 if (answer)
                 {
-                    var db = DbContext.Instance.GetAdministrator();
                     var response = await client.Delete<ListResponse>($"room/delroom?IdRoom={obj.IdRoom}&IdOwner={obj.IdOwner}");
                     if (response != null)
                     {
@@ -137,6 +137,7 @@ namespace KyAApp.ViewModels.Administrator
                 SnackError("No puedes eliminar un cuarto que esta ocupado", "Error", Helpers.TypeSnackBar.Top);
             }
         }
+
         private async void SelectedRoomExecuted(RoomsModel obj)
         {
             await PopupNavigation.Instance.PushAsync(new Views.Administrator.Popup.UpdateRoomAdminPopup(obj));

@@ -62,6 +62,7 @@ objectAnimator;obj/Debug/res/animator/iconspin.xml
 overshootInterpolator;/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/lp/1/jl/res/anim/interpolator_slight_overshoot.xml
 path;obj/Debug/res/drawable/ic_add.xml
 path;obj/Debug/res/drawable/ic_arrow_botom.xml
+path;obj/Debug/res/drawable/ic_arrow_down_white.xml
 path;obj/Debug/res/drawable/ic_arrow_left.xml
 path;obj/Debug/res/drawable/ic_assigmentroom.xml
 path;obj/Debug/res/drawable/ic_close.xml
@@ -70,6 +71,7 @@ path;obj/Debug/res/drawable/ic_done.xml
 path;obj/Debug/res/drawable/ic_email.xml
 path;obj/Debug/res/drawable/ic_error.xml
 path;obj/Debug/res/drawable/ic_image.xml
+path;obj/Debug/res/drawable/ic_list.xml
 path;obj/Debug/res/drawable/ic_menu.xml
 path;obj/Debug/res/drawable/ic_message.xml
 path;obj/Debug/res/drawable/ic_message_black.xml
@@ -133,6 +135,7 @@ translate;/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/lp/62/
 translate;/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/obj/Debug/lp/62/jl/res/anim/exittoright.xml
 vector;obj/Debug/res/drawable/ic_add.xml
 vector;obj/Debug/res/drawable/ic_arrow_botom.xml
+vector;obj/Debug/res/drawable/ic_arrow_down_white.xml
 vector;obj/Debug/res/drawable/ic_arrow_left.xml
 vector;obj/Debug/res/drawable/ic_assigmentroom.xml
 vector;obj/Debug/res/drawable/ic_close.xml
@@ -141,6 +144,7 @@ vector;obj/Debug/res/drawable/ic_done.xml
 vector;obj/Debug/res/drawable/ic_email.xml
 vector;obj/Debug/res/drawable/ic_error.xml
 vector;obj/Debug/res/drawable/ic_image.xml
+vector;obj/Debug/res/drawable/ic_list.xml
 vector;obj/Debug/res/drawable/ic_menu.xml
 vector;obj/Debug/res/drawable/ic_message.xml
 vector;obj/Debug/res/drawable/ic_message_black.xml

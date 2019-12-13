@@ -33,7 +33,9 @@ namespace KyAApp.ViewModels.User
             try
             {
                 ListMenu = new ObservableCollection<MenuModel>();
-
+                ListMenu.Add(new MenuModel { Icon = "", ID = 2, Title = "Mis Pagos", BackgroundColor = "#E65100" });
+                ListMenu.Add(new MenuModel { Icon = "", ID = 3, Title = "Mi Habitacion", BackgroundColor = "#E65100" });
+                ListMenu.Add(new MenuModel { Icon = "", ID = 4, Title = "Mensajes", BackgroundColor = "#E65100" });
                 ListMenu.Add(new MenuModel { Icon = "", ID = 5, Title = "Cerrar sesion", BackgroundColor = "#E65100" });
             }
             catch (Exception ex)
@@ -52,7 +54,19 @@ namespace KyAApp.ViewModels.User
         {
             try
             {
-                if (menu.ID == 5)
+                if (menu.ID == 2)
+                {
+                    await NavigationAsync(new Views.User.MyPaymentsPage());
+                }
+                else if (menu.ID == 3)
+                {
+                    await NavigationAsync(new Views.User.MyRoomPage());
+                }
+                else if (menu.ID == 4)
+                {
+                    await NavigationAsync(new Views.User.MessageUserToOwnerPage());
+                }
+                else if (menu.ID == 5)
                 {
                     DbContext.Instance.DeleteUser();
                     MainPage(new Views.Session.LoginPage());

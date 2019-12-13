@@ -170,7 +170,6 @@ android/support/v7/widget/RecyclerView$AdapterDataObserver.class
 android/support/design/widget/HeaderBehavior$FlingRunnable.class
 android/support/v4/provider/FontRequest.class
 android/support/v7/widget/TintContextWrapper.class
-android/support/v7/graphics/Palette.class
 com/google/firebase/internal/FirebaseAppHelper.class
 android/support/v7/widget/Toolbar$OnMenuItemClickListener.class
 com/google/android/gms/common/api/Scope.class
@@ -251,6 +250,7 @@ android/support/v4/app/LoaderManagerImpl.class
 com/google/android/gms/common/api/internal/StatusPendingResult.class
 android/support/v7/widget/RecyclerView$Orientation.class
 android/support/design/widget/BaseTransientBottomBar$8.class
+org/aviran/cookiebar2/CookieBarDismissListener$DismissType.class
 android/support/annotation/CheckResult.class
 android/support/v4/media/VolumeProviderCompat.class
 android/support/annotation/AnimRes.class
@@ -339,8 +339,8 @@ android/support/v4/graphics/drawable/IconCompat$IconType.class
 android/support/v4/net/ConnectivityManagerCompat.class
 android/support/annotation/RequiresPermission.class
 android/support/v4/view/ViewCompat$OnUnhandledKeyEventListenerWrapper.class
-android/support/v4/view/MenuItemCompat.class
 com/google/android/gms/common/config/GservicesValue.class
+android/support/v4/view/MenuItemCompat.class
 android/support/v7/appcompat/R$string.class
 android/support/v4/provider/FontsContractCompat.class
 android/support/design/bottomappbar/BottomAppBar$5.class
@@ -416,12 +416,11 @@ android/support/v4/app/NotificationCompat$MessagingStyle$Message.class
 android/support/v4/app/NotificationCompat$Builder.class
 android/support/v4/net/ConnectivityManagerCompat$RestrictBackgroundStatus.class
 android/support/v4/content/PermissionChecker.class
-android/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListener.class
 com/google/android/gms/common/util/SharedPreferencesUtils.class
+android/support/v4/view/accessibility/AccessibilityManagerCompat$AccessibilityStateChangeListener.class
 android/support/v4/media/MediaBrowserCompat.class
 android/support/v7/widget/RecyclerView$RecyclerViewDataObserver.class
 android/support/v7/widget/RecyclerView$ChildDrawingOrderCallback.class
-android/support/v7/media/MediaRouteDescriptor$Builder.class
 com/onesignal/WebViewManager$OSJavaScriptInterface.class
 android/support/v4/widget/ViewDragHelper$Callback.class
 android/support/design/widget/BaseTransientBottomBar$6.class
@@ -541,7 +540,6 @@ android/support/v4/content/res/FontResourcesParserCompat.class
 com/google/auto/value/AutoOneOf.class
 android/support/v7/widget/AppCompatImageHelper.class
 android/support/v4/view/AbsSavedState.class
-android/support/v7/media/MediaRouteDescriptor.class
 android/support/v4/util/LruCache.class
 android/support/v7/widget/AppCompatTextHelper.class
 android/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper.class
@@ -704,7 +702,6 @@ android/support/multidex/ZipUtil$CentralDirectory.class
 android/support/design/widget/FloatingActionButton$Size.class
 android/support/v7/app/ActionBarDrawerToggle.class
 android/support/v7/app/ActionBar$OnMenuVisibilityListener.class
-android/support/v7/graphics/Palette$Builder.class
 android/support/v4/app/AppOpsManagerCompat.class
 android/support/transition/Slide$CalculateSlideHorizontal.class
 android/support/v7/widget/DecorToolbar.class
@@ -764,6 +761,7 @@ com/airbnb/lottie/LottieComposition.class
 android/support/v7/widget/RecyclerViewAccessibilityDelegate.class
 com/ecocadiz/kyaapp/R$styleable.class
 android/support/v4/content/res/FontResourcesParserCompat$FamilyResourceEntry.class
+org/aviran/cookiebar2/CookieBar$Builder.class
 android/support/v4/content/res/FontResourcesParserCompat$FontFileResourceEntry.class
 android/support/design/widget/BottomSheetBehavior$2.class
 androidx/versionedparcelable/VersionedParcelable.class
@@ -789,6 +787,7 @@ android/support/v4/view/ViewPager$SimpleOnPageChangeListener.class
 android/support/v4/view/NestedScrollingChildHelper.class
 android/support/v4/view/OnApplyWindowInsetsListener.class
 android/support/v4/view/NestedScrollingParentHelper.class
+org/aviran/cookiebar2/CookieBarDismissListener.class
 android/support/design/R$style.class
 com/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException.class
 android/support/v7/widget/RecyclerView$ItemAnimatorRestoreListener.class

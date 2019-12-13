@@ -49,6 +49,16 @@ namespace KyAApp.ViewModels.Administrator
                         {
                             var img = (item.IconString == null || item.IconString == string.Empty) ? "user" : "http://rentapp.carlosdiaz.com.elpumavp.arvixevps.com/Image/" + item.IconString;
                             item.IconString = img;
+                            if(item.StatusAssignUser == 1)
+                            {
+                                item.StatusAssign = "Ocupado";
+                                item.ColorStatusAssign = Color.Red;
+                            }
+                            else
+                            {
+                                item.StatusAssign = "Libre";
+                                item.ColorStatusAssign = Color.Black;
+                            }
                             ListUser.Add(item);
                         }
                     }
@@ -74,6 +84,11 @@ namespace KyAApp.ViewModels.Administrator
         {
             try
             {
+                if(user.StatusAssignUser ==1)
+                {
+                    SnackError("No puedes eliminar un usuario que tenga un cuarto asignado", "Error", Helpers.TypeSnackBar.Top);
+                    return;
+                }
                 bool answer = await App.Current.MainPage.DisplayAlert("Eliminar", $"Desea eliminar al usuario: {user.Name}", "Si", "No");
                 if (answer)
                 {

@@ -90,6 +90,7 @@
                         <Entry
                             Text="{Binding Phone}"
                             Placeholder="Telefono"
+                            Keyboard="Telephone"
                             PlaceholderColor="Gray"
                             TextColor="Black"
                             Grid.Column="0"/>

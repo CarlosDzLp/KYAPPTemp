@@ -9,19 +9,35 @@ namespace KyAApp.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var file = value as byte[];
-            if (file == null)
+            var file = value as string;
+            if (file == string.Empty || string.IsNullOrWhiteSpace(file))
             {
                 return "user";
             }
             else
             {
-                ImageSource image = null;
-                var result = ImageSource.FromStream(
-                    () => new MemoryStream(file));
-                image = result;
+                if (file.Contains("http://rentapp.carlosdiaz.com.elpumavp.arvixevps.com/Image"))
+                {
+                    var img = file.Substring(59);
+                    if(string.IsNullOrWhiteSpace(img))
+                    {
+                        return "user";
+                    }
+                    else
+                    {
+                        return file;
+                    }                
+                }
+                else
+                {
+                    var img = System.Convert.FromBase64String(file);
+                    ImageSource image = null;
+                    var result = ImageSource.FromStream(
+                        () => new MemoryStream(img));
+                    image = result;
 
-                return image;
+                    return image;
+                }
             }
         }
 

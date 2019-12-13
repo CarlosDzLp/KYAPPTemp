@@ -7,6 +7,7 @@ using KyAApp.Helpers;
 using KyAApp.DataBase;
 using KyAApp.Service;
 using KyAApp.Models;
+using KyAApp.Models.Authenticate;
 
 namespace KyAApp.ViewModels.User
 {
@@ -39,17 +40,22 @@ namespace KyAApp.ViewModels.User
         {
             IsPassword = true;
             Icon = "visibility_on";
-            User = DbContext.Instance.GetUser();
-            ImageConvert = User.Icon;
-            User.User = Encrypt.DeCrypt(User.User);
-            User.Password = Encrypt.DeCrypt(User.Password);
+            LoadImage();
             UpdateUserCommand = new Command(UpdateUserCommandExecuted);
             ImageCommand = new Command(ImageCommandExecuted);
             ImagePasswordCommand = new Command(ImagePasswordCommandExecuted);
         }
 
 
-
+        private void LoadImage()
+        {
+            User = DbContext.Instance.GetUser();
+            ImageConvert = "http://rentapp.carlosdiaz.com.elpumavp.arvixevps.com/Image/" + User.IconString;
+            var user = Encrypt.DeCrypt(User.User);
+            var password = Encrypt.DeCrypt(User.Password);
+            User.User = user;
+            User.Password = password;
+        }
 
         #endregion
 
@@ -91,7 +97,10 @@ namespace KyAApp.ViewModels.User
                     {
                         if (ImageConvert != null)
                         {
-                            User.Icon = ImageConvert;
+                            if (!ImageConvert.Contains("http://rentapp.carlosdiaz.com.elpumavp.arvixevps.com/Image"))
+                            {
+                                User.Icon = Convert.FromBase64String(ImageConvert);
+                            }
                         }
                         User.Status = true;
                         User.User = Encrypt.Crypt(User.User);
@@ -104,7 +113,23 @@ namespace KyAApp.ViewModels.User
                             if (response.Result && response.Count > 0)
                             {
                                 SnackSucces("Datos actualizados", "KYA", Helpers.TypeSnackBar.Top);
-                                DbContext.Instance.InsertUser(User);
+                                var device = DbContext.Instance.GetDeviceToken();
+                                var auth = new AuthenticateModel();
+                                auth.User = User.User;
+                                auth.Password = User.Password;
+                                auth.PlayerId = device.PlayerId;
+                                auth.PushToken = device.PushToken;
+                                var responseUSer = await client.Post<Models.User.User, AuthenticateModel>(auth, "user/seluser");
+                                if(responseUSer != null)
+                                {
+                                    if(responseUSer.Result != null && responseUSer.Count > 0)
+                                    {
+                                        DbContext.Instance.InsertUser(responseUSer.Result);
+                                        LoadImage();
+                                        MessagingCenter.Send<App>((App)Xamarin.Forms.Application.Current, "user");
+                                    }
+                                }
+                                //
                             }
                         }
                         else
@@ -137,11 +162,13 @@ namespace KyAApp.ViewModels.User
                     string action = await App.Current.MainPage.DisplayActionSheet("", "Cancelar", null, "Galeria", "Camara");
                     if (action == "Camara")
                     {
-                        ImageConvert = await PhotoCamera.TakePhoto();
+                        var img  = await PhotoCamera.TakePhoto();
+                        ImageConvert = Convert.ToBase64String(img);
                     }
                     else if (action == "Galeria")
                     {
-                        ImageConvert = await PhotoCamera.PickPhoto();
+                        var img = await PhotoCamera.PickPhoto();
+                        ImageConvert = Convert.ToBase64String(img);
                     }
                     else
                     {

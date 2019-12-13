@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace KyAApp.Controls
 {
-    public class CustomListView : ListView
+    public class CustomListView : ListView ,IDisposable
     {
         public static BindableProperty SelectedItemCommandProperty =
             BindableProperty.Create(
@@ -45,31 +45,6 @@ namespace KyAApp.Controls
             }
         }
 
-        public void ScrollToFirst()
-        {
-
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                try
-                {
-                    if (ItemsSource != null && ItemsSource.Cast<object>().Count() > 0)
-                    {
-                        var msg = ItemsSource.Cast<object>().FirstOrDefault();
-                        if (msg != null)
-                        {
-                            ScrollTo(msg, ScrollToPosition.Start, false);
-                        }
-
-                    }
-                }
-                catch (Exception ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.ToString());
-                }
-
-            });
-        }
-
         public void ScrollToLast()
         {
             Device.BeginInvokeOnMainThread(() =>
@@ -92,6 +67,11 @@ namespace KyAApp.Controls
                 }
 
             });
+        }
+
+        public void Dispose()
+        {
+            this.Dispose();
         }
     }
 }

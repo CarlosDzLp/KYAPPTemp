@@ -6,6 +6,7 @@ using KyAApp.Service;
 using System.Collections.ObjectModel;
 using KyAApp.Models.Documents;
 using KyAApp.Helpers;
+using KyAApp.DataBase;
 
 namespace KyAApp.ViewModels.Owner
 {
@@ -42,9 +43,19 @@ namespace KyAApp.ViewModels.Owner
         public HomeOwnerViewModel()
         {
             LoadDocument();
+            var own = DbContext.Instance.GetOwner();
+            ImageConvert = "http://rentapp.carlosdiaz.com.elpumavp.arvixevps.com/Image/" + own.IconString;
             AccountCommand = new Command(AccountCommandExecuted);
             SelectedDocumentCommand = new Command<DocumentsModel>(SelectedDocumentCommandExecuted);
+            ChatAdminCommand = new Command(ChatAdminCommandExecuted);
+            MessagingCenter.Subscribe<App>((App)Xamarin.Forms.Application.Current, "owner", (s) =>
+            {
+                var owner = DbContext.Instance.GetOwner();
+                ImageConvert= "http://rentapp.carlosdiaz.com.elpumavp.arvixevps.com/Image/" + owner.IconString;
+            });
         }
+
+        
         #endregion
 
         #region Methods
@@ -93,6 +104,7 @@ namespace KyAApp.ViewModels.Owner
         #region Command
         public ICommand AccountCommand { get; set; }
         public ICommand SelectedDocumentCommand { get; set; }
+        public ICommand ChatAdminCommand { get; set; }
         #endregion
 
         #region CommandExecuted
@@ -100,6 +112,10 @@ namespace KyAApp.ViewModels.Owner
         {
             //abre un poup para modificar sus datos personnales
             await NavigationPushModalAsync(new Views.Owner.AccountOwnerPage());
+        }
+        private async void ChatAdminCommandExecuted()
+        {
+            await NavigationPushModalAsync(new Views.Owner.MessageOwnerPage());
         }
         #endregion
 

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="KyAApp.Controls.Templates.OutgoingViewCell">
+    <Frame BackgroundColor="White"
+            Padding="10"
+            Rotation="180"
+            FlowDirection="LeftToRight"
+            HasShadow="True"
+           CornerRadius="10"
+            Margin="80,10,10,10">
+        <StackLayout  Spacing="0">
+            <Label Text="{Binding Message}"
+                  TextColor="Black"/>
+            <Label TextColor="Black" FontSize="10" HorizontalOptions="Start" Text="{Binding DateCreated,StringFormat='{0:dd/MM/yyyy hh:mm:ss}'}"/>
+        </StackLayout>
+           
+        </Frame>
+</ViewCell>
