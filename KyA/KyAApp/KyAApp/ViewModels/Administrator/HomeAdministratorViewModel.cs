@@ -218,6 +218,7 @@ namespace KyAApp.ViewModels.Administrator
 
             }
         }
+
         private async void SaveDocumentCommandExecuted()
         {
             try
@@ -237,6 +238,13 @@ namespace KyAApp.ViewModels.Administrator
                     SnackError("Debe agregar un nombre al archivo", "Error", TypeSnackBar.Top);
                     return;
                 }
+                if(File.Length > 7000001)
+                {
+                    File = null;
+                    Toast("El archivo supera los 7 MB");
+                    return;
+                }
+
                 Show("Enviando documento...");
                 var owner = (SelectedOwner.IdOwner == Guid.Empty) ? null : SelectedOwner.IdOwner;
                 var admin = DbContext.Instance.GetAdministrator();
@@ -276,6 +284,7 @@ namespace KyAApp.ViewModels.Administrator
                 Hide();
             }
         }
+
         private async void SelectedDocumentCommandExecuted(DocumentsModel obj)
         {
             await NavigationPushModalAsync(new Views.Administrator.DocumentsPage(obj));

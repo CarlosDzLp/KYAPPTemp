@@ -101,21 +101,6 @@
                                                   </StackLayout>
                                                       <StackLayout Grid.Column="0" Grid.Row="2" Spacing="0">
                                                       <Label
-                                                    HorizontalTextAlignment="Center"
-                                                        FontSize="10"
-                                                          FontAttributes="Bold"
-                                                        TextColor="Black"
-                                                          VerticalOptions="Center"
-                                                        Text="Propietario"/>
-                                                      <Label
-                                                          TextColor="Black"
-                                                    HorizontalTextAlignment="Center"
-                                                        FontSize="10"
-                                                        VerticalOptions="Center"
-                                                        Text="{Binding NameOwner}"/>
-                                                  </StackLayout>
-                                                      <StackLayout Grid.Column="1" Grid.Row="2" Spacing="0">
-                                                      <Label
                                            TextColor="Black"
                                             HorizontalOptions="Center"
                                             VerticalOptions="Center"
@@ -141,8 +126,8 @@
                                                           <StackLayout>
                                                                   <Label
                                                                       HorizontalTextAlignment="Center"
-                                                                      FontSize="10"
-                                                                      TextColor="Red"
+                                                                      FontSize="12"
+                                                                      TextColor="{Binding ColorMothly}"
                                                                       Text="{Binding StringStatus}"/>
                                                               <Label
                                                                       HorizontalTextAlignment="Center"

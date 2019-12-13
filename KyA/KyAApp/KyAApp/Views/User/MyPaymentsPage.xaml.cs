@@ -67,7 +67,13 @@ namespace KyAApp.Views.User
                             }
                             if (item.StatusActivePay.Value)
                             {
+                                item.ColorMothly = Color.Red;
                                 item.StringStatus = "Mensualidad actual";
+                            }
+                            else
+                            {
+                                item.ColorMothly = Color.Black;
+                                item.StringStatus = "Mensualidad Pagada";
                             }
                             ListMonthly.Add(item);
                         }

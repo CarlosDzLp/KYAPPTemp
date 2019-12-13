@@ -1,11 +1,19 @@
 ﻿<Properties StartupConfiguration="{83733CF5-2457-4382-9B50-200A2C9B31C6}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.ItemProperties.KyAApp.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.DVR0219415003527" />
+  <MonoDevelop.Ide.ItemProperties.KyAApp.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.huawei" />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="KyA" expanded="True">
-            <Node name="KyAApp.Android" selected="True" />
+            <Node name="KyAApp" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="User" expanded="True">
+                  <Node name="MyPaymentsPage.xaml" expanded="True">
+                    <Node name="MyPaymentsPage.xaml.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>

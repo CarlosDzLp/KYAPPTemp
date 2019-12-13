@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using Xamarin.Forms;
 
 namespace KyAApp.Models.MonthlyPayment
 {
@@ -50,6 +51,9 @@ namespace KyAApp.Models.MonthlyPayment
 
         [JsonIgnore]
         public string Surcharges { get; set; }
+
+        [JsonIgnore]
+        public Color ColorMothly { get; set; }
     }
     public class ListMonthlyPaymentModel
     {
