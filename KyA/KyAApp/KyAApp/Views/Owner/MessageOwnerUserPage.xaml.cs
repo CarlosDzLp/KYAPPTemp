@@ -70,6 +70,7 @@ namespace KyAApp.Views.Owner
         {
             try
             {
+                IsBussy = true;
                 ListMessage = new ObservableCollection<MessageOwnerToUser>();
                 ListMessage.Clear();
                 var owner = DbContext.Instance.GetOwner();
@@ -97,9 +98,11 @@ namespace KyAApp.Views.Owner
                         }
                     }
                 }
+                IsBussy = false;
             }
             catch(Exception ex)
             {
+                IsBussy = false;
 
             }
         }

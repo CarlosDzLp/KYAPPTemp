@@ -43,6 +43,7 @@ namespace KyAApp.Views.User
         {
             try
             {
+                IsBussy = true;
                 ListRoom = new ObservableCollection<RoomsModel>();
                 ListRoom.Clear();
                 var user = DbContext.Instance.GetUser();
@@ -74,20 +75,11 @@ namespace KyAApp.Views.User
                         ListRoom.Add(FilterRoom);
                     }
                 }
-
-
-
-
-
-                
-                if (AssignmentRoomUser != null)
-                {
-                    
-                }               
+                IsBussy = false;             
             }
             catch(Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

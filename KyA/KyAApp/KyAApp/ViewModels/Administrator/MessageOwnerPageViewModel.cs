@@ -50,6 +50,7 @@ namespace KyAApp.ViewModels.Administrator
         {
             try
             {
+                IsBussy = true;
                 ListMessage = new ObservableCollection<MessageOwnerToAdmin>();
                 ListMessage.Clear();
                 var response = await client.Get<ListMessageOwnerToAdmin>($"messageownertoadmin/selmessageownertoadmin?IdOwner={Owner.IdOwner}");
@@ -76,10 +77,11 @@ namespace KyAApp.ViewModels.Administrator
                         }
                     }
                 }
+                IsBussy = false;
             }
             catch (Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

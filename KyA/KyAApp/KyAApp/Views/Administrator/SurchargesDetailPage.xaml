@@ -27,6 +27,9 @@
                 </Image>
             </Grid>
             <controls:CustomListView
+                IsPullToRefreshEnabled="True"
+                RefreshControlColor="#0CB392"
+                IsRefreshing="{Binding IsBussy}"
                 x:Name="CollectionView"
                 ItemsSource="{Binding ListSurchargeDetail}"
                 VerticalScrollBarVisibility="Never"

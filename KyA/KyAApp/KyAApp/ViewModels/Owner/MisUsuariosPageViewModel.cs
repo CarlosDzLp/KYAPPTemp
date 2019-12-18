@@ -41,6 +41,7 @@ namespace KyAApp.ViewModels.Owner
         {
             try
             {
+                IsBussy = true;
                 var owner = DbContext.Instance.GetOwner();
                 ListUser = new ObservableCollection<UserModel>();
                 ListUser.Clear();
@@ -61,10 +62,11 @@ namespace KyAApp.ViewModels.Owner
                 {
                     SnackError("Hubo un erro intentelo mas tarde", "Error", Helpers.TypeSnackBar.Top);
                 }
+                IsBussy = false;
             }
             catch (Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

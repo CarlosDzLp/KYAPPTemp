@@ -42,6 +42,7 @@ namespace KyAApp.ViewModels.Administrator
         {
             try
             {
+                IsBussy = true;
                 ListService = new ObservableCollection<ServiceModel>();
                 ListService.Clear();
                 var response = await client.Get<ListOwnerModel>($"administrator/selowner?status={true}");
@@ -68,10 +69,11 @@ namespace KyAApp.ViewModels.Administrator
                         }
                     }
                 }
+                IsBussy = false;
             }
             catch (Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

@@ -30,6 +30,7 @@ namespace KyAApp.ViewModels.Owner
         #region Methods
         private async void LoadRoom()
         {
+            IsBussy = true;
             ListRoom = new ObservableCollection<RoomsModel>();
             ListRoom.Clear();
             var owner = DbContext.Instance.GetOwner();
@@ -62,6 +63,8 @@ namespace KyAApp.ViewModels.Owner
             {
                 SnackError("Hubo un error intentelo mas tarde", "Error", Helpers.TypeSnackBar.Top);
             }
+            IsBussy = false;
+
         }
         #endregion
     }

@@ -5,15 +5,7 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="KyA" expanded="True">
-            <Node name="KyAApp" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="User" expanded="True">
-                  <Node name="MyPaymentsPage.xaml" expanded="True">
-                    <Node name="MyPaymentsPage.xaml.cs" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
+            <Node name="KyAApp.Android" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -22,7 +14,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="../../../KyAApp/KyAApp/ViewModels/Administrator/ServiceAdminPageViewModel.cs" line="37" offsetX="-1" offsetY="-1" expression="responseService" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageDetailAdminPageViewModel.cs" line="60" column="1" />
@@ -32,13 +24,13 @@
       <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/User/HomeUserPageViewModel.cs" line="70" column="1" />
       <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/Helpers/ConvertToBytetoPdf.cs" relfile="KyAApp/KyAApp.Android/Helpers/ConvertToBytetoPdf.cs" line="14" column="1" />
       <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/Helpers/ConvertToBytetoPdf.cs" relfile="KyAApp/KyAApp.Android/Helpers/ConvertToBytetoPdf.cs" line="27" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/ServiceAdminPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/ServiceAdminPageViewModel.cs" line="72" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/ServiceAdminPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/ServiceAdminPageViewModel.cs" line="74" column="1" />
       <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp.Android/BroadcastReceiverKyApp.cs" relfile="KyAApp/KyAApp.Android/BroadcastReceiverKyApp.cs" line="23" column="1" />
       <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Owner/AccountOwnerPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Owner/AccountOwnerPageViewModel.cs" line="148" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageUserPageViewModel.cs" line="158" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageUserPageViewModel.cs" line="171" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageOwnerPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageOwnerPageViewModel.cs" line="156" column="1" />
-      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/User/MessageUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/User/MessageUserPageViewModel.cs" line="138" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageUserPageViewModel.cs" line="160" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageUserPageViewModel.cs" line="173" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/Administrator/MessageOwnerPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/Administrator/MessageOwnerPageViewModel.cs" line="158" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/ViewModels/User/MessageUserPageViewModel.cs" relfile="KyAApp/KyAApp/ViewModels/User/MessageUserPageViewModel.cs" line="140" column="1" />
       <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/Controls/CustomListView.cs" relfile="KyAApp/KyAApp/Controls/CustomListView.cs" line="49" column="1" />
       <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/Controls/CustomListView.cs" relfile="KyAApp/KyAApp/Controls/CustomListView.cs" line="54" column="1" />
       <Breakpoint file="/Users/carlosdiaz/KYAPPTemp/KyA/KyAApp/KyAApp/Views/Owner/UserPagePopup.xaml.cs" relfile="KyAApp/KyAApp/Views/Owner/UserPagePopup.xaml.cs" line="12" column="1" />

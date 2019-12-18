@@ -60,6 +60,7 @@ namespace KyAApp.ViewModels.User
         {
             try
             {
+                IsBussy = true;
                 IsVisibleEmpty = false;
                 IsVisibleList = true;
                 ListDocument = new ObservableCollection<DocumentsModel>();
@@ -90,10 +91,11 @@ namespace KyAApp.ViewModels.User
                     IsVisibleList = false;
                     SnackError("Hubo un error intentelo mas tarde", "Error", TypeSnackBar.Top);
                 }
+                IsBussy = false;
             }
             catch (Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

@@ -31,6 +31,7 @@ namespace KyAApp.ViewModels.Owner
         {
             try
             {
+                IsBussy = true;
                 ListService = new ObservableCollection<ServiceModel>();
                 ListService.Clear();
                 var owner = DbContext.Instance.GetOwner();
@@ -46,10 +47,11 @@ namespace KyAApp.ViewModels.Owner
                         }
                     }
                 }
+                IsBussy = false;
             }
             catch (Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

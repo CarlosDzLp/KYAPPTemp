@@ -42,6 +42,7 @@ namespace KyAApp.ViewModels.Owner
         {
             try
             {
+                IsBussy = true;
                 var Owner = DbContext.Instance.GetOwner();
                 ListMessage = new ObservableCollection<MessageOwnerToAdmin>();
                 ListMessage.Clear();
@@ -69,10 +70,11 @@ namespace KyAApp.ViewModels.Owner
                         }
                     }
                 }
+                IsBussy = false;
             }
             catch (Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

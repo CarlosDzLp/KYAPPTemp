@@ -19,6 +19,12 @@ namespace KyAApp.ViewModels.Base
             get { return _imageConvert; }
             set { SetProperty(ref _imageConvert, value); }
         }
+        private bool _isBussy;
+        public bool IsBussy
+        {
+            get { return _isBussy; }
+            set { SetProperty(ref _isBussy, value); }
+        }
         #endregion
 
         #region NotifyChanged

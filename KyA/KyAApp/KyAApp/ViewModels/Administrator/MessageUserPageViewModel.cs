@@ -52,6 +52,7 @@ namespace KyAApp.ViewModels.Administrator
         {
             try
             {
+                IsBussy = true;
                 ListMessage = new ObservableCollection<MessageUserToAdmin>();
                 ListMessage.Clear();
                 var response = await client.Get<ListMessageUserToAdmin>($"messageusertoadmin/selmessageusertoadmin?userID={User.UserId}");
@@ -77,11 +78,12 @@ namespace KyAApp.ViewModels.Administrator
                             ListMessage.Add(item);
                         }
                     }
-                }                
+                }
+                IsBussy = false;
             }
             catch (Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

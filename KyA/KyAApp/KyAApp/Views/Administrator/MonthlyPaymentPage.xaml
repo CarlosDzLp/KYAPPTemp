@@ -103,6 +103,9 @@
                 </controls:ExpandableView.SecondaryViewTemplate>         
             </controls:ExpandableView>
             <flv:FlowListView
+                IsPullToRefreshEnabled="True"
+                RefreshControlColor="#0CB392"
+                IsRefreshing="{Binding IsBussy}"
                 Grid.Row="1"
                 x:Name="CollectionView"
                 VerticalScrollBarVisibility="Never"

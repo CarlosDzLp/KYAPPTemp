@@ -37,7 +37,10 @@
                     </Image.GestureRecognizers>
                 </Image>
             </Grid>
-            <controls:CustomListView Grid.Row="1" 
+            <controls:CustomListView Grid.Row="1"
+                                     IsPullToRefreshEnabled="True"
+                RefreshControlColor="#0CB392"
+                IsRefreshing="{Binding IsBussy}"
                  ItemTemplate="{StaticResource MessageTemplateSelector}" 
                  ItemsSource="{Binding ListMessage}" 
                  Margin="0"

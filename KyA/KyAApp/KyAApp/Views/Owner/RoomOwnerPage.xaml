@@ -8,6 +8,9 @@
     Title="Cuartos">
     <ContentPage.Content>
         <controls:CustomListView
+            IsPullToRefreshEnabled="True"
+                RefreshControlColor="#0CB392"
+                IsRefreshing="{Binding IsBussy}"
             x:Name="listroom"
             VerticalScrollBarVisibility="Never"
             HasUnevenRows="True"

@@ -8,6 +8,9 @@
     Title="Servicios del cuarto">
     <ContentPage.Content>
         <controls:CustomListView
+            IsPullToRefreshEnabled="True"
+                RefreshControlColor="#0CB392"
+                IsRefreshing="{Binding IsBussy}"
             x:Name="listroomservice"
             VerticalScrollBarVisibility="Never"
             HasUnevenRows="True"

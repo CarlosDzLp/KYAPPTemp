@@ -61,6 +61,9 @@
                 </Frame>
             </Grid>
             <flv:FlowListView
+                IsPullToRefreshEnabled="True"
+                RefreshControlColor="#0CB392"
+                IsRefreshing="{Binding IsBussy}"
                 x:Name="CollectionView"
                 VerticalScrollBarVisibility="Never"
                                  FlowItemsSource="{Binding ListOwner}"

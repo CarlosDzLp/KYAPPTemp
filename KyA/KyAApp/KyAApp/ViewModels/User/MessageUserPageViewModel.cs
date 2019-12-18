@@ -39,6 +39,7 @@ namespace KyAApp.ViewModels.User
         {
             try
             {
+                IsBussy = true;
                 var User = DbContext.Instance.GetUser();
                 ListMessage = new ObservableCollection<MessageUserToAdmin>();
                 ListMessage.Clear();
@@ -66,10 +67,11 @@ namespace KyAApp.ViewModels.User
                         }
                     }
                 }
+                IsBussy = false;
             }
             catch (Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

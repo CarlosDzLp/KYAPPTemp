@@ -86,6 +86,9 @@
                 TextButton="{Binding Empty}"
                 IsVisible="{Binding IsVisibleEmpty}"/>
             <flv:FlowListView
+                IsPullToRefreshEnabled="True"
+                RefreshControlColor="#0CB392"
+                IsRefreshing="{Binding IsBussy}"
                 x:Name="CollectionView"
                 IsVisible="{Binding IsVisibleList}"
                 VerticalScrollBarVisibility="Never"

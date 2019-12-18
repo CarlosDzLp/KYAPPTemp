@@ -10,6 +10,9 @@
     <ContentPage.Content>
         <flv:FlowListView
                 Grid.Row="1"
+            IsPullToRefreshEnabled="True"
+                RefreshControlColor="#0CB392"
+                IsRefreshing="{Binding IsBussy}"
                 x:Name="CollectionView"
                 VerticalScrollBarVisibility="Never"
                                  FlowItemsSource="{Binding ListMonthly}"

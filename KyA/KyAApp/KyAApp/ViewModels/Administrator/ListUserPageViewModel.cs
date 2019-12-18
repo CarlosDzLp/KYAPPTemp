@@ -38,6 +38,7 @@ namespace KyAApp.ViewModels.Administrator
         {
             try
             {
+                IsBussy = true;
                 ListUser = new ObservableCollection<UserModel>();
                 ListUser.Clear();
                 var response = await client.Get<ListUserModel>($"administrator/seluser?IdOwner={Owner.IdOwner}&status={true}");
@@ -67,10 +68,11 @@ namespace KyAApp.ViewModels.Administrator
                 {
                     SnackError("Hubo un erro intentelo mas tarde", "Error", Helpers.TypeSnackBar.Top);
                 }
+                IsBussy = false;
             }
             catch(Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

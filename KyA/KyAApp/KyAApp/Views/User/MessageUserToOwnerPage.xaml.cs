@@ -60,6 +60,7 @@ namespace KyAApp.Views.User
         {
             try
             {
+                IsBussy = true;
                 ListMessage = new ObservableCollection<MessageOwnerToUser>();
                 ListMessage.Clear();
                 var user = DbContext.Instance.GetUser();
@@ -87,10 +88,11 @@ namespace KyAApp.Views.User
                         }
                     }
                 }
+                IsBussy = false;
             }
             catch (Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

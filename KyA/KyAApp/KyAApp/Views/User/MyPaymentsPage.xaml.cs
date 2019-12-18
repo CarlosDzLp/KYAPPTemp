@@ -42,6 +42,7 @@ namespace KyAApp.Views.User
         {
             try
             {
+                IsBussy = true;
                 var user = DbContext.Instance.GetUser();
                 var surcharges = await client.Get<ListSurchargesModel>($"surcharges/selsurcharges?IdOwner={user.IdOwner}");
                 ListMonthly = new ObservableCollection<MonthlyPaymentModel>();
@@ -79,10 +80,11 @@ namespace KyAApp.Views.User
                         }
                     }
                 }
+                IsBussy = false;
             }
             catch(Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion

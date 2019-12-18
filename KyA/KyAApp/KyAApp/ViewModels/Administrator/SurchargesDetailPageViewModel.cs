@@ -40,6 +40,7 @@ namespace KyAApp.ViewModels.Administrator
         {
             try
             {
+                IsBussy = true;
                 ListSurchargeDetail = new ObservableCollection<SurchargesModel>();
                 ListSurchargeDetail.Clear();
                 var response = await client.Get<ListSurchargesModel>($"surcharges/selsurcharges?IdOwner={Monthly.IdOwner}");
@@ -53,10 +54,11 @@ namespace KyAApp.ViewModels.Administrator
                         }
                     }
                 }
+                IsBussy = false;
             }
             catch(Exception ex)
             {
-
+                IsBussy = false;
             }
         }
         #endregion
